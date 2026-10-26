@@ -1,4 +1,4 @@
-# Apple Health → coach
+# Apple Health → coach (shelved 26 Oct; steps kept for later)
 
 Apple Health has no cloud API, so the phone sends last night's numbers itself. Once a morning, a Shortcut posts sleep, resting heart rate and HRV to this repo. `.github/workflows/health.yml` logs them in `data/health.csv`. The brief and today's card then show a recovery line, and flag low recovery. Workouts don't go this way; they come through Strava.
 
