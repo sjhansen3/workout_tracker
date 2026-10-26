@@ -1,0 +1,33 @@
+name: health
+# Fired by the iPhone Shortcut each morning (repository_dispatch, event_type "health"). See HEALTH.md.
+on:
+  repository_dispatch:
+    types: [health]
+permissions:
+  contents: write
+# Every workflow that commits shares this queue so pushes never race.
+concurrency: { group: coach-commits, cancel-in-progress: false }
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    env: { TZ: America/Chicago }
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - run: python scripts/health.py
+        env:
+          HEALTH_PAYLOAD: ${{ toJSON(github.event.client_payload) }}
+          PUSH_SUBSCRIPTION: ${{ secrets.PUSH_SUBSCRIPTION }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          SITE_URL: ${{ vars.SITE_URL }}
+      - run: python scripts/build_site.py
+        env:
+          REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+          VAPID_PUBLIC_KEY: ${{ vars.VAPID_PUBLIC_KEY }}
+      - name: commit
+        run: |
+          git config user.name "coach-bot"; git config user.email "coach@users.noreply.github.com"
+          git add data docs
+          git diff --cached --quiet || { git commit -m "health: $(date +%F)" && git pull --rebase && git push; }

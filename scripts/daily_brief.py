@@ -66,6 +66,12 @@ def send(title, body):
 def main():
     week = json.load(open("data/week.json"))
     title, body = compose(week, dt.date.today())
+    import health  # last night's Apple Health numbers, if the Shortcut sent them
+    rec, low = health.recovery(dt.date.today().isoformat())
+    if rec:
+        body += "\n" + rec
+    if low:
+        title = "⚠️ " + title
     print(title); print(body)
     if os.environ.get("PUSH_SUBSCRIPTION") and os.environ.get("VAPID_PRIVATE_KEY"):
         send(title, body)

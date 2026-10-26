@@ -31,6 +31,12 @@ def load():
 def day_card(s, today):
     d = dt.date.fromisoformat(s["date"])
     is_today = d == today
+    rec = ""
+    if is_today:
+        import health  # last night's Apple Health numbers, shown on today's card
+        line, low = health.recovery(s["date"])
+        if line:
+            rec = f'<p class="rec{" low" if low else ""}">{html.escape(line).replace(chr(10), "<br>")}</p>'
     scheme, web = APP_LINKS.get(s["app"], (None, None))
     btn = ""
     if web:
@@ -44,6 +50,7 @@ def day_card(s, today):
   <h2>{html.escape(s["title"])}</h2>
   <p class="meta">{SPORT_LABEL.get(s["sport"], s["sport"])} {mins}</p>
   {note}
+  {rec}
   {btn}
 </section>'''
 
@@ -80,7 +87,7 @@ body{{margin:0;background:var(--bg);color:var(--ink);font:17px/1.4 -apple-system
 header{{display:flex;gap:10px;align-items:baseline;font-size:14px;color:var(--mute)}}
 .dow{{font-weight:600;color:var(--ink)}}.venue{{margin-left:auto}}
 h2{{margin:6px 0 2px;font-size:20px;font-weight:600}}
-.meta{{margin:0;color:var(--mute)}}.note{{margin:8px 0 0;font-size:15px}}
+.meta{{margin:0;color:var(--mute)}}.rec{{margin:8px 0 0;font-size:14px;color:var(--mute)}}.rec.low{{color:#b5531d}}.note{{margin:8px 0 0;font-size:15px}}
 .go{{display:inline-block;margin-top:12px;background:var(--go);color:var(--go-ink);text-decoration:none;padding:10px 16px;border-radius:10px;font-weight:600}}
 .chat{{display:block;text-align:center;margin:20px 0 0;padding:14px;border:1px solid var(--line);border-radius:14px;color:var(--ink);text-decoration:none;font-weight:600}}
 .push{{background:var(--card);border:1px dashed var(--line);border-radius:14px;padding:14px 16px;margin-bottom:12px;font-size:15px}}

@@ -24,7 +24,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.4 -apple-system,
 header{display:flex;gap:10px;align-items:baseline;font-size:14px;color:var(--mute)}
 .dow{font-weight:600;color:var(--ink)}.venue{margin-left:auto}
 h2{margin:6px 0 2px;font-size:20px;font-weight:600}
-.meta{margin:0;color:var(--mute)}.note{margin:8px 0 0;font-size:15px}
+.meta{margin:0;color:var(--mute)}.rec{margin:8px 0 0;font-size:14px;color:var(--mute)}.rec.low{color:#b5531d}.note{margin:8px 0 0;font-size:15px}
 .go{display:inline-block;margin-top:12px;background:var(--go);color:var(--go-ink);text-decoration:none;padding:10px 16px;border-radius:10px;font-weight:600}
 .chat{display:block;text-align:center;margin:20px 0 0;padding:14px;border:1px solid var(--line);border-radius:14px;color:var(--ink);text-decoration:none;font-weight:600}
 .push{background:var(--card);border:1px dashed var(--line);border-radius:14px;padding:14px 16px;margin-bottom:12px;font-size:15px}
@@ -36,13 +36,14 @@ h2{margin:6px 0 2px;font-size:20px;font-weight:600}
 <div class="top"><h1>Week of 26 Oct</h1><span>Phase 1 · 45 weeks to Madison</span></div>
 <div class="push" id="push-install" hidden>Get the morning brief as a notification: tap <b>Share → Add to Home Screen</b>, then open <b>Training</b> from your home screen.</div>
 <div class="push" id="push-ask" hidden>Get the 6am brief as a notification from this app.<br><button id="push-on">Turn on notifications</button></div>
-<div class="push" id="push-code" hidden>Last step: copy this code into the GitHub secret <b>PUSH_SUBSCRIPTION</b> (<a href="https://github.com/sjhansen3/workout_tracker/settings/secrets/actions/new">open secrets</a>).
+<div class="push" id="push-code" hidden>Last step: copy this code into the GitHub secret <b>PUSH_SUBSCRIPTION</b> (<a href="https://github.com">open secrets</a>).
 <textarea id="push-json" readonly></textarea><button id="push-copy">Copy code</button></div>
 
 <section class="day planned today" id="d2026-10-26">
   <header><span class="dow">Mon</span><span class="date">26 Oct</span><span class="venue">home</span></header>
   <h2>Fitbod full body</h2>
   <p class="meta">Strength 45 min</p>
+  
   
   <a class="go" href="https://fitbod.me" data-scheme="fitbod://">Open Fitbod</a>
 </section>
@@ -53,6 +54,7 @@ h2{margin:6px 0 2px;font-size:20px;font-weight:600}
   <p class="meta">Run 30 min</p>
   <p class="note">Conversational pace. Record on your watch.</p>
   
+  
 </section>
 
 <section class="day planned" id="d2026-10-28">
@@ -60,6 +62,7 @@ h2{margin:6px 0 2px;font-size:20px;font-weight:600}
   <h2>Zone 2 spin</h2>
   <p class="meta">Bike 45 min</p>
   <p class="note">If the KICKR isn&#x27;t ready: take the day off.</p>
+  
   <a class="go" href="https://www.trainerroad.com/app" data-scheme="trainerroad://">Open TrainerRoad</a>
 </section>
 
@@ -67,6 +70,7 @@ h2{margin:6px 0 2px;font-size:20px;font-weight:600}
   <header><span class="dow">Thu</span><span class="date">29 Oct</span><span class="venue">home</span></header>
   <h2>Fitbod full body</h2>
   <p class="meta">Strength 45 min</p>
+  
   
   <a class="go" href="https://fitbod.me" data-scheme="fitbod://">Open Fitbod</a>
 </section>
@@ -77,6 +81,7 @@ h2{margin:6px 0 2px;font-size:20px;font-weight:600}
   <p class="meta">Rest </p>
   
   
+  
 </section>
 
 <section class="day planned" id="d2026-10-31">
@@ -84,6 +89,7 @@ h2{margin:6px 0 2px;font-size:20px;font-weight:600}
   <h2>Easy run</h2>
   <p class="meta">Run 45 min</p>
   <p class="note">Conversational pace. Record on your watch.</p>
+  
   
 </section>
 
@@ -93,12 +99,13 @@ h2{margin:6px 0 2px;font-size:20px;font-weight:600}
   <p class="meta">Rest </p>
   <p class="note">Optional.</p>
   
+  
 </section>
 <a class="chat" href="https://claude.ai/code">Ask the coach</a>
-<p class="foot"><a href="https://github.com/sjhansen3/workout_tracker">repo</a> · <a href="#" id="push-show">notification code</a></p>
+<p class="foot"><a href="https://github.com">repo</a> · <a href="#" id="push-show">notification code</a></p>
 <script>
 // Notifications from this page itself (iOS 16.4+ when opened from the home screen).
-const VAPID = "BKPuyEng95lrRP1B0UQDxsVFZAIGLGS8yFs9GvHnf52ctLrER_44xa6GwOpGgvD1tpHvngGZBrSFRMR-Nqvucng";
+const VAPID = "";
 const $ = id => document.getElementById(id);
 const standalone = matchMedia('(display-mode: standalone)').matches || navigator.standalone;
 const b64 = s => { s = s.replace(/-/g,'+').replace(/_/g,'/'); const r = atob(s + '='.repeat((4 - s.length % 4) % 4)); return Uint8Array.from(r, c => c.charCodeAt(0)); };
