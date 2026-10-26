@@ -1,9 +1,10 @@
 """Compose today's one-line brief from data/week.json and push it via ntfy.
 
-Env: NTFY_TOPIC (required), SITE_URL (optional, link on the notification).
+Env: NTFY_TOPIC (required), SITE_URL (optional, link on the notification),
+CHAT_URL (optional, "Ask coach" button; defaults to Claude Code on the web).
 Run weather.py --apply before this so venues are current.
 """
-import json, os, datetime as dt, requests
+import json, os, time, datetime as dt, requests
 
 APP_NAME = {"runna": "Runna", "trainerroad": "TrainerRoad", "fitbod": "Fitbod"}
 TAGS = {"run": "running", "bike": "bike", "strength": "muscle", "swim": "swimmer", "rest": "sleeping"}
@@ -25,9 +26,18 @@ def main():
     if not topic:
         print(msg); return
     headers = {"Title": "Training", "Tags": TAGS.get(s["sport"], "calendar") if s else "calendar"}
+    chat = os.environ.get("CHAT_URL") or "https://claude.ai/code"
+    actions = [f"view, Ask coach, {chat}"]
     if os.environ.get("SITE_URL"):
         headers["Click"] = os.environ["SITE_URL"]
-    requests.post(f"https://ntfy.sh/{topic}", data=msg.encode(), headers=headers, timeout=20).raise_for_status()
+        actions.insert(0, f"view, Week, {os.environ['SITE_URL']}")
+    headers["Actions"] = "; ".join(actions)
+    for i in range(4):  # ntfy.sh rate-limits shared IPs (CI runners); back off and retry
+        r = requests.post(f"https://ntfy.sh/{topic}", data=msg.encode(), headers=headers, timeout=20)
+        if r.status_code != 429:
+            break
+        time.sleep(10 * 2 ** i)
+    r.raise_for_status()
     print("sent:", msg)
 
 if __name__ == "__main__":
