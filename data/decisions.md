@@ -14,3 +14,4 @@
 - Weather check, first live run: Tue and Sat runs stay outside (dry, 50s–60s°F). No change to the week.
 - ntfy and Google Calendar do different jobs; no duplication. ntfy is the one morning nudge, with buttons to the week and to the coach chat. Steve: "calendar is just a different thing." The calendar shows the plan and carries no reminders.
 - The coach can read Steve's Runna, personal and work calendars in chat sessions (Google Calendar connector). Crons can't yet; that needs a service account.
+- Morning brief comes from the site itself (installed as "Training", own icon) instead of ntfy. Steve wanted it to look cooler and not come from ntfy. iOS web push can't show buttons, so tapping opens the week, which has an "Ask the coach" link.

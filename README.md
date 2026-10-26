@@ -34,7 +34,7 @@ Set Runna's and TrainerRoad's "training days" to match the days in `data/week.js
 
 **Runna / Fitbod / TrainerRoad — no API.** Don't fight it. They're execution-only. Their output reaches us through Strava.
 
-**Delivery — ntfy.sh.** Free push notifications to the phone, no account. The daily brief posts to a private topic; subscribe once in the ntfy app. Tapping the notification opens the site.
+**Delivery — web push from the site.** The site installs to the home screen as "Training" and sends its own notifications (iOS 16.4+), no third-party app. One-time: open Training from the home screen, tap "Turn on notifications", paste the code into the `PUSH_SUBSCRIPTION` secret. `VAPID_PRIVATE_KEY` is the matching signing key. Tapping the notification opens the week.
 
 **Site — GitHub Pages.** `scripts/build_site.py` renders `data/week.json` into `docs/index.html` (today-first, tap to open the right app, links back here for chat) and `docs/week.ics`. Subscribe to the `.ics` from the iPhone calendar and the week shows up there too, no sync code.
 
@@ -42,14 +42,14 @@ Set Runna's and TrainerRoad's "training days" to match the days in `data/week.js
 
 ## Crons (`.github/workflows/`)
 
-- `daily.yml` — 6:00 CT every day: weather → decide venues → rebuild site → push brief.
+- `daily.yml` — 6:00 CT every day: weather → decide venues → rebuild site → web push brief.
 - `sunday.yml` — 18:00 CT Sundays: strava sync → mark ledger → rebuild site → draft next week into `data/week.next.json` and open an issue titled "Week of …" with the draft for review.
 
 ## Setup checklist
 
 1. Push this repo. Enable GitHub Pages: deploy from branch `main`, folder `/docs`.
 2. `pip install -r requirements.txt`; run `python scripts/build_site.py` locally to confirm it renders.
-3. Install ntfy on the phone, pick a topic name, add `NTFY_TOPIC` as a repo secret.
+3. Add `VAPID_PRIVATE_KEY` as a repo secret. Add the site to the home screen, open it from there, tap "Turn on notifications", and save the code as the `PUSH_SUBSCRIPTION` secret.
 4. Strava app: add `STRAVA_CLIENT_ID`, `STRAVA_CLIENT_SECRET`, `STRAVA_REFRESH_TOKEN` as secrets. Run `scripts/strava_sync.py` once by hand.
 5. Add the site to the iPhone home screen (Share → Add to Home Screen). Subscribe to `week.ics`.
 6. Set Runna and TrainerRoad training days to match week one.
