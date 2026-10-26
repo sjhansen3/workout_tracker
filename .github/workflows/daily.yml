@@ -1,9 +1,9 @@
 name: daily brief
 on:
   schedule:
-    # 06:00 Chicago year-round. 11:00 UTC is 6am in CDT, 12:00 UTC is 6am in CST; the gate keeps the right one.
-    - cron: "0 11 * * *"
-    - cron: "0 12 * * *"
+    # 09:00 Chicago year-round. 14:00 UTC is 9am in CDT, 15:00 UTC is 9am in CST; the gate keeps the right one.
+    - cron: "0 14 * * *"
+    - cron: "0 15 * * *"
   workflow_dispatch:
 permissions:
   contents: write
@@ -16,7 +16,7 @@ jobs:
     steps:
       - id: g
         run: |
-          want="0 11 * * *"; [ "$(TZ=America/Chicago date +%z)" = "-0600" ] && want="0 12 * * *"
+          want="0 14 * * *"; [ "$(TZ=America/Chicago date +%z)" = "-0600" ] && want="0 15 * * *"
           if [ "${{ github.event_name }}" != "schedule" ] || [ "${{ github.event.schedule }}" = "$want" ]; then echo go=yes >> $GITHUB_OUTPUT; else echo go=no >> $GITHUB_OUTPUT; fi
   brief:
     needs: gate

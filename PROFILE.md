@@ -10,7 +10,8 @@ Edited through coaching conversations only. Every line here is something Steve s
 
 ## Life
 - Two young kids. Works from home. Steve: "most important thing to know is this." His fitness goals are about staying on top of that life.
-- Usually trains after the kids' bedtime at 8pm. Sleep can be the blocker.
+- Weekdays: trains after the kids' bedtime at 8pm. Weekends: nap time / midday window. Usually sleeps 7+ h, but sleep can be the blocker.
+- Daily push at 9am, not 6am.
 - Family/social plans and sleep/fatigue are what knock training off track.
 
 ## Constraints
@@ -20,7 +21,7 @@ Edited through coaching conversations only. Every line here is something Steve s
 - Winter block priority: balanced strength and endurance.
 - No pool access until spring.
 - Location: Evanston, IL (60201).
-- Weather rule: cold is fine; wet is not. Run outside when precipitation chance is under 40% and it's daylight; otherwise treadmill. Snow on the ground counts as wet unless Steve says otherwise. Will train through temps well below freezing.
+- Weather rule: cold is fine; wet is not. Run outside when precipitation chance is under 40%; otherwise treadmill. Dark is OK: he has lights. Has a treadmill at home. Snow on the ground counts as wet unless Steve says otherwise. Will train through temps well below freezing.
 
 ## Equipment and apps
 - Runs: recorded on the watch. Runna dropped 26 Oct: it owns its own calendar and can't be scheduled. Revisit a structured run app in May.

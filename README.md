@@ -42,7 +42,7 @@ The repo decides every day. Any app we use must take its schedule from the repo,
 
 ## Crons (`.github/workflows/`)
 
-- `daily.yml` — 6:00 CT every day: weather → decide venues → rebuild site → web push brief.
+- `daily.yml` — 9:00 CT every day: weather → decide venues → rebuild site → web push brief.
 - `sunday.yml` — 18:00 CT Sundays: strava sync → mark ledger → rebuild site → draft next week into `data/week.next.json` and open an issue titled "Week of …" with the draft for review.
 
 ## Setup checklist

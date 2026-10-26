@@ -1,4 +1,4 @@
-// Receives the 6am brief and opens the week page when tapped. No caching: the page is always fresh.
+// Receives the 9am brief and opens the week page when tapped. No caching: the page is always fresh.
 self.addEventListener('install', () => self.skipWaiting());
 self.addEventListener('activate', e => e.waitUntil(self.clients.claim()));
 self.addEventListener('push', e => {

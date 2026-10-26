@@ -178,7 +178,7 @@ body{{margin:0;background:var(--bg);color:var(--ink);font:17px/1.4 -apple-system
 <p class="sub">Phase {week["phase"]} · {PHASE_NAME.get(week["phase"], "")} · {(RACE - today).days // 7} weeks to Madison</p>
 <nav class="strip">{strip}</nav>
 <div class="push" id="push-install" hidden>Get the morning brief as a notification: tap <b>Share → Add to Home Screen</b>, then open <b>Training</b> from your home screen.</div>
-<div class="push" id="push-ask" hidden>Get the 6am brief as a notification from this app.<br><button id="push-on">Turn on notifications</button></div>
+<div class="push" id="push-ask" hidden>Get the 9am brief as a notification from this app.<br><button id="push-on">Turn on notifications</button></div>
 <div class="push" id="push-code" hidden>Last step: copy this code into the GitHub secret <b>PUSH_SUBSCRIPTION</b> (<a href="{SECRETS}">open secrets</a>).
 <textarea id="push-json" readonly></textarea><button id="push-copy">Copy code</button></div>
 {coach_html()}
@@ -263,7 +263,7 @@ MANIFEST = {
               {"src": "icon-512.png", "sizes": "512x512", "type": "image/png"}],
 }
 
-SW = """// Receives the 6am brief and opens the week page when tapped. No caching: the page is always fresh.
+SW = """// Receives the 9am brief and opens the week page when tapped. No caching: the page is always fresh.
 self.addEventListener('install', () => self.skipWaiting());
 self.addEventListener('activate', e => e.waitUntil(self.clients.claim()));
 self.addEventListener('push', e => {

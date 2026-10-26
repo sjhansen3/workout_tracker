@@ -79,7 +79,7 @@ def main():
     print(f"logged {row}")
     line, low = recovery(today, rows)
     print(line or "")
-    # Arrived after the 6am brief went out? Only ping again if it matters.
+    # Arrived after the 9am brief went out? Only ping again if it matters.
     if low and os.environ.get("PUSH_SUBSCRIPTION") and os.environ.get("VAPID_PRIVATE_KEY"):
         import daily_brief
         daily_brief.send("⚠️ Low recovery", line)

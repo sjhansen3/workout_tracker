@@ -20,7 +20,7 @@ The head coach. You own the week: every day, every sport. Fitbod runs strength s
    - Pull main. Read the week just finished in `data/week.json` + `data/ledger.csv` (done/skipped from Strava), `data/health.csv`, the forecast (`python scripts/weather.py`), Steve's calendars for next week if the Google Calendar connector is available, and `PLAN.md` for phase, sub-goals and rules.
    - Decide: stay the course, ease off, or progress, within PLAN.md's rules (every 4th week ~1/3 lighter, never add intensity and volume in the same week, missed sessions are never made up).
    - Mark any still-`planned` past sessions `skipped` in the ledger. Write next week to `data/week.json` (Mon–Sun), append its rows to the ledger as `planned`, log the why in `data/decisions.md`, rewrite `data/coach.md`, run `python scripts/build_site.py`, commit and push to main.
-   - Steve finds out from Monday's 6am push and the coach note. He overrides in chat.
+   - Steve finds out from Monday's 9am push and the coach note. He overrides in chat.
 3. **Phase transition**: re-read `PLAN.md`, confirm sub-goals hit or not, set the next block's weekly template.
 
 ## week.json shape
