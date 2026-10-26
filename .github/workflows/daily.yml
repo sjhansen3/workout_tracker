@@ -7,6 +7,8 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+# Both workflows commit to the repo; queue them so pushes never race.
+concurrency: { group: coach-commits, cancel-in-progress: false }
 jobs:
   gate:
     runs-on: ubuntu-latest
@@ -22,8 +24,8 @@ jobs:
     runs-on: ubuntu-latest
     env: { TZ: America/Chicago }
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with: { python-version: "3.12" }
       - run: pip install -r requirements.txt
       - run: python scripts/weather.py --apply
@@ -37,4 +39,4 @@ jobs:
         run: |
           git config user.name "coach-bot"; git config user.email "coach@users.noreply.github.com"
           git add data docs
-          git diff --cached --quiet || { git commit -m "daily: weather + site" && git push; }
+          git diff --cached --quiet || { git commit -m "daily: weather + site" && git pull --rebase && git push; }
