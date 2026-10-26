@@ -37,20 +37,23 @@ COLOR = {"run": ("#e8c61a", "#4cc35a"), "bike": ("#b98cf6", "#7b61f0"), "strengt
 
 def coach_html(path="data/coach.md"):
     """The coach's own words, free text. Minimal markdown: paragraphs, **bold**, '- ' bullets.
-    The first paragraph shows; the rest folds under 'more'."""
-    import re
+    Tap the header to fold it to a one-line preview; a new note opens again (keyed by a content hash)."""
+    import re, hashlib
     if not os.path.exists(path) or not open(path).read().strip():
         return ""
-    blocks = [b.strip() for b in open(path).read().strip().split("\n\n") if b.strip()]
+    text = open(path).read().strip()
+    blocks = [b.strip() for b in text.split("\n\n") if b.strip()]
     def fmt(b):
         b = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", html.escape(b))
         lines = b.split("\n")
         if all(l.startswith("- ") for l in lines):
             return "<ul>" + "".join(f"<li>{l[2:]}</li>" for l in lines) + "</ul>"
         return "<p>" + "<br>".join(lines) + "</p>"
-    first, rest = fmt(blocks[0]), "".join(fmt(b) for b in blocks[1:])
-    more = f'<details><summary>more</summary>{rest}</details>' if rest else ""
-    return f'<section class="coach"><h3>From the coach</h3>{first}{more}</section>'
+    preview = html.escape(re.sub(r"\*\*|\n", " ", blocks[0]))
+    key = hashlib.sha1(text.encode()).hexdigest()[:10]
+    return (f'<section class="coach" id="coach" data-key="{key}">'
+            f'<button class="coach-head" aria-expanded="true"><h3>From the coach</h3><span class="chev">▾</span></button>'
+            f'<p class="preview">{preview}</p><div class="full">{"".join(fmt(b) for b in blocks)}</div></section>')
 
 def recovery_html(date):
     import health  # last night's Apple Health numbers, shown on today's card
@@ -147,10 +150,13 @@ body{{margin:0;background:var(--bg);color:var(--ink);font:17px/1.4 -apple-system
 .hint{{margin:10px 0 0;font-size:14px;color:var(--warn)}}
 .go{{display:inline-block;margin-top:16px;background:var(--ink);color:var(--bg);text-decoration:none;padding:11px 18px;border-radius:12px;font-weight:600}}
 .coach{{background:var(--card2);border-radius:18px;padding:16px 18px;margin-bottom:14px;font-size:15px;line-height:1.5}}
-.coach h3{{margin:0 0 6px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}}
+.coach h3{{margin:0;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}}
 .coach p{{margin:0 0 8px}}.coach ul{{margin:0 0 8px;padding-left:20px}}.coach b{{color:var(--ink)}}
-.coach details summary{{cursor:pointer;color:var(--mute);font-size:14px;list-style:none;margin-top:2px}}
-.coach details[open] summary{{display:none}}
+.coach-head{{all:unset;cursor:pointer;display:flex;justify-content:space-between;align-items:center;width:100%}}
+.coach-head h3{{margin:0}}.chev{{color:var(--mute);transition:transform .2s}}
+.coach .preview{{display:none;margin:6px 0 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--mute)}}
+.coach .full{{margin-top:6px}}
+.coach.folded .full{{display:none}}.coach.folded .preview{{display:block}}.coach.folded .chev{{transform:rotate(-90deg)}}
 .overview{{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px 20px;margin-bottom:14px}}
 .overview h3{{margin:0 0 14px;font-size:18px;font-weight:600}}
 .segs{{display:flex;gap:6px}}.seg{{flex:1;height:8px;border-radius:4px;background:var(--line)}}.seg.on{{background:var(--c)}}
@@ -186,6 +192,17 @@ body{{margin:0;background:var(--bg);color:var(--ink);font:17px/1.4 -apple-system
 <a class="chat" href="{CHAT}">💬 Ask the coach</a>
 <p class="foot"><a href="{REPO}">repo</a> · <a href="#" id="push-show">notification code</a></p>
 <script>
+// Coach note: tap the header to fold/unfold. Remembered per note; a new note opens again.
+(() => {{
+  const c = document.getElementById('coach'); if (!c) return;
+  const k = 'coach-folded';
+  try {{ if (localStorage.getItem(k) === c.dataset.key) c.classList.add('folded'); }} catch (e) {{}}
+  c.querySelector('.coach-head').onclick = () => {{
+    const f = c.classList.toggle('folded');
+    c.querySelector('.coach-head').setAttribute('aria-expanded', String(!f));
+    try {{ f ? localStorage.setItem(k, c.dataset.key) : localStorage.removeItem(k); }} catch (e) {{}}
+  }};
+}})();
 // Week strip: tap a day to show its card. Today is selected by default.
 const pick = d => {{
   document.querySelectorAll('.hero').forEach(h => h.hidden = h.dataset.date !== d);
