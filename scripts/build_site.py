@@ -11,8 +11,9 @@ import json, os, datetime as dt, html
 REPO = os.environ.get("REPO_URL", "https://github.com")
 CHAT = os.environ.get("CHAT_URL", "https://claude.ai/code")
 SECRETS = f"{REPO}/settings/secrets/actions/new" if REPO.count("/") > 3 else "https://github.com"
-# Public half of the VAPID keypair; the private half is the VAPID_PRIVATE_KEY secret.
-VAPID_PUBLIC = os.environ.get("VAPID_PUBLIC_KEY", "BDfsl0zKQIUeoWLVvZ4J_AcaiSPLTqqiKjXZkm5XZ43DtnbQ9Sw_8Lf2YNqQldTBa6qmG1tOeq1YYxKK86Ldbpk")
+# Public half of the VAPID keypair (repo variable); the private half is the VAPID_PRIVATE_KEY secret.
+# Both come from scripts/setup_secrets.py. Without it the page hides the notifications card.
+VAPID_PUBLIC = os.environ.get("VAPID_PUBLIC_KEY") or ""
 RACE = dt.date(2027, 9, 11)
 APP_LINKS = {
     # URL scheme first, web fallback second. Schemes are best-effort; fix any that don't open.
@@ -109,7 +110,7 @@ async function subscribe() {{
   const sub = await reg.pushManager.subscribe({{userVisibleOnly: true, applicationServerKey: b64(VAPID)}});
   showCode(sub);
 }}
-if ('serviceWorker' in navigator) {{
+if (VAPID && 'serviceWorker' in navigator) {{
   navigator.serviceWorker.register('sw.js').then(async reg => {{
     if (!('PushManager' in window)) {{ if (!standalone) $('push-install').hidden = false; return; }}
     const sub = await reg.pushManager.getSubscription();

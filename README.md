@@ -49,8 +49,8 @@ Set Runna's and TrainerRoad's "training days" to match the days in `data/week.js
 
 1. Push this repo. Enable GitHub Pages: deploy from branch `main`, folder `/docs`.
 2. `pip install -r requirements.txt`; run `python scripts/build_site.py` locally to confirm it renders.
-3. Add `VAPID_PRIVATE_KEY` as a repo secret. Add the site to the home screen, open it from there, tap "Turn on notifications", and save the code as the `PUSH_SUBSCRIPTION` secret.
-4. Strava app: add `STRAVA_CLIENT_ID`, `STRAVA_CLIENT_SECRET`, `STRAVA_REFRESH_TOKEN` as secrets. Run `scripts/strava_sync.py` once by hand.
+3. On your computer, run `python3 scripts/setup_secrets.py` (needs `gh auth login`). It sets SITE_URL, a fresh notification keypair, and the Strava secrets straight into GitHub; nothing gets pasted into chat. Create the Strava API app at strava.com/settings/api first.
+4. On the phone: add the site to the home screen, open it from there, tap "Turn on notifications", and save the code as the `PUSH_SUBSCRIPTION` secret.
 5. Add the site to the iPhone home screen (Share → Add to Home Screen). Subscribe to `week.ics`.
 6. Set Runna and TrainerRoad training days to match week one.
 7. Identify the KICKR generation, check cassette speed vs your bike, check axle type.

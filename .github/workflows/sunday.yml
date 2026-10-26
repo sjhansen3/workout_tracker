@@ -36,7 +36,9 @@ jobs:
           STRAVA_REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
       - run: python scripts/weather.py > forecast.txt
       - run: python scripts/build_site.py
-        env: { REPO_URL: "${{ github.server_url }}/${{ github.repository }}" }
+        env:
+          REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+          VAPID_PUBLIC_KEY: ${{ vars.VAPID_PUBLIC_KEY }}
       - name: open review issue
         uses: actions/github-script@v8
         with:

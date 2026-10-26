@@ -30,7 +30,9 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python scripts/weather.py --apply
       - run: python scripts/build_site.py
-        env: { REPO_URL: "${{ github.server_url }}/${{ github.repository }}" }
+        env:
+          REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+          VAPID_PUBLIC_KEY: ${{ vars.VAPID_PUBLIC_KEY }}
       - run: python scripts/daily_brief.py
         env:
           PUSH_SUBSCRIPTION: ${{ secrets.PUSH_SUBSCRIPTION }}

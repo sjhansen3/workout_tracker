@@ -4,7 +4,7 @@ Edited through coaching conversations only. Every line here is something Steve s
 
 ## Goal
 - IRONMAN 70.3 Wisconsin, Madison. Saturday 11 Sep 2027 (confirm). Goal for this cycle: get fit, finish, enjoy it.
-- Previous endurance background: has trained for a marathon.
+- Previous endurance background: ran the Chicago Marathon (11 Oct 2026). Hasn't run since. Strava shows ~20–27 mi/week in August, long runs to 11 mi.
 
 ## Constraints
 - Available training time now: under 5 hours per week.
@@ -24,7 +24,7 @@ Edited through coaching conversations only. Every line here is something Steve s
 - Wants low friction: look, do it, or ask for a change, and go.
 
 ## Still to confirm
-- Current weekly running mileage and most recent race.
 - Injuries or anything fragile to protect.
 - Days of the week that are off-limits.
 - KICKR generation.
+- Why Runna runs stopped reaching Strava after 1 Sep (Steve: "runna isnt or didnt sync").

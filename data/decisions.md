@@ -15,3 +15,5 @@
 - ntfy and Google Calendar do different jobs; no duplication. ntfy is the one morning nudge, with buttons to the week and to the coach chat. Steve: "calendar is just a different thing." The calendar shows the plan and carries no reminders.
 - The coach can read Steve's Runna, personal and work calendars in chat sessions (Google Calendar connector). Crons can't yet; that needs a service account.
 - Morning brief comes from the site itself (installed as "Training", own icon) instead of ntfy. Steve wanted it to look cooler and not come from ntfy. iOS web push can't show buttons, so tapping opens the week, which has an "Ask the coach" link.
+- Steve ran the Chicago Marathon (11 Oct) and hasn't run since. Week one stays as written: easy volume is the right restart two weeks out. Runna's Tue progression run and next week's repeats are too much for phase 1; Steve to switch Runna to easy runs on Tue/Sat.
+- Secrets go straight from Steve's computer into GitHub via `scripts/setup_secrets.py`, never through chat. Steve: "isnt that safer?" The keys pasted in chat today are retired: a new notification keypair, and a regenerated Strava client secret.
