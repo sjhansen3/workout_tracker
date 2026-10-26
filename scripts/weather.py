@@ -73,14 +73,14 @@ def main():
     week = json.load(open("data/week.json"))
     today = dt.date.today().isoformat()
     changed = False
-    for s in week["days"]:
-        f = fc.get(s["date"])
-        if not f:
-            continue
-        line = f'{s["date"]} {f["lo"]:.0f}–{f["hi"]:.0f}°F  rain {f["precip_prob"]}% {f["precip_in"]:.2f}in'
+    sessions = {s["date"]: s for s in week["days"]}
+    for date, f in fc.items():  # every forecast day, so Sunday's review sees next week too
+        s = sessions.get(date)
+        line = f'{date} {dt.date.fromisoformat(date):%a} {f["lo"]:.0f}–{f["hi"]:.0f}°F  rain {f["precip_prob"]}% {f["precip_in"]:.2f}in'
         if f["snow_in"] or f["ground_in"]:
             line += f'  snow {f["snow_in"]:.1f}in, ground {f["ground_in"]:.1f}in'
-        if s["sport"] == "run" and s["status"] == "planned" and s["date"] >= today:
+        line += f'  {"wet" if decide(f) == "treadmill" else "dry"}'
+        if s and s["sport"] == "run" and s["status"] == "planned" and s["date"] >= today:
             v = decide(f)
             line += f'  → run {v}'
             if s["venue"] != v and "--apply" in sys.argv:

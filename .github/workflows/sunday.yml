@@ -1,14 +1,27 @@
 name: sunday review
 on:
   schedule:
-    - cron: "0 23 * * 0"   # 18:00 Chicago Sundays (CDT)
+    # 18:00 Chicago Sundays year-round. 23:00 UTC Sun is 6pm in CDT, 00:00 UTC Mon is 6pm in CST; the gate keeps the right one.
+    - cron: "0 23 * * 0"
+    - cron: "0 0 * * 1"
   workflow_dispatch:
 permissions:
   contents: write
   issues: write
 jobs:
-  review:
+  gate:
     runs-on: ubuntu-latest
+    outputs: { go: "${{ steps.g.outputs.go }}" }
+    steps:
+      - id: g
+        run: |
+          want="0 23 * * 0"; [ "$(TZ=America/Chicago date +%z)" = "-0600" ] && want="0 0 * * 1"
+          if [ "${{ github.event_name }}" != "schedule" ] || [ "${{ github.event.schedule }}" = "$want" ]; then echo go=yes >> $GITHUB_OUTPUT; else echo go=no >> $GITHUB_OUTPUT; fi
+  review:
+    needs: gate
+    if: needs.gate.outputs.go == 'yes'
+    runs-on: ubuntu-latest
+    env: { TZ: America/Chicago }
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -21,6 +34,7 @@ jobs:
           STRAVA_REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
       - run: python scripts/weather.py > forecast.txt
       - run: python scripts/build_site.py
+        env: { REPO_URL: "${{ github.server_url }}/${{ github.repository }}" }
       - name: open review issue
         uses: actions/github-script@v7
         with:
@@ -29,8 +43,9 @@ jobs:
             const week = fs.readFileSync('data/week.json','utf8');
             const fc = fs.readFileSync('forecast.txt','utf8');
             const body = `Week just finished (status from Strava):\n\n\`\`\`json\n${week}\n\`\`\`\n\nForecast:\n\`\`\`\n${fc}\n\`\`\`\n\nOpen Claude Code in this repo and run the Sunday review (see COACH.md). Close this issue when next week is committed.`;
-            await github.rest.issues.create({owner: context.repo.owner, repo: context.repo.repo, title: `Sunday review · ${new Date().toISOString().slice(0,10)}`, body});
+            await github.rest.issues.create({owner: context.repo.owner, repo: context.repo.repo, title: `Sunday review · ${new Date().toLocaleDateString('en-CA', {timeZone: 'America/Chicago'})}`, body});
       - name: commit
         run: |
           git config user.name "coach-bot"; git config user.email "coach@users.noreply.github.com"
-          git add data docs && git diff --cached --quiet || git commit -m "sunday: strava sync + site" && git push
+          git add data docs
+          git diff --cached --quiet || { git commit -m "sunday: strava sync + site" && git push; }

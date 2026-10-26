@@ -5,6 +5,9 @@ Run weather.py --apply before this so venues are current.
 """
 import json, os, datetime as dt, requests
 
+APP_NAME = {"runna": "Runna", "trainerroad": "TrainerRoad", "fitbod": "Fitbod"}
+TAGS = {"run": "running", "bike": "bike", "strength": "muscle", "swim": "swimmer", "rest": "sleeping"}
+
 def main():
     week = json.load(open("data/week.json"))
     today = dt.date.today().isoformat()
@@ -15,11 +18,13 @@ def main():
         msg = f"Today: {s['title']}."
     else:
         venue = "" if s["sport"] == "strength" else f", {s['venue']}"
-        msg = f"Today: {s['title']}, {s['minutes']} min{venue}. {s['note']}".strip()
+        app = APP_NAME.get(s["app"], s["app"])
+        title = s["title"].removeprefix(app).strip()  # "Fitbod full body" -> "full body"
+        msg = f"{app}: {title[0].lower() + title[1:]}, {s['minutes']} min{venue}. {s['note']}".strip()
     topic = os.environ.get("NTFY_TOPIC")
     if not topic:
         print(msg); return
-    headers = {"Title": "Training", "Tags": "running"}
+    headers = {"Title": "Training", "Tags": TAGS.get(s["sport"], "calendar") if s else "calendar"}
     if os.environ.get("SITE_URL"):
         headers["Click"] = os.environ["SITE_URL"]
     requests.post(f"https://ntfy.sh/{topic}", data=msg.encode(), headers=headers, timeout=20).raise_for_status()
