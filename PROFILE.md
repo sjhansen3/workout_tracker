@@ -14,7 +14,7 @@ Edited through coaching conversations only. Every line here is something Steve s
 - Weather rule: cold is fine; wet is not. Run outside when precipitation chance is under 40% and it's daylight; otherwise treadmill. Snow on the ground counts as wet unless Steve says otherwise. Will train through temps well below freezing.
 
 ## Equipment and apps
-- Runs: Runna (triathlon run plan available for 70.3).
+- Runs: recorded on the watch. Runna dropped 26 Oct: it owns its own calendar and can't be scheduled. Revisit a structured run app in May.
 - Strength: Fitbod.
 - Bike: Wahoo KICKR (older generation, direct drive, ERG mode). Generation, cassette speed and axle compatibility not yet confirmed. TrainerRoad planned once it's live.
 - Everything syncs to Strava.
@@ -27,4 +27,3 @@ Edited through coaching conversations only. Every line here is something Steve s
 - Injuries or anything fragile to protect.
 - Days of the week that are off-limits.
 - KICKR generation.
-- Why Runna runs stopped reaching Strava after 1 Sep (Steve: "runna isnt or didnt sync").

@@ -22,7 +22,7 @@ The bike is where a runner's 70.3 is won or lost. This block buys that.
 - Strength still happening at least once a week.
 
 ## Phase 3 — Three sports (1 Apr – 30 Jun, 13 weeks)
-Pool opens: 2 swims, building to 1500 m continuous. Bike moves outdoors on weekends. Runna 70.3 run plan starts around early May (16–20 weeks out). Sprint or Olympic tri in June as a rehearsal.
+Pool opens: 2 swims, building to 1500 m continuous. Bike moves outdoors on weekends. Structured run build starts around early May (16–20 weeks out); decide then which app runs it, on the condition that the coach can schedule it. Sprint or Olympic tri in June as a rehearsal.
 
 **Sub-goals by 30 Jun**
 - 1500 m continuous swim.
@@ -44,4 +44,4 @@ Long rides to 3 h, bricks, open-water swims, 2-week taper.
 - Weather moves days, not just venues: a dry 45° Thursday in January is worth moving a strength day for.
 
 ## Week one (26 Oct – 1 Nov)
-See `data/week.json`. Run days come from Runna; the rest fits around them: 2 Fitbod, 1 bike (off if the KICKR isn't ready), 2 days off.
+See `data/week.json`. Mon Fitbod · Tue easy run 30 · Wed bike 45 Z2 (off if the KICKR isn't ready) · Thu Fitbod · Fri off · Sat easy run 45 · Sun off or easy spin.

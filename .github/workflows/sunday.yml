@@ -34,8 +34,6 @@ jobs:
           STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
           STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
           STRAVA_REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
-      - run: python scripts/runna.py
-        env: { RUNNA_ICS_URL: "${{ secrets.RUNNA_ICS_URL }}" }
       - run: python scripts/weather.py > forecast.txt
       - run: python scripts/build_site.py
         env:

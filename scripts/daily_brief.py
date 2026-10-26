@@ -36,14 +36,14 @@ def compose(week, today):
         return "📋 No plan for today", f"Time for a Sunday review · {weeks}"
     if s["sport"] == "rest":
         return f"😴 {dow} · {s['title']}", " · ".join(x for x in [s["note"], weeks] if x)
-    app = APP_NAME.get(s["app"], s["app"])
-    what = s["title"].removeprefix(app).strip()
+    app = APP_NAME.get(s["app"], "")  # runs are app "none": just go, record on the watch
+    what = s["title"].removeprefix(app).strip() if app else s["title"]
     title = f"{EMOJI.get(s['sport'], '•')} {dow} · {what[0].upper() + what[1:]}, {s['minutes']} min"
     where = s["venue"]
     if s["sport"] in ("run", "bike") and s["venue"] == "outside":
         w = weather_bit(s["date"])
         where = f"outside, {w}" if w else where
-    body = " · ".join([app, where, weeks])
+    body = " · ".join(x for x in [app, where, weeks] if x)
     if s["note"]:
         body += f"\n{s['note']}"
     return title, body

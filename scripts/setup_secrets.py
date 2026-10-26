@@ -3,12 +3,11 @@
     brew install gh && gh auth login        # once
     pip3 install requests cryptography
     python3 scripts/setup_secrets.py         # all steps
-    python3 scripts/setup_secrets.py strava  # or just one: site | push | strava | runna
+    python3 scripts/setup_secrets.py strava  # or just one: site | push | strava
 
 site    sets SITE_URL.
 push    makes a fresh notification keypair: VAPID_PRIVATE_KEY (secret) + VAPID_PUBLIC_KEY (variable),
         then rebuilds the site so the page uses the new key. Re-tap "Turn on notifications" afterwards.
-runna   stores RUNNA_ICS_URL, the private iCal address of the Runna calendar, so the coach can follow Runna's run days.
 strava  asks for the Client ID/Secret (hidden), opens Strava to authorize, and stores
         STRAVA_CLIENT_ID, STRAVA_CLIENT_SECRET, STRAVA_REFRESH_TOKEN.
 """
@@ -66,15 +65,7 @@ def strava():
     secret("STRAVA_CLIENT_SECRET", csecret)
     secret("STRAVA_REFRESH_TOKEN", j["refresh_token"])
 
-def runna():
-    print("  Google Calendar on the web → Settings (gear) → under 'Settings for my calendars' click Runna →\n"
-          "  'Integrate calendar' → copy 'Secret address in iCal format'.")
-    url = getpass.getpass("  Paste it (hidden): ").strip()
-    if not url.startswith("https://") or ".ics" not in url:
-        sys.exit("  That doesn't look like an iCal address (https://…/basic.ics).")
-    secret("RUNNA_ICS_URL", url)
-
-STEPS = {"site": site, "push": push, "runna": runna, "strava": strava}
+STEPS = {"site": site, "push": push, "strava": strava}
 
 if __name__ == "__main__":
     for name in sys.argv[1:] or STEPS:

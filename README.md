@@ -10,12 +10,12 @@ The head coach decides *which days* and *what kind* of session. The apps decide 
 
 | Sport    | App         | Who picks the day | Who writes the workout | Result lands in |
 |----------|-------------|-------------------|------------------------|-----------------|
-| Run      | Runna       | Runna (repo follows its calendar) | Runna  | Strava          |
+| Run      | Watch (phase 1) | this repo     | this repo (easy, unstructured) | Strava |
 | Bike     | TrainerRoad | this repo         | TrainerRoad            | Strava          |
 | Strength | Fitbod      | this repo         | Fitbod                 | Strava (via Apple Health) |
 | Swim     | TBD (spring)| this repo         | TBD                    | Strava          |
 
-Runna decides run days; `scripts/runna.py` reads Runna's calendar each morning and moves strength/bike around it. Nothing to keep in sync by hand.
+The repo decides every day. Any app we use must take its schedule from the repo, never own one of its own.
 
 ## Files that are the source of truth
 
@@ -32,7 +32,7 @@ Runna decides run days; `scripts/runna.py` reads Runna's calendar each morning a
 
 **Strava — read completed activities.** Register an API app at strava.com/settings/api (free). OAuth once, store refresh token as a repo secret. `scripts/strava_sync.py` pulls the last 7 days of activities and marks matching ledger rows done. This is the only integration that needs setup; everything flows into Strava already, so it's the one read that replaces all logging.
 
-**Runna / Fitbod / TrainerRoad — no API.** Don't fight it. They're execution-only. Their output reaches us through Strava.
+**Fitbod / TrainerRoad — no API.** Don't fight it. They're execution-only. Their output reaches us through Strava.
 
 **Delivery — web push from the site.** The site installs to the home screen as "Training" and sends its own notifications (iOS 16.4+), no third-party app. One-time: open Training from the home screen, tap "Turn on notifications", paste the code into the `PUSH_SUBSCRIPTION` secret. `VAPID_PRIVATE_KEY` is the matching signing key. Tapping the notification opens the week.
 
