@@ -1,0 +1,47 @@
+# The year
+
+46 weeks from Mon 26 Oct 2026 to race day. Under 5 hours a week to start, growing only where the bike demands it.
+
+## Phase 1 — Habit and strength (26 Oct – 31 Dec, 10 weeks)
+2 × Fitbod, 2 × easy run, 1 × bike (once the KICKR is live). About 4–4.5 h.
+The goal is consistency, not fitness. Runs stay easy. No intensity until the habit is boring.
+
+**Sub-goals by 31 Dec**
+- 10 consecutive weeks with 4 or more sessions logged.
+- KICKR set up, calibrated, TrainerRoad connected, one FTP ramp test done.
+- 15 easy miles a week feels normal.
+
+## Phase 2 — Engine (1 Jan – 31 Mar, 13 weeks)
+TrainerRoad low-volume plan (3 rides, ~3 h) is the spine. 2 runs, one growing to 8–10 mi. Strength 1–2×. Hours drift to 5–6.
+The bike is where a runner's 70.3 is won or lost. This block buys that.
+
+**Sub-goals by 31 Mar**
+- Second FTP test, number went up.
+- 90 min indoor ride is comfortable.
+- 10-mile long run done.
+- Strength still happening at least once a week.
+
+## Phase 3 — Three sports (1 Apr – 30 Jun, 13 weeks)
+Pool opens: 2 swims, building to 1500 m continuous. Bike moves outdoors on weekends. Runna 70.3 run plan starts around early May (16–20 weeks out). Sprint or Olympic tri in June as a rehearsal.
+
+**Sub-goals by 30 Jun**
+- 1500 m continuous swim.
+- 40-mile outdoor ride.
+- One tune-up race finished.
+
+## Phase 4 — Specific (1 Jul – 11 Sep, 10 weeks)
+Long rides to 3 h, bricks, open-water swims, 2-week taper.
+
+**Sub-goal**
+- Finish. Enjoy it.
+
+## Rules the coach follows
+- Never add intensity and volume in the same week.
+- A missed session is marked, never deleted, never "made up" by stacking.
+- One hard day per sport per week, maximum, in phases 2–4. Zero in phase 1.
+- Every fourth week is lighter by about a third.
+- When Steve says he's not enjoying something, the plan changes, and the decision is logged with his words.
+- Weather moves days, not just venues: a dry 45° Thursday in January is worth moving a strength day for.
+
+## Week one (26 Oct – 1 Nov)
+See `data/week.json`. Mon Fitbod · Tue run 30 easy · Wed bike 45 Z2 (or second easy run if KICKR isn't ready) · Thu Fitbod · Fri off · Sat run 45 easy · Sun off or easy spin.

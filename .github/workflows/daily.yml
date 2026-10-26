@@ -1,0 +1,26 @@
+name: daily brief
+on:
+  schedule:
+    - cron: "0 11 * * *"   # 06:00 Chicago (CDT); 05:00 during CST. Adjust in November if you care.
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  brief:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - run: python scripts/weather.py --apply
+      - run: python scripts/build_site.py
+        env: { REPO_URL: "${{ github.server_url }}/${{ github.repository }}" }
+      - run: python scripts/daily_brief.py
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          SITE_URL: ${{ vars.SITE_URL }}
+      - name: commit
+        run: |
+          git config user.name "coach-bot"; git config user.email "coach@users.noreply.github.com"
+          git add data site && git diff --cached --quiet || git commit -m "daily: weather + site" && git push
