@@ -70,8 +70,12 @@ def main():
     if os.environ.get("PUSH_SUBSCRIPTION") and os.environ.get("VAPID_PRIVATE_KEY"):
         send(title, body)
         print("sent")
+    elif os.environ.get("VAPID_PRIVATE_KEY"):
+        # Set up but no phone subscribed: fail loudly so GitHub emails, instead of a silent green run.
+        sys.exit("::error::PUSH_SUBSCRIPTION secret is empty. On the phone: open Training, tap 'notification code', "
+                 "copy it into the PUSH_SUBSCRIPTION secret (Secrets tab, not Variables).")
     else:
-        print("::warning::PUSH_SUBSCRIPTION / VAPID_PRIVATE_KEY not set; brief not sent.")
+        print("::warning::Notifications not set up; brief not sent.")
 
 if __name__ == "__main__":
     main()
