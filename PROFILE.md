@@ -10,7 +10,7 @@ Edited through coaching conversations only. Every line here is something Steve s
 
 ## Life
 - Two young kids. Works from home. Steve: "most important thing to know is this." His fitness goals are about staying on top of that life.
-- Weekdays: trains after the kids' bedtime at 8pm. Weekends: nap time / midday window. Usually sleeps 7+ h, but sleep can be the blocker.
+- Weekdays: routine short sessions ("let's just do 30 min") at night after the kids' 8pm bedtime. Midday also works and is a good work break, but check his calendar first. Big/long sessions are best midday. Weekends: nap time / midday window. Usually sleeps 7+ h, but sleep can be the blocker.
 - Daily push at 9am, not 6am.
 - Family/social plans and sleep/fatigue are what knock training off track.
 
@@ -30,6 +30,9 @@ Edited through coaching conversations only. Every line here is something Steve s
 - Everything syncs to Strava.
 
 ## Preferences
+- Hardest part is deciding what to do and where. Can be lazy and want to just chill. So: the plan decides for him, one clear thing per day.
+- Over-tracking and over-analysis are a pitfall. "Best to just lace up the shoes and see how we feel." Keep numbers out of his way.
+- "Be kind to myself instead of hard ass."
 - Wants regular massage with Nicole, his massage therapist; timing coordinated with her.
 - Likes how Runna works: one workout, pushed to the watch, adapts on its own, easy to move.
 - Wants low friction: look, do it, or ask for a change, and go.

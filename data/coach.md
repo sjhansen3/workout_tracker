@@ -6,6 +6,6 @@ Week one is about one thing: showing up. Two weeks after Chicago, the legs need 
 
 **Your back:** heavy leg days tighten your back and legs, so Fitbod stays moderate on legs and never goes heavy right before a run. If something tightens, stop the leg work; the run matters more.
 
-**How I'm planning around your life:** most sessions happen after the kids' 8pm bedtime, so weekday sessions stay 45 minutes or less, and sleep beats a workout. If you're short on sleep, tell me and I'll swap the day; no make-ups. Swimming stays light all year since you're already strong; the bike gets the time.
+**How I'm planning around your life:** short routine sessions at night after the kids' 8pm bedtime; longer ones midday when your calendar's clear. I decide the what and where so you just lace up and see how you feel. Sleep beats a workout. If you're short on sleep, tell me and I'll swap the day; no make-ups. Swimming stays light all year since you're already strong; the bike gets the time.
 
 **Still open:** how often you want massage with Nicole, the KICKR model, and whether Fitbod lands in Strava tonight.
