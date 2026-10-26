@@ -83,7 +83,7 @@ h2{margin:6px 0 2px;font-size:20px;font-weight:600}
   <p class="note">Optional.</p>
   
 </section>
-<a class="chat" href="https://github.com">Talk to the coach · open the repo</a>
+<a class="chat" href="https://github.com/sjhansen3/workout_tracker">Talk to the coach · open the repo</a>
 <script>
 // Try the app's URL scheme first; fall back to the web link if nothing opens.
 document.querySelectorAll('a.go').forEach(a=>{a.addEventListener('click',e=>{const s=a.dataset.scheme;if(!s)return;e.preventDefault();const t=Date.now();location.href=s;setTimeout(()=>{if(Date.now()-t<1500)location.href=a.href;},1200);});});
