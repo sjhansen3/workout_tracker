@@ -12,7 +12,7 @@ github.com → Settings → Developer settings → **Fine-grained tokens** → G
 
 ## 2. The Shortcut
 
-Shortcuts app → **Automation** → **+** → **Alarm** → **Is Stopped** (your wake-up alarm) → **Run Immediately** → New Blank Automation. Add these actions:
+Shortcuts app → **Automation** → **+** → **Focus** → **Sleep** → tick **When Turning Off** (untick When Turning On) → **Run Immediately** → Next → New Blank Automation. Add these actions:
 
 1. **Find Health Samples**: Type **Sleep Analysis**. Add filters: *Start Date is in the last 12 hours*, *Value is not In Bed*, *Value is not Awake*.
 2. **Get Details of Health Samples**: **Duration** (of the result above).
@@ -34,5 +34,5 @@ Tap ▶︎ once to test, then ask the coach to check it landed (Actions → **he
 
 ## Notes
 - The receiver accepts loose shapes: "52 count/min", "7 hr 12 min", seconds, lists. If a value comes through odd, the coach fixes the parser; you don't change the Shortcut.
-- Why the alarm and not 5:45am: iOS locks Health data while the phone is locked, so a timed run can find nothing. If numbers arrive after the 6am brief, they still show on today's card, and you get one extra push only when recovery is low.
+- Why "Sleep Focus turns off" and not a fixed time: iOS locks Health data while the phone is locked, so a timed run can find nothing. Sleep Focus ending means Steve is up and about to unlock. If numbers arrive after the 6am brief, they still show on today's card, and you get one extra push only when recovery is low.
 - Low recovery means sleep under 6 h, resting HR more than 5 above your 7-day median, or HRV under 80% of it. The flag is advice, not an automatic plan change.
