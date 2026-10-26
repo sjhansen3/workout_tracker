@@ -7,6 +7,7 @@ Edited through coaching conversations only. Every line here is something Steve s
 - Previous endurance background: ran the Chicago Marathon (11 Oct 2026). Hasn't run since. Strava shows ~20–27 mi/week in August, long runs to 11 mi.
 
 ## Constraints
+- Back: overworking legs leaves his legs or back tight. "Not too bad." Keep leg volume moderate in strength work and avoid heavy legs right before runs.
 - No days are off-limits. The Tuesday "Trainer" on the calendar is an old trainer, not a session.
 - Available training time now: under 5 hours per week.
 - Winter block priority: balanced strength and endurance.
@@ -21,9 +22,10 @@ Edited through coaching conversations only. Every line here is something Steve s
 - Everything syncs to Strava.
 
 ## Preferences
+- Wants regular massage with Nicole, his massage therapist; timing coordinated with her.
 - Likes how Runna works: one workout, pushed to the watch, adapts on its own, easy to move.
 - Wants low friction: look, do it, or ask for a change, and go.
 
 ## Still to confirm
-- Injuries: Steve says "something minor". Where, and what aggravates it?
+- Massage with Nicole: how often, and which days she has open.
 - KICKR generation.
