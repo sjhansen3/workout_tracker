@@ -5,28 +5,28 @@ X-WR-CALNAME:Training
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 BEGIN:VEVENT
 UID:2026-10-26-strength@training-hq
-DTSTAMP:20261026T181632Z
+DTSTAMP:20261026T191048Z
 DTSTART;VALUE=DATE:20261026
 SUMMARY:Fitbod full body · 45 min · home
 DESCRIPTION:Fitbod Keep legs moderate: if your back or legs start to tighten\, drop the leg work.
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-27-run@training-hq
-DTSTAMP:20261026T181632Z
+DTSTAMP:20261026T191048Z
 DTSTART;VALUE=DATE:20261027
 SUMMARY:Easy run · 30 min · outside
 DESCRIPTION:none Conversational pace. Record with the Strava app on your phone.
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-29-strength@training-hq
-DTSTAMP:20261026T181632Z
+DTSTAMP:20261026T191048Z
 DTSTART;VALUE=DATE:20261029
 SUMMARY:Fitbod full body · 45 min · home
 DESCRIPTION:Fitbod Keep legs moderate: if your back or legs start to tighten\, drop the leg work.
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-31-run@training-hq
-DTSTAMP:20261026T181632Z
+DTSTAMP:20261026T191048Z
 DTSTART;VALUE=DATE:20261031
 SUMMARY:Easy run · 45 min · outside
 DESCRIPTION:none Conversational pace. Record with the Strava app on your phone.
