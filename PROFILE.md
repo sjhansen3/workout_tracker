@@ -4,7 +4,14 @@ Edited through coaching conversations only. Every line here is something Steve s
 
 ## Goal
 - IRONMAN 70.3 Wisconsin, Madison. Saturday 11 Sep 2027 (likely date; not registered yet). Goal for this cycle: get fit, finish, enjoy it.
+- Swim: competitive in high school, varsity. "I'm very strong." Struggles a little with open water but isn't worried.
+- Bike: some riding. Bike is the discipline with the most to gain.
 - Previous endurance background: ran the Chicago Marathon (11 Oct 2026). Hasn't run since. Strava shows ~20–27 mi/week in August, long runs to 11 mi.
+
+## Life
+- Two young kids. Works from home. Steve: "most important thing to know is this." His fitness goals are about staying on top of that life.
+- Usually trains after the kids' bedtime at 8pm. Sleep can be the blocker.
+- Family/social plans and sleep/fatigue are what knock training off track.
 
 ## Constraints
 - Back: overworking legs leaves his legs or back tight. "Not too bad." Keep leg volume moderate in strength work and avoid heavy legs right before runs.
