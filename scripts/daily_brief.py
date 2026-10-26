@@ -8,6 +8,7 @@ Env: PUSH_SUBSCRIPTION (the JSON the site shows after "Turn on notifications"),
 Run weather.py --apply before this so venues are current.
 """
 import json, os, sys, datetime as dt
+from urllib.parse import urlsplit
 
 APP_NAME = {"runna": "Runna", "trainerroad": "TrainerRoad", "fitbod": "Fitbod"}
 EMOJI = {"run": "🏃", "bike": "🚴", "strength": "🏋️", "swim": "🏊", "rest": "😴"}
@@ -53,7 +54,8 @@ def send(title, body):
         webpush(subscription_info=json.loads(os.environ["PUSH_SUBSCRIPTION"]),
                 data=json.dumps({"title": title, "body": body, "url": SITE}),
                 vapid_private_key=os.environ["VAPID_PRIVATE_KEY"],
-                vapid_claims={"sub": SITE.rstrip("/")}, ttl=12 * 3600)
+                # VAPID 'sub' must be a bare https origin (no path) or a mailto:.
+                vapid_claims={"sub": "https://" + urlsplit(SITE).netloc}, ttl=12 * 3600)
     except WebPushException as e:
         code = getattr(e.response, "status_code", None)
         if code in (404, 410):
