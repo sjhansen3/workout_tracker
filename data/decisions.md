@@ -26,3 +26,4 @@
 - Bike tooling deferred to a mid-December checkpoint. Phase 1 rides are a single easy 45 min a week and need no app to run them. Steve: "holy complexity."
 - Page redesigned like Runna's Today view (week strip with sport-colour dots, today's card with a colour bar, week overview). Steve: "i really like this bar with color coding."
 - "Ask the coach" opens one standing Claude Code session ("Coach") on this repo, not a blank chat. Steve: "just opens claude app - not any conversation with any history or context."
+- The home page gets a "From the coach" card (data/coach.md): the coach's own words on what's going on and why, rewritten whenever something changes. Steve: "we are missing a connection to the coach - leave it pretty wide open since we are going pretty ai first."

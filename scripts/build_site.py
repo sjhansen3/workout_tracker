@@ -35,6 +35,23 @@ PHASE_NAME = {1: "Habit & strength", 2: "Engine", 3: "Three sports", 4: "Race sp
 COLOR = {"run": ("#e8c61a", "#4cc35a"), "bike": ("#b98cf6", "#7b61f0"), "strength": ("#f7b23b", "#f0703c"),
          "swim": ("#47cdf2", "#2f7cf0"), "rest": ("#4a5560", "#4a5560")}
 
+def coach_html(path="data/coach.md"):
+    """The coach's own words, free text. Minimal markdown: paragraphs, **bold**, '- ' bullets.
+    The first paragraph shows; the rest folds under 'more'."""
+    import re
+    if not os.path.exists(path) or not open(path).read().strip():
+        return ""
+    blocks = [b.strip() for b in open(path).read().strip().split("\n\n") if b.strip()]
+    def fmt(b):
+        b = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", html.escape(b))
+        lines = b.split("\n")
+        if all(l.startswith("- ") for l in lines):
+            return "<ul>" + "".join(f"<li>{l[2:]}</li>" for l in lines) + "</ul>"
+        return "<p>" + "<br>".join(lines) + "</p>"
+    first, rest = fmt(blocks[0]), "".join(fmt(b) for b in blocks[1:])
+    more = f'<details><summary>more</summary>{rest}</details>' if rest else ""
+    return f'<section class="coach"><h3>From the coach</h3>{first}{more}</section>'
+
 def recovery_html(date):
     import health  # last night's Apple Health numbers, shown on today's card
     line, low = health.recovery(date)
@@ -127,6 +144,11 @@ body{{margin:0;background:var(--bg);color:var(--ink);font:17px/1.4 -apple-system
 .badge.off{{background:var(--line);color:var(--mute)}}
 .hero.skipped h2{{text-decoration:line-through;opacity:.6}}
 .go{{display:inline-block;margin-top:16px;background:var(--ink);color:var(--bg);text-decoration:none;padding:11px 18px;border-radius:12px;font-weight:600}}
+.coach{{background:var(--card2);border-radius:18px;padding:16px 18px;margin-bottom:14px;font-size:15px;line-height:1.5}}
+.coach h3{{margin:0 0 6px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}}
+.coach p{{margin:0 0 8px}}.coach ul{{margin:0 0 8px;padding-left:20px}}.coach b{{color:var(--ink)}}
+.coach details summary{{cursor:pointer;color:var(--mute);font-size:14px;list-style:none;margin-top:2px}}
+.coach details[open] summary{{display:none}}
 .overview{{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px 20px;margin-bottom:14px}}
 .overview h3{{margin:0 0 14px;font-size:18px;font-weight:600}}
 .segs{{display:flex;gap:6px}}.seg{{flex:1;height:8px;border-radius:4px;background:var(--line)}}.seg.on{{background:var(--c)}}
@@ -151,6 +173,7 @@ body{{margin:0;background:var(--bg);color:var(--ink);font:17px/1.4 -apple-system
 <div class="push" id="push-ask" hidden>Get the 6am brief as a notification from this app.<br><button id="push-on">Turn on notifications</button></div>
 <div class="push" id="push-code" hidden>Last step: copy this code into the GitHub secret <b>PUSH_SUBSCRIPTION</b> (<a href="{SECRETS}">open secrets</a>).
 <textarea id="push-json" readonly></textarea><button id="push-copy">Copy code</button></div>
+{coach_html()}
 {heroes}
 <section class="overview">
   <h3>Week {wk} overview</h3>

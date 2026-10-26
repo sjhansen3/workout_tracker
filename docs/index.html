@@ -41,6 +41,11 @@ body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.4 -apple-system,
 .badge.off{background:var(--line);color:var(--mute)}
 .hero.skipped h2{text-decoration:line-through;opacity:.6}
 .go{display:inline-block;margin-top:16px;background:var(--ink);color:var(--bg);text-decoration:none;padding:11px 18px;border-radius:12px;font-weight:600}
+.coach{background:var(--card2);border-radius:18px;padding:16px 18px;margin-bottom:14px;font-size:15px;line-height:1.5}
+.coach h3{margin:0 0 6px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.coach p{margin:0 0 8px}.coach ul{margin:0 0 8px;padding-left:20px}.coach b{color:var(--ink)}
+.coach details summary{cursor:pointer;color:var(--mute);font-size:14px;list-style:none;margin-top:2px}
+.coach details[open] summary{display:none}
 .overview{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px 20px;margin-bottom:14px}
 .overview h3{margin:0 0 14px;font-size:18px;font-weight:600}
 .segs{display:flex;gap:6px}.seg{flex:1;height:8px;border-radius:4px;background:var(--line)}.seg.on{background:var(--c)}
@@ -65,6 +70,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.4 -apple-system,
 <div class="push" id="push-ask" hidden>Get the 6am brief as a notification from this app.<br><button id="push-on">Turn on notifications</button></div>
 <div class="push" id="push-code" hidden>Last step: copy this code into the GitHub secret <b>PUSH_SUBSCRIPTION</b> (<a href="https://github.com">open secrets</a>).
 <textarea id="push-json" readonly></textarea><button id="push-copy">Copy code</button></div>
+<section class="coach"><h3>From the coach</h3><p>Week one is about one thing: showing up. Two weeks after Chicago, the legs need easy miles and the habit needs reps, not fitness. Every run this week is conversational; if you can&#x27;t talk, slow down.</p><details><summary>more</summary><p><b>This week:</b> Fitbod tonight, easy 30 tomorrow, a first spin Wednesday if the KICKR is ready (if not, take the day off, no make-up), Fitbod Thursday, easy 45 Saturday before the birthday party.</p><p><b>What changed today:</b> we dropped Runna, because it owned its own calendar and the plan kept fighting it. I schedule every day now; you just open the page and go. Bike tools get decided in December, once the KICKR is set up and we have an FTP.</p><p><b>Still open:</b> what &quot;Trainer&quot; on Tuesdays is, the KICKR model, and whether Fitbod lands in Strava tonight.</p></details></section>
 <article class="hero planned" data-date="2026-10-26" style="--c1:#f7b23b;--c2:#f0703c" hidden>
   <div class="bar"></div>
   <div class="body">
