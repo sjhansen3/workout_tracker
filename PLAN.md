@@ -44,4 +44,4 @@ Long rides to 3 h, bricks, open-water swims, 2-week taper.
 - Weather moves days, not just venues: a dry 45° Thursday in January is worth moving a strength day for.
 
 ## Week one (26 Oct – 1 Nov)
-See `data/week.json`. Mon Fitbod · Tue run 30 easy · Wed bike 45 Z2 (or second easy run if KICKR isn't ready) · Thu Fitbod · Fri off · Sat run 45 easy · Sun off or easy spin.
+See `data/week.json`. Run days come from Runna; the rest fits around them: 2 Fitbod, 1 bike (off if the KICKR isn't ready), 2 days off.

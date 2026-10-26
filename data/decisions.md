@@ -17,3 +17,8 @@
 - Morning brief comes from the site itself (installed as "Training", own icon) instead of ntfy. Steve wanted it to look cooler and not come from ntfy. iOS web push can't show buttons, so tapping opens the week, which has an "Ask the coach" link.
 - Steve ran the Chicago Marathon (11 Oct) and hasn't run since. Week one stays as written: easy volume is the right restart two weeks out. Runna's Tue progression run and next week's repeats are too much for phase 1; Steve to switch Runna to easy runs on Tue/Sat.
 - Secrets go straight from Steve's computer into GitHub via `scripts/setup_secrets.py`, never through chat. Steve: "isnt that safer?" The keys pasted in chat today are retired: a new notification keypair, and a regenerated Strava client secret.
+- 2026-10-26 (auto, Runna owns run days): Sat run dropped: not in Runna.
+- 2026-10-26 (auto, Runna owns run days): Fitbod full body moved Mon→Sat for Runna's run.
+- 2026-10-26 (auto, Runna owns run days): Mon run added from Runna: "3mi Easy Run", 30 min.
+- 2026-10-26 (auto, Runna owns run days): Tue run now Runna's "4.5mi Progressive Long Run", 45 min.
+- Runna owns run days; the repo follows Runna's calendar and moves strength/bike around it. Steve: "this is the sorta thing thats unhelpful to do. its systems fighting each other." Replaces the manual "set Runna's training days" step from the handoff. Wednesday's no-KICKR fallback is now a day off instead of an extra run, since runs come from Runna.

@@ -10,12 +10,12 @@ The head coach decides *which days* and *what kind* of session. The apps decide 
 
 | Sport    | App         | Who picks the day | Who writes the workout | Result lands in |
 |----------|-------------|-------------------|------------------------|-----------------|
-| Run      | Runna       | this repo         | Runna                  | Strava          |
+| Run      | Runna       | Runna (repo follows its calendar) | Runna  | Strava          |
 | Bike     | TrainerRoad | this repo         | TrainerRoad            | Strava          |
 | Strength | Fitbod      | this repo         | Fitbod                 | Strava (via Apple Health) |
 | Swim     | TBD (spring)| this repo         | TBD                    | Strava          |
 
-Set Runna's and TrainerRoad's "training days" to match the days in `data/week.json`. When the coach moves a run, you move it in Runna too (one tap). That's the only manual sync in the system.
+Runna decides run days; `scripts/runna.py` reads Runna's calendar each morning and moves strength/bike around it. Nothing to keep in sync by hand.
 
 ## Files that are the source of truth
 
@@ -52,5 +52,4 @@ Set Runna's and TrainerRoad's "training days" to match the days in `data/week.js
 3. On your computer, run `python3 scripts/setup_secrets.py` (needs `gh auth login`). It sets SITE_URL, a fresh notification keypair, and the Strava secrets straight into GitHub; nothing gets pasted into chat. Create the Strava API app at strava.com/settings/api first.
 4. On the phone: add the site to the home screen, open it from there, tap "Turn on notifications", and save the code as the `PUSH_SUBSCRIPTION` secret.
 5. Add the site to the iPhone home screen (Share → Add to Home Screen). Subscribe to `week.ics`.
-6. Set Runna and TrainerRoad training days to match week one.
 7. Identify the KICKR generation, check cassette speed vs your bike, check axle type.

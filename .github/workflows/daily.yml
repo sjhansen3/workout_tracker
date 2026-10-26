@@ -28,6 +28,8 @@ jobs:
       - uses: actions/setup-python@v6
         with: { python-version: "3.12" }
       - run: pip install -r requirements.txt
+      - run: python scripts/runna.py
+        env: { RUNNA_ICS_URL: "${{ secrets.RUNNA_ICS_URL }}" }
       - run: python scripts/weather.py --apply
       - run: python scripts/build_site.py
         env:
