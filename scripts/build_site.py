@@ -63,7 +63,8 @@ def hero(s, today):
     d = dt.date.fromisoformat(s["date"])
     top, bottom = COLOR.get(s["sport"], COLOR["rest"])
     scheme, web = APP_LINKS.get(s["app"], (None, None))
-    btn = f'<a class="go" href="{web}" data-scheme="{scheme or ""}">Open {APP_NAME.get(s["app"], s["app"])}</a>' if web else ""
+    name = APP_NAME.get(s["app"], s["app"])
+    btn = f'<a class="go" href="#" data-scheme="{scheme}" data-app="{name}">Open {name}</a>' if scheme else ""
     when = d.strftime("%A, %b %-d") + (f' · {s["minutes"]} min' if s["minutes"] else "")
     what = SPORT_LABEL.get(s["sport"], s["sport"]) + ("" if s["sport"] == "rest" else f' · {s["venue"]}')
     note = f'<p class="note">{html.escape(s["note"])}</p>' if s["note"] else ""
@@ -143,6 +144,7 @@ body{{margin:0;background:var(--bg);color:var(--ink);font:17px/1.4 -apple-system
 .badge{{display:inline-block;vertical-align:middle;margin-left:10px;font-size:13px;font-weight:600;padding:3px 8px;border-radius:8px;background:var(--accent);color:var(--bg)}}
 .badge.off{{background:var(--line);color:var(--mute)}}
 .hero.skipped h2{{text-decoration:line-through;opacity:.6}}
+.hint{{margin:10px 0 0;font-size:14px;color:var(--warn)}}
 .go{{display:inline-block;margin-top:16px;background:var(--ink);color:var(--bg);text-decoration:none;padding:11px 18px;border-radius:12px;font-weight:600}}
 .coach{{background:var(--card2);border-radius:18px;padding:16px 18px;margin-bottom:14px;font-size:15px;line-height:1.5}}
 .coach h3{{margin:0 0 6px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}}
@@ -214,8 +216,23 @@ if (VAPID && 'serviceWorker' in navigator) {{
 $('push-on').onclick = () => subscribe().catch(e => alert('Could not turn on notifications: ' + e.message));
 $('push-copy').onclick = () => {{ const t = $('push-json'); t.select(); navigator.clipboard ? navigator.clipboard.writeText(t.value) : document.execCommand('copy'); $('push-copy').textContent = 'Copied'; }};
 
-// Try the app's URL scheme first; fall back to the web link if nothing opens.
-document.querySelectorAll('a.go').forEach(a=>{{a.addEventListener('click',e=>{{const s=a.dataset.scheme;if(!s)return;e.preventDefault();const t=Date.now();location.href=s;setTimeout(()=>{{if(Date.now()-t<1500)location.href=a.href;}},1200);}});}});
+// Open the app by its URL scheme. Never navigate to the app's website: in the home-screen app there's
+// no back button, so that strands you. If the app didn't open (page still visible), show a hint instead.
+document.querySelectorAll('a.go').forEach(a => a.addEventListener('click', e => {{
+  e.preventDefault();
+  let left = false;
+  const away = () => {{ left = true; }};
+  document.addEventListener('visibilitychange', away, {{once: true}});
+  location.href = a.dataset.scheme;
+  setTimeout(() => {{
+    document.removeEventListener('visibilitychange', away);
+    if (!left && document.visibilityState === 'visible') {{
+      let h = a.nextElementSibling;
+      if (!h || !h.classList.contains('hint')) {{ h = document.createElement('p'); h.className = 'hint'; a.after(h); }}
+      h.textContent = "Couldn't open " + a.dataset.app + " from here. Open it from your home screen.";
+    }}
+  }}, 1500);
+}}));
 </script>
 </body></html>'''
 
