@@ -23,3 +23,4 @@
 - 2026-10-26 (auto, Runna owns run days): Tue run now Runna's "4.5mi Progressive Long Run", 45 min.
 - Runna owns run days; the repo follows Runna's calendar and moves strength/bike around it. Steve: "this is the sorta thing thats unhelpful to do. its systems fighting each other." Replaces the manual "set Runna's training days" step from the handoff. Wednesday's no-KICKR fallback is now a day off instead of an extra run, since runs come from Runna.
 - Runna dropped. Steve: "the issue is you need to be able to schedule things. honestly I am tempted to dump runna." Phase 1 runs are easy and unstructured, recorded on the watch. Week restored to the coach's plan: Fitbod tonight, easy 30 Tue, easy 45 Sat. Rule from now on: any app we use takes its schedule from the repo.
+- Bike tooling deferred to a mid-December checkpoint. Phase 1 rides are a single easy 45 min a week and need no app to run them. Steve: "holy complexity."

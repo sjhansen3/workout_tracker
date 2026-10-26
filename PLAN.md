@@ -11,6 +11,8 @@ The goal is consistency, not fitness. Runs stay easy. No intensity until the hab
 - KICKR set up, calibrated, TrainerRoad connected, one FTP ramp test done.
 - 15 easy miles a week feels normal.
 
+**Checkpoint, mid-December:** choose how phase 2's structured bike workouts get executed (intervals.icu + Zwift, TrainerRoad, or other). Rule: the coach must be able to schedule it, or it plans around one app's calendar. Decide with the KICKR set up and an FTP number in hand.
+
 ## Phase 2 — Engine (1 Jan – 31 Mar, 13 weeks)
 TrainerRoad low-volume plan (3 rides, ~3 h) is the spine. 2 runs, one growing to 8–10 mi. Strength 1–2×. Hours drift to 5–6.
 The bike is where a runner's 70.3 is won or lost. This block buys that.
