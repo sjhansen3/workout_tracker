@@ -7,3 +7,8 @@
 - Runs go outside when dry; treadmill when wet. Steve: "I can run in cold but wet kinda sucks."
 - Bike sessions depend on the KICKR being set up (generation, cassette, axle unconfirmed). Until then, Wednesday's bike becomes a second easy run.
 - Architecture: this repo is the head coach; Runna/Fitbod/TrainerRoad run workouts; Strava is the only read-back; weather from Open-Meteo; daily brief via ntfy; site on GitHub Pages; two crons (daily brief, Sunday review).
+
+## 2026-10-26
+- Site publishes from `docs/`, not `site/`: GitHub Pages can only serve a branch's root or `/docs`. No plan change.
+- Crons hold 6:00 / Sun 18:00 Chicago through the November clock change (each fires at both UTC hours; a gate keeps the right one). No plan change.
+- Weather check, first live run: Tue and Sat runs stay outside (dry, 50s–60s°F). No change to the week.
