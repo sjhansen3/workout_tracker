@@ -3,10 +3,11 @@
 Edited through coaching conversations only. Every line here is something Steve said.
 
 ## Goal
-- IRONMAN 70.3 Wisconsin, Madison. Saturday 11 Sep 2027 (confirm). Goal for this cycle: get fit, finish, enjoy it.
+- IRONMAN 70.3 Wisconsin, Madison. Saturday 11 Sep 2027 (likely date; not registered yet). Goal for this cycle: get fit, finish, enjoy it.
 - Previous endurance background: ran the Chicago Marathon (11 Oct 2026). Hasn't run since. Strava shows ~20–27 mi/week in August, long runs to 11 mi.
 
 ## Constraints
+- No days are off-limits. The Tuesday "Trainer" on the calendar is an old trainer, not a session.
 - Available training time now: under 5 hours per week.
 - Winter block priority: balanced strength and endurance.
 - No pool access until spring.
@@ -24,6 +25,5 @@ Edited through coaching conversations only. Every line here is something Steve s
 - Wants low friction: look, do it, or ask for a change, and go.
 
 ## Still to confirm
-- Injuries or anything fragile to protect.
-- Days of the week that are off-limits.
+- Injuries: Steve says "something minor". Where, and what aggravates it?
 - KICKR generation.

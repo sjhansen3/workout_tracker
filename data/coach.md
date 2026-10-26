@@ -4,4 +4,4 @@ Week one is about one thing: showing up. Two weeks after Chicago, the legs need 
 
 **What changed today:** we dropped Runna, because it owned its own calendar and the plan kept fighting it. I schedule every day now; you just open the page and go. Bike tools get decided in December, once the KICKR is set up and we have an FTP.
 
-**Still open:** what "Trainer" on Tuesdays is, the KICKR model, and whether Fitbod lands in Strava tonight.
+**Still open:** where the minor niggle is, the KICKR model, and whether Fitbod lands in Strava tonight.
