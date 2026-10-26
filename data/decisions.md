@@ -27,3 +27,4 @@
 - Page redesigned like Runna's Today view (week strip with sport-colour dots, today's card with a colour bar, week overview). Steve: "i really like this bar with color coding."
 - "Ask the coach" opens one standing Claude Code session ("Coach") on this repo, not a blank chat. Steve: "just opens claude app - not any conversation with any history or context."
 - The home page gets a "From the coach" card (data/coach.md): the coach's own words on what's going on and why, rewritten whenever something changes. Steve: "we are missing a connection to the coach - leave it pretty wide open since we are going pretty ai first."
+- Weekly AI review: a Claude Code routine ("Coach: Sunday review", Sun 18:45 Chicago) wakes the Coach session after the Strava sync. It decides, writes next week, rewrites the coach note and pushes, without asking or messaging. No AI runs mid-week. Steve: "idk if we want smart ai running in a loop without me in it because that becomes a nag."
