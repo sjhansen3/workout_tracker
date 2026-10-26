@@ -1,4 +1,5 @@
 name: sunday review
+# Strava sync + site at 6pm. The Coach routine (a Claude Code trigger, Sun 18:45 Chicago) then reviews and writes next week.
 on:
   schedule:
     # 18:00 Chicago Sundays year-round. 23:00 UTC Sun is 6pm in CDT, 00:00 UTC Mon is 6pm in CST; the gate keeps the right one.
@@ -7,7 +8,6 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
-  issues: write
 # Both workflows commit to the repo; queue them so pushes never race.
 concurrency: { group: coach-commits, cancel-in-progress: false }
 jobs:
@@ -34,20 +34,10 @@ jobs:
           STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
           STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
           STRAVA_REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
-      - run: python scripts/weather.py > forecast.txt
       - run: python scripts/build_site.py
         env:
           REPO_URL: ${{ github.server_url }}/${{ github.repository }}
           VAPID_PUBLIC_KEY: ${{ vars.VAPID_PUBLIC_KEY }}
-      - name: open review issue
-        uses: actions/github-script@v8
-        with:
-          script: |
-            const fs = require('fs');
-            const week = fs.readFileSync('data/week.json','utf8');
-            const fc = fs.readFileSync('forecast.txt','utf8');
-            const body = `Week just finished (status from Strava):\n\n\`\`\`json\n${week}\n\`\`\`\n\nForecast:\n\`\`\`\n${fc}\n\`\`\`\n\nOpen Claude Code in this repo and run the Sunday review (see COACH.md). Close this issue when next week is committed.`;
-            await github.rest.issues.create({owner: context.repo.owner, repo: context.repo.repo, title: `Sunday review · ${new Date().toLocaleDateString('en-CA', {timeZone: 'America/Chicago'})}`, body});
       - name: commit
         run: |
           git config user.name "coach-bot"; git config user.email "coach@users.noreply.github.com"
