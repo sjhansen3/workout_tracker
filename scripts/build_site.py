@@ -1,4 +1,5 @@
-"""Render data/week.json into site/index.html (today-first home page) and site/week.ics.
+"""Render data/week.json into docs/index.html (today-first home page) and docs/week.ics.
+GitHub Pages serves docs/ from main (Pages can only publish / or /docs from a branch).
 
 Usage: python scripts/build_site.py
 Set REPO_URL env var to your GitHub repo URL so the chat link works.
@@ -13,6 +14,7 @@ APP_LINKS = {
     "fitbod": ("fitbod://", "https://fitbod.me"),
     "none": (None, None),
 }
+APP_NAME = {"runna": "Runna", "trainerroad": "TrainerRoad", "fitbod": "Fitbod"}
 SPORT_LABEL = {"run": "Run", "bike": "Bike", "strength": "Strength", "swim": "Swim", "rest": "Rest"}
 
 def load():
@@ -24,7 +26,7 @@ def day_card(s, today):
     scheme, web = APP_LINKS.get(s["app"], (None, None))
     btn = ""
     if web:
-        btn = f'<a class="go" href="{web}" data-scheme="{scheme or ""}">Open {s["app"].capitalize()}</a>'
+        btn = f'<a class="go" href="{web}" data-scheme="{scheme or ""}">Open {APP_NAME.get(s["app"], s["app"])}</a>'
     venue = "" if s["sport"] == "rest" else f'<span class="venue">{html.escape(s["venue"])}</span>'
     note = f'<p class="note">{html.escape(s["note"])}</p>' if s["note"] else ""
     mins = f'{s["minutes"]} min' if s["minutes"] else ""
@@ -82,20 +84,25 @@ document.querySelectorAll('a.go').forEach(a=>{{a.addEventListener('click',e=>{{c
 </script>
 </body></html>'''
 
+def esc(t):
+    return t.replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
+
 def ics(week):
+    stamp = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     lines = ["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Training HQ//EN","X-WR-CALNAME:Training","REFRESH-INTERVAL;VALUE=DURATION:PT6H"]
     for s in week["days"]:
         if s["sport"] == "rest":
             continue
         d = s["date"].replace("-", "")
-        lines += ["BEGIN:VEVENT", f"UID:{s['date']}-{s['sport']}@training-hq", f"DTSTART;VALUE=DATE:{d}",
-                  f"SUMMARY:{s['title']} · {s['minutes']} min · {s['venue']}", f"DESCRIPTION:{s['app']} {s['note']}".strip(), "END:VEVENT"]
+        lines += ["BEGIN:VEVENT", f"UID:{s['date']}-{s['sport']}@training-hq", f"DTSTAMP:{stamp}", f"DTSTART;VALUE=DATE:{d}",
+                  f"SUMMARY:{esc(s['title'])} · {s['minutes']} min · {s['venue']}", esc(f"DESCRIPTION:{APP_NAME.get(s['app'], s['app'])} {s['note']}".strip()), "END:VEVENT"]
     lines.append("END:VCALENDAR")
     return "\r\n".join(lines) + "\r\n"
 
 if __name__ == "__main__":
-    os.makedirs("site", exist_ok=True)
+    os.makedirs("docs", exist_ok=True)
     week = load()
-    open("site/index.html", "w").write(render(week))
-    open("site/week.ics", "w").write(ics(week))
-    print("built site/index.html and site/week.ics")
+    open("docs/index.html", "w").write(render(week))
+    open("docs/week.ics", "w").write(ics(week))
+    open("docs/.nojekyll", "w").close()
+    print("built docs/index.html and docs/week.ics")

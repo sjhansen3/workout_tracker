@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Training">
+<meta name="theme-color" content="#0f1a14">
+<title>Training HQ</title>
+<style>
+:root{color-scheme:light dark;--bg:#f3f1ec;--ink:#17201b;--mute:#6a7570;--card:#fff;--line:#dcd8cf;--go:#1d5c3a;--go-ink:#fff;--today:#1d5c3a;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1a14;--ink:#eef2ee;--mute:#9aa79f;--card:#162419;--line:#243528;--go:#6fd39a;--go-ink:#0f1a14;--today:#6fd39a}}
+*{box-sizing:inherit}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.4 -apple-system,"SF Pro Text",Helvetica,Arial,sans-serif;padding:16px 16px 48px}
+.top{display:flex;justify-content:space-between;align-items:baseline;margin:4px 0 16px}
+.top h1{font-size:20px;margin:0;font-weight:600}.top span{color:var(--mute);font-size:14px}
+.day{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:10px}
+.day.today{border:2px solid var(--today);padding:20px 16px}
+.day.today h2{font-size:28px}
+.day.done{opacity:.55}.day.skipped{opacity:.45;text-decoration:line-through}
+header{display:flex;gap:10px;align-items:baseline;font-size:14px;color:var(--mute)}
+.dow{font-weight:600;color:var(--ink)}.venue{margin-left:auto}
+h2{margin:6px 0 2px;font-size:20px;font-weight:600}
+.meta{margin:0;color:var(--mute)}.note{margin:8px 0 0;font-size:15px}
+.go{display:inline-block;margin-top:12px;background:var(--go);color:var(--go-ink);text-decoration:none;padding:10px 16px;border-radius:10px;font-weight:600}
+.chat{display:block;text-align:center;margin:24px auto 0;color:var(--mute);text-decoration:none;font-size:15px}
+</style></head><body>
+<div class="top"><h1>Week of 26 Oct</h1><span>Phase 1 · 45 weeks to Madison</span></div>
+
+<section class="day planned today" id="d2026-10-26">
+  <header><span class="dow">Mon</span><span class="date">26 Oct</span><span class="venue">home</span></header>
+  <h2>Fitbod full body</h2>
+  <p class="meta">Strength 45 min</p>
+  
+  <a class="go" href="https://fitbod.me" data-scheme="fitbod://">Open Fitbod</a>
+</section>
+
+<section class="day planned" id="d2026-10-27">
+  <header><span class="dow">Tue</span><span class="date">27 Oct</span><span class="venue">outside</span></header>
+  <h2>Easy run</h2>
+  <p class="meta">Run 30 min</p>
+  <p class="note">Treadmill if it&#x27;s raining.</p>
+  <a class="go" href="https://www.runna.com" data-scheme="runna://">Open Runna</a>
+</section>
+
+<section class="day planned" id="d2026-10-28">
+  <header><span class="dow">Wed</span><span class="date">28 Oct</span><span class="venue">trainer</span></header>
+  <h2>Zone 2 spin</h2>
+  <p class="meta">Bike 45 min</p>
+  <p class="note">If the KICKR isn&#x27;t ready: easy run 30 min instead.</p>
+  <a class="go" href="https://www.trainerroad.com/app" data-scheme="trainerroad://">Open TrainerRoad</a>
+</section>
+
+<section class="day planned" id="d2026-10-29">
+  <header><span class="dow">Thu</span><span class="date">29 Oct</span><span class="venue">home</span></header>
+  <h2>Fitbod full body</h2>
+  <p class="meta">Strength 45 min</p>
+  
+  <a class="go" href="https://fitbod.me" data-scheme="fitbod://">Open Fitbod</a>
+</section>
+
+<section class="day planned" id="d2026-10-30">
+  <header><span class="dow">Fri</span><span class="date">30 Oct</span></header>
+  <h2>Off</h2>
+  <p class="meta">Rest </p>
+  
+  
+</section>
+
+<section class="day planned" id="d2026-10-31">
+  <header><span class="dow">Sat</span><span class="date">31 Oct</span><span class="venue">outside</span></header>
+  <h2>Easy run</h2>
+  <p class="meta">Run 45 min</p>
+  <p class="note">Treadmill if wet.</p>
+  <a class="go" href="https://www.runna.com" data-scheme="runna://">Open Runna</a>
+</section>
+
+<section class="day planned" id="d2026-11-01">
+  <header><span class="dow">Sun</span><span class="date">1 Nov</span></header>
+  <h2>Off, or 30 min easy spin</h2>
+  <p class="meta">Rest </p>
+  <p class="note">Optional.</p>
+  
+</section>
+<a class="chat" href="https://github.com">Talk to the coach · open the repo</a>
+<script>
+// Try the app's URL scheme first; fall back to the web link if nothing opens.
+document.querySelectorAll('a.go').forEach(a=>{a.addEventListener('click',e=>{const s=a.dataset.scheme;if(!s)return;e.preventDefault();const t=Date.now();location.href=s;setTimeout(()=>{if(Date.now()-t<1500)location.href=a.href;},1200);});});
+</script>
+</body></html>

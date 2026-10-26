@@ -36,7 +36,7 @@ Set Runna's and TrainerRoad's "training days" to match the days in `data/week.js
 
 **Delivery — ntfy.sh.** Free push notifications to the phone, no account. The daily brief posts to a private topic; subscribe once in the ntfy app. Tapping the notification opens the site.
 
-**Site — GitHub Pages.** `scripts/build_site.py` renders `data/week.json` into `site/index.html` (today-first, tap to open the right app, links back here for chat) and `site/week.ics`. Subscribe to the `.ics` from the iPhone calendar and the week shows up there too, no sync code.
+**Site — GitHub Pages.** `scripts/build_site.py` renders `data/week.json` into `docs/index.html` (today-first, tap to open the right app, links back here for chat) and `docs/week.ics`. Subscribe to the `.ics` from the iPhone calendar and the week shows up there too, no sync code.
 
 **Chat — Claude Code in this repo.** Every session starts by reading `COACH.md`. The coach edits the data files directly, logs decisions, and commits. The Sunday review is a Claude Code session the cron opens for you.
 
@@ -47,7 +47,7 @@ Set Runna's and TrainerRoad's "training days" to match the days in `data/week.js
 
 ## Setup checklist
 
-1. Push this repo. Enable GitHub Pages from `/site`.
+1. Push this repo. Enable GitHub Pages: deploy from branch `main`, folder `/docs`.
 2. `pip install -r requirements.txt`; run `python scripts/build_site.py` locally to confirm it renders.
 3. Install ntfy on the phone, pick a topic name, add `NTFY_TOPIC` as a repo secret.
 4. Strava app: add `STRAVA_CLIENT_ID`, `STRAVA_CLIENT_SECRET`, `STRAVA_REFRESH_TOKEN` as secrets. Run `scripts/strava_sync.py` once by hand.
