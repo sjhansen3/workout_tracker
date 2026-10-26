@@ -2,75 +2,12 @@
   "week_of": "2026-10-26",
   "phase": 1,
   "days": [
-    {
-      "date": "2026-10-26",
-      "sport": "strength",
-      "app": "fitbod",
-      "title": "Fitbod full body",
-      "minutes": 45,
-      "venue": "home",
-      "status": "planned",
-      "note": "Keep legs moderate: if your back or legs start to tighten, drop the leg work."
-    },
-    {
-      "date": "2026-10-27",
-      "sport": "run",
-      "app": "none",
-      "title": "Easy run",
-      "minutes": 30,
-      "venue": "outside",
-      "status": "planned",
-      "note": "Conversational pace. Record on your watch."
-    },
-    {
-      "date": "2026-10-28",
-      "sport": "bike",
-      "app": "trainerroad",
-      "title": "Zone 2 spin",
-      "minutes": 45,
-      "venue": "trainer",
-      "status": "planned",
-      "note": "If the KICKR isn't ready: take the day off."
-    },
-    {
-      "date": "2026-10-29",
-      "sport": "strength",
-      "app": "fitbod",
-      "title": "Fitbod full body",
-      "minutes": 45,
-      "venue": "home",
-      "status": "planned",
-      "note": "Keep legs moderate: if your back or legs start to tighten, drop the leg work."
-    },
-    {
-      "date": "2026-10-30",
-      "sport": "rest",
-      "app": "none",
-      "title": "Off",
-      "minutes": 0,
-      "venue": "home",
-      "status": "planned",
-      "note": ""
-    },
-    {
-      "date": "2026-10-31",
-      "sport": "run",
-      "app": "none",
-      "title": "Easy run",
-      "minutes": 45,
-      "venue": "outside",
-      "status": "planned",
-      "note": "Conversational pace. Record on your watch."
-    },
-    {
-      "date": "2026-11-01",
-      "sport": "rest",
-      "app": "none",
-      "title": "Off, or 30 min easy spin",
-      "minutes": 0,
-      "venue": "home",
-      "status": "planned",
-      "note": "Optional."
-    }
+    {"date": "2026-10-26", "sport": "strength", "app": "fitbod", "title": "Fitbod full body", "minutes": 45, "venue": "home", "status": "planned", "note": "Keep legs moderate: if your back or legs start to tighten, drop the leg work."},
+    {"date": "2026-10-27", "sport": "run", "app": "none", "title": "Easy run", "minutes": 30, "venue": "outside", "status": "planned", "note": "Conversational pace. Record on your watch."},
+    {"date": "2026-10-28", "sport": "bike", "app": "trainerroad", "title": "Zone 2 spin", "minutes": 45, "venue": "trainer", "status": "planned", "note": "If the KICKR isn't ready: take the day off."},
+    {"date": "2026-10-29", "sport": "strength", "app": "fitbod", "title": "Fitbod full body", "minutes": 45, "venue": "home", "status": "planned", "note": "Keep legs moderate: if your back or legs start to tighten, drop the leg work."},
+    {"date": "2026-10-30", "sport": "rest", "app": "none", "title": "Off", "minutes": 0, "venue": "home", "status": "planned", "note": ""},
+    {"date": "2026-10-31", "sport": "run", "app": "none", "title": "Easy run", "minutes": 45, "venue": "outside", "status": "planned", "note": "Conversational pace. Record on your watch."},
+    {"date": "2026-11-01", "sport": "rest", "app": "none", "title": "Off, or 30 min easy spin", "minutes": 0, "venue": "home", "status": "planned", "note": "Optional."}
   ]
 }
