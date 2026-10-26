@@ -1,6 +1,8 @@
 Week one is about one thing: showing up. Two weeks after Chicago, the legs need easy miles and the habit needs reps, not fitness. Every run this week is conversational; if you can't talk, slow down.
 
-**This week:** easy 30 today with a sauna after, Fitbod tomorrow, Wednesday off (the bike waits for December), Fitbod Thursday, easy 45 Saturday before the birthday party.
+**First run back is done.** Heavy legs at the end are normal two weeks after a marathon. Tomorrow's Fitbod goes light on legs.
+
+**This week:** easy 30 Monday (done), Fitbod tomorrow, Wednesday off (the bike waits for December), Fitbod Thursday, easy 45 Saturday before the birthday party.
 
 **What changed today:** we dropped Runna, because it owned its own calendar and the plan kept fighting it. I schedule every day now; you just open the page and go. Bike tools get decided in December, once the KICKR is set up and we have an FTP.
 

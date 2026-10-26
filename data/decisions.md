@@ -36,3 +36,4 @@
 - How Steve wants to be coached: "be kind to myself instead of hard ass." Deciding what/where is the hard part and over-tracking backfires, so the coach decides and keeps numbers out of the way. Long sessions midday (check calendar), routine 30-min ones at night. Added to COACH.md.
 - Wed 28 Oct: bike → off. KICKR isn't set up; no make-up. Steve has no watch: runs are recorded with the Strava app on his phone for now. Apple Health Shortcut stays shelved: without a wearable there's no resting HR or HRV to send, and Steve wants less tracking.
 - Mon/Tue swap: easy 30 run today, Fitbod tomorrow. Steve wanted to run today; dry and 50s–60s°F. Sauna after: "It's such a nice reward." Fitbod Tue/Thu around Wed off keeps heavy legs away from Saturday's run.
+- Mon run done, 30 min easy. Steve: "Legs felt heavy at the end. Feels good to be in groove though." Tue Fitbod goes light on legs (upper body and core) so Saturday's 45 starts fresh.

@@ -2,8 +2,8 @@
   "week_of": "2026-10-26",
   "phase": 1,
   "days": [
-    {"date": "2026-10-26", "sport": "run", "app": "none", "title": "Easy run", "minutes": 30, "venue": "outside", "status": "planned", "note": "Swapped with Fitbod; sauna after. Conversational pace. Record with the Strava app on your phone."},
-    {"date": "2026-10-27", "sport": "strength", "app": "fitbod", "title": "Fitbod full body", "minutes": 45, "venue": "home", "status": "planned", "note": "Swapped from Monday. Keep legs moderate: if your back or legs start to tighten, drop the leg work."},
+    {"date": "2026-10-26", "sport": "run", "app": "none", "title": "Easy run", "minutes": 30, "venue": "outside", "status": "done", "note": "Done. Legs heavy at the end; felt good to be in a groove. Swapped with Fitbod; sauna after. Conversational pace. Record with the Strava app on your phone."},
+    {"date": "2026-10-27", "sport": "strength", "app": "fitbod", "title": "Fitbod full body", "minutes": 45, "venue": "home", "status": "planned", "note": "Swapped from Monday. Legs were heavy after Monday's run: go light on legs, lean on upper body and core."},
     {"date": "2026-10-28", "sport": "rest", "app": "none", "title": "Off", "minutes": 0, "venue": "home", "status": "planned", "note": "KICKR not set up yet. Bike starts in December."},
     {"date": "2026-10-29", "sport": "strength", "app": "fitbod", "title": "Fitbod full body", "minutes": 45, "venue": "home", "status": "planned", "note": "Keep legs moderate: if your back or legs start to tighten, drop the leg work."},
     {"date": "2026-10-30", "sport": "rest", "app": "none", "title": "Off", "minutes": 0, "venue": "home", "status": "planned", "note": ""},
