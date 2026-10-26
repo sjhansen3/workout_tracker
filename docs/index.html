@@ -48,7 +48,8 @@ body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.4 -apple-system,
 .coach-head{all:unset;cursor:pointer;display:flex;justify-content:space-between;align-items:center;width:100%}
 .coach-head h3{margin:0}.chev{color:var(--mute);transition:transform .2s}
 .coach .preview{display:none;margin:6px 0 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--mute)}
-.coach .full{margin-top:6px}
+.coach .full{margin-top:6px}.coach .preview{cursor:pointer}
+.coach-less{all:unset;cursor:pointer;display:block;margin:4px 0 0 auto;font-size:13px;color:var(--mute)}
 .coach.folded .full{display:none}.coach.folded .preview{display:block}.coach.folded .chev{transform:rotate(-90deg)}
 .overview{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px 20px;margin-bottom:14px}
 .overview h3{margin:0 0 14px;font-size:18px;font-weight:600}
@@ -74,7 +75,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.4 -apple-system,
 <div class="push" id="push-ask" hidden>Get the 9am brief as a notification from this app.<br><button id="push-on">Turn on notifications</button></div>
 <div class="push" id="push-code" hidden>Last step: copy this code into the GitHub secret <b>PUSH_SUBSCRIPTION</b> (<a href="https://github.com">open secrets</a>).
 <textarea id="push-json" readonly></textarea><button id="push-copy">Copy code</button></div>
-<section class="coach" id="coach" data-key="4b1c25ac81"><button class="coach-head" aria-expanded="true"><h3>From the coach</h3><span class="chev">▾</span></button><p class="preview">Week one is about one thing: showing up. Two weeks after Chicago, the legs need easy miles and the habit needs reps, not fitness. Every run this week is conversational; if you can&#x27;t talk, slow down.</p><div class="full"><p>Week one is about one thing: showing up. Two weeks after Chicago, the legs need easy miles and the habit needs reps, not fitness. Every run this week is conversational; if you can&#x27;t talk, slow down.</p><p><b>This week:</b> easy 30 today with a sauna after, Fitbod tomorrow, Wednesday off (the bike waits for December), Fitbod Thursday, easy 45 Saturday before the birthday party.</p><p><b>What changed today:</b> we dropped Runna, because it owned its own calendar and the plan kept fighting it. I schedule every day now; you just open the page and go. Bike tools get decided in December, once the KICKR is set up and we have an FTP.</p><p><b>Your back:</b> heavy leg days tighten your back and legs, so Fitbod stays moderate on legs and never goes heavy right before a run. If something tightens, stop the leg work; the run matters more.</p><p><b>How I&#x27;m planning around your life:</b> short routine sessions at night after the kids&#x27; 8pm bedtime; longer ones midday when your calendar&#x27;s clear. I decide the what and where so you just lace up and see how you feel. Sleep beats a workout. If you&#x27;re short on sleep, tell me and I&#x27;ll swap the day; no make-ups. Swimming stays light all year since you&#x27;re already strong; the bike gets the time.</p><p><b>Still open:</b> how often you want massage with Nicole, the KICKR model, and whether Fitbod lands in Strava tonight.</p></div></section>
+<section class="coach" id="coach" data-key="4b1c25ac81"><button class="coach-head" aria-expanded="true"><h3>From the coach</h3><span class="chev">▾</span></button><p class="preview">Week one is about one thing: showing up. Two weeks after Chicago, the legs need easy miles and the habit needs reps, not fitness. Every run this week is conversational; if you can&#x27;t talk, slow down.</p><div class="full"><p>Week one is about one thing: showing up. Two weeks after Chicago, the legs need easy miles and the habit needs reps, not fitness. Every run this week is conversational; if you can&#x27;t talk, slow down.</p><p><b>This week:</b> easy 30 today with a sauna after, Fitbod tomorrow, Wednesday off (the bike waits for December), Fitbod Thursday, easy 45 Saturday before the birthday party.</p><p><b>What changed today:</b> we dropped Runna, because it owned its own calendar and the plan kept fighting it. I schedule every day now; you just open the page and go. Bike tools get decided in December, once the KICKR is set up and we have an FTP.</p><p><b>Your back:</b> heavy leg days tighten your back and legs, so Fitbod stays moderate on legs and never goes heavy right before a run. If something tightens, stop the leg work; the run matters more.</p><p><b>How I&#x27;m planning around your life:</b> short routine sessions at night after the kids&#x27; 8pm bedtime; longer ones midday when your calendar&#x27;s clear. I decide the what and where so you just lace up and see how you feel. Sleep beats a workout. If you&#x27;re short on sleep, tell me and I&#x27;ll swap the day; no make-ups. Swimming stays light all year since you&#x27;re already strong; the bike gets the time.</p><p><b>Still open:</b> how often you want massage with Nicole, the KICKR model, and whether Fitbod lands in Strava tonight.</p><button class="coach-less">Show less ▴</button></div></section>
 <article class="hero planned" data-date="2026-10-26" style="--c1:#e8c61a;--c2:#4cc35a" hidden>
   <div class="bar"></div>
   <div class="body">
@@ -147,16 +148,20 @@ body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.4 -apple-system,
 <a class="chat" href="https://claude.ai/code/session_01D1JheBwhYgigUFzvCCM8eX">💬 Ask the coach</a>
 <p class="foot"><a href="https://github.com">repo</a> · <a href="#" id="push-show">notification code</a></p>
 <script>
-// Coach note: tap the header to fold/unfold. Remembered per note; a new note opens again.
+// Coach note: tap the header to fold/unfold, or "Show less" at the bottom. Remembered per note; a new note opens again.
 (() => {
   const c = document.getElementById('coach'); if (!c) return;
   const k = 'coach-folded';
   try { if (localStorage.getItem(k) === c.dataset.key) c.classList.add('folded'); } catch (e) {}
-  c.querySelector('.coach-head').onclick = () => {
-    const f = c.classList.toggle('folded');
+  const fold = f => {
+    c.classList.toggle('folded', f);
     c.querySelector('.coach-head').setAttribute('aria-expanded', String(!f));
     try { f ? localStorage.setItem(k, c.dataset.key) : localStorage.removeItem(k); } catch (e) {}
   };
+  c.querySelector('.coach-head').onclick = () => fold(!c.classList.contains('folded'));
+  c.querySelector('.preview').onclick = () => fold(false);
+  // Folding from the bottom of a long note: bring the card's top back into view.
+  c.querySelector('.coach-less').onclick = () => { fold(true); if (c.getBoundingClientRect().top < 0) c.scrollIntoView({block: 'start'}); };
 })();
 // Week strip: tap a day to show its card. Today is selected by default.
 const pick = d => {

@@ -37,7 +37,8 @@ COLOR = {"run": ("#e8c61a", "#4cc35a"), "bike": ("#b98cf6", "#7b61f0"), "strengt
 
 def coach_html(path="data/coach.md"):
     """The coach's own words, free text. Minimal markdown: paragraphs, **bold**, '- ' bullets.
-    Tap the header to fold it to a one-line preview; a new note opens again (keyed by a content hash)."""
+    Tap the header or "Show less" to fold it to a one-line preview; tap the preview to open it.
+    A new note opens again (keyed by a content hash)."""
     import re, hashlib
     if not os.path.exists(path) or not open(path).read().strip():
         return ""
@@ -53,7 +54,8 @@ def coach_html(path="data/coach.md"):
     key = hashlib.sha1(text.encode()).hexdigest()[:10]
     return (f'<section class="coach" id="coach" data-key="{key}">'
             f'<button class="coach-head" aria-expanded="true"><h3>From the coach</h3><span class="chev">▾</span></button>'
-            f'<p class="preview">{preview}</p><div class="full">{"".join(fmt(b) for b in blocks)}</div></section>')
+            f'<p class="preview">{preview}</p><div class="full">{"".join(fmt(b) for b in blocks)}'
+            f'<button class="coach-less">Show less ▴</button></div></section>')
 
 def recovery_html(date):
     import health  # last night's Apple Health numbers, shown on today's card
@@ -155,7 +157,8 @@ body{{margin:0;background:var(--bg);color:var(--ink);font:17px/1.4 -apple-system
 .coach-head{{all:unset;cursor:pointer;display:flex;justify-content:space-between;align-items:center;width:100%}}
 .coach-head h3{{margin:0}}.chev{{color:var(--mute);transition:transform .2s}}
 .coach .preview{{display:none;margin:6px 0 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--mute)}}
-.coach .full{{margin-top:6px}}
+.coach .full{{margin-top:6px}}.coach .preview{{cursor:pointer}}
+.coach-less{{all:unset;cursor:pointer;display:block;margin:4px 0 0 auto;font-size:13px;color:var(--mute)}}
 .coach.folded .full{{display:none}}.coach.folded .preview{{display:block}}.coach.folded .chev{{transform:rotate(-90deg)}}
 .overview{{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px 20px;margin-bottom:14px}}
 .overview h3{{margin:0 0 14px;font-size:18px;font-weight:600}}
@@ -192,16 +195,20 @@ body{{margin:0;background:var(--bg);color:var(--ink);font:17px/1.4 -apple-system
 <a class="chat" href="{CHAT}">💬 Ask the coach</a>
 <p class="foot"><a href="{REPO}">repo</a> · <a href="#" id="push-show">notification code</a></p>
 <script>
-// Coach note: tap the header to fold/unfold. Remembered per note; a new note opens again.
+// Coach note: tap the header to fold/unfold, or "Show less" at the bottom. Remembered per note; a new note opens again.
 (() => {{
   const c = document.getElementById('coach'); if (!c) return;
   const k = 'coach-folded';
   try {{ if (localStorage.getItem(k) === c.dataset.key) c.classList.add('folded'); }} catch (e) {{}}
-  c.querySelector('.coach-head').onclick = () => {{
-    const f = c.classList.toggle('folded');
+  const fold = f => {{
+    c.classList.toggle('folded', f);
     c.querySelector('.coach-head').setAttribute('aria-expanded', String(!f));
     try {{ f ? localStorage.setItem(k, c.dataset.key) : localStorage.removeItem(k); }} catch (e) {{}}
   }};
+  c.querySelector('.coach-head').onclick = () => fold(!c.classList.contains('folded'));
+  c.querySelector('.preview').onclick = () => fold(false);
+  // Folding from the bottom of a long note: bring the card's top back into view.
+  c.querySelector('.coach-less').onclick = () => {{ fold(true); if (c.getBoundingClientRect().top < 0) c.scrollIntoView({{block: 'start'}}); }};
 }})();
 // Week strip: tap a day to show its card. Today is selected by default.
 const pick = d => {{
