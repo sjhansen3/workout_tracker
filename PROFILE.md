@@ -25,7 +25,7 @@ Edited through coaching conversations only. Every line here is something Steve s
 
 ## Equipment and apps
 - Runs: no watch yet; record with the Strava app on his phone. Open to a wearable if it helps, but doesn't want more distractions or tech. Runna dropped 26 Oct: it owns its own calendar and can't be scheduled. Revisit a structured run app in May.
-- Home gym: adjustable bench (flat and incline, "one of those multi bench dealios"), two adjustable dumbbells (max weight to confirm), a Bowflex adjustable barbell set, a big stability ball. No rack, so no heavy back squat or barbell bench; that's fine. Doorway pull-up bars are "kinda crappy" there; vertical pull comes from bands (to buy) until a wall-mounted bar is wanted. Happy to buy more.
+- Home gym: adjustable bench (flat and incline, "one of those multi bench dealios"), two adjustable dumbbells (max weight to confirm), a Bowflex adjustable barbell set, a big stability ball. No rack, so no heavy back squat or barbell bench; that's fine. Wall-mounted pull-up bar (57" wide) ordered 27 Oct, arrives Fri 30 Oct, Steve mounts it on 2x4s. Bands with a door anchor still worth buying for assisted pull-ups and warm-ups. Happy to buy more.
 - Strength: Hevy (switched 27 Oct, from Fitbod). Needs Pro for the API. Steve wants the app to show the sets and run the rest timer; the coach writes the weights and volume.
 - Bike: Wahoo KICKR (older generation, direct drive, ERG mode). Not set up yet (26 Oct). Generation, cassette speed and axle compatibility not yet confirmed. TrainerRoad planned once it's live.
 - Everything syncs to Strava.
