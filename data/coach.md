@@ -10,6 +10,6 @@ Week one is about one thing: showing up. Two weeks after Chicago, the legs need 
 
 **How I'm planning around your life:** short routine sessions at night after the kids' 8pm bedtime; longer ones midday when your calendar's clear. I decide the what and where so you just lace up and see how you feel. Sleep beats a workout. If you're short on sleep, tell me and I'll swap the day; no make-ups. Swimming stays light all year since you're already strong; the bike gets the time.
 
-**Strength moves to Hevy.** You wanted an app that shows the sets and runs the timer, with me setting the weights and volume. Hevy does both and takes its workouts from here. Thursday is the first one once your API key is in; until then, Fitbod.
+**Strength moves to Hevy.** You wanted an app that shows the sets and runs the timer, with me setting the weights and volume. Hevy does both and takes its workouts from here. Thursday's session is already in the app under Routines: 7 exercises, dumbbells and bodyweight, about 45 minutes. This first one you pick the weights; after that I set them.
 
-**Still open:** how often you want massage with Nicole, the KICKR model, and the Hevy key.
+**Still open:** how often you want massage with Nicole, what's in your home gym (dumbbells, bench?), and the KICKR model.
