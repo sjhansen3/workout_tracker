@@ -46,3 +46,4 @@
 - Steve ordered a 57" wall-mounted pull-up bar, due Fri 30 Oct. Session B (next week) gets pull-ups or band-assisted pull-ups once it's up.
 - Steve bought loop bands. Session B: band-assisted pull-ups and band rows off the bar. Steve: "I love those."
 - Strength style settled: no loaded back squats ("scared of" them), nothing bro-style; trainer-style functional work, dumbbells, bar, bands, ball. Aim is durability plus stress relief, not numbers. Steve: "it helps so much with stress... im into it now."
+- Correction: back squats are not off the table, they're a destination. Steve: "im okay working up to more and more things - just need to get there." Progression written into PROFILE.md.
