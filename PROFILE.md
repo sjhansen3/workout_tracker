@@ -18,6 +18,15 @@ Edited through coaching conversations only. Every line here is something Steve s
 - 180 lb, 5' 11" (27 Oct 2026). Wants to lose weight, but "managing life feeling, stress and building strength to prevent injury is key."
 - Goal: ~170 lb by the start of April (phase 3), through consistency, not dieting. No calorie counting; it's the over-tracking he said backfires. Weigh in no more than once a week.
 
+## History and red flags
+- No surgeries. Left shoulder: past overuse, better now, "especially with the lifting, that helps." Keep pressing and pulling balanced; rows and face pulls stay in every week.
+- Clenches teeth at night; works "a fuck ton" in front of a computer. Classic desk posture: tight chest and hip flexors, weak upper back. Programme leans pull over push, adds thoracic and hip-flexor mobility.
+
+## Food
+- Eats fairly healthy. Weak breakfast; the struggle is at night: too much at dinner and extra helpings.
+- Always skinny with a fast metabolism; started gaining weight after the kids.
+- Alcohol: a glass with dinner Fri/Sat, maybe one weeknight. No binges. Not a target.
+
 ## Constraints
 - Back: overworking legs leaves his legs or back tight. "Not too bad." Keep leg volume moderate in strength work and avoid heavy legs right before runs.
 - No days are off-limits. The Tuesday "Trainer" on the calendar is an old trainer, not a session.
