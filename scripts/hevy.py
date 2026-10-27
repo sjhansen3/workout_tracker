@@ -81,7 +81,7 @@ def parse_sets(spec, lb=None, kind="normal"):
             s["rep_range"] = {"start": a, "end": int(b)}
         else:
             s["reps"] = a
-        out.append(s)
+        out.append({k: v for k, v in s.items() if v is not None})  # PUT rejects rep_range: null
     return out
 
 def build(session, cache):
