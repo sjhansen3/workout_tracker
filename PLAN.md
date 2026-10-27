@@ -45,5 +45,18 @@ Long rides to 3 h, bricks, open-water swims, 2-week taper.
 - When Steve says he's not enjoying something, the plan changes, and the decision is logged with his words.
 - Weather moves days, not just venues: a dry 45° Thursday in January is worth moving a strength day for.
 
+## Strength, across the year
+Why: runners' 70.3s fall apart on the bike and in the last 5 km of the run. Strength buys durability there, and protects the back and hips that tighten when legs are overworked.
+
+**Phase 1 (now):** 2 × full body a week, Hevy, ~35–45 min, at home. Two sessions that alternate, A and B, so each lift comes round once a week:
+- A: squat pattern (goblet squat), horizontal pull (one-arm row), horizontal push (dumbbell bench/floor press), glute bridge, overhead press, plank, dead bug.
+- B: hinge pattern (light Romanian deadlift, once the back is trusted; glute bridge until then), split squat or step-up, vertical pull if there's anything to pull on (else band/row), push-up, lateral raise or carry, side plank, bird dog.
+- Three supersets plus a core finisher. Legs moderate: 3 sets, never to failure, and never heavy the day before a run.
+- Progression: when every set hits the top of the range with 2–3 reps in hand, add 5 lb (upper) or 10 lb (lower) next time. Every 4th week, one set fewer everywhere.
+- The first session calibrates weights; the coach sets them from the second on, read back from Hevy.
+
+**Phase 2:** 1–2 × a week, the same A/B, held at the weights reached. The bike is the priority; strength never leaves the week.
+**Phases 3–4:** 1 × a week, 30 min, same lifts lighter, more single-leg and core. Last strength session two weeks before the race.
+
 ## Week one (26 Oct – 1 Nov)
 See `data/week.json`. Mon strength · Tue easy run 30 · Wed bike 45 Z2 (off if the KICKR isn't ready) · Thu strength · Fri off · Sat easy run 45 · Sun off or easy spin.
