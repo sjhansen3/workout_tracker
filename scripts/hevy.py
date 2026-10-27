@@ -41,18 +41,18 @@ def call(method, path, body=None, **params):
     except HTTPError as e:
         sys.exit(f"{method} {path} → {e.code}: {e.read().decode()[:500]}")
 
-def pages(path, item_key, **params):
-    """Walk a paginated list endpoint (page / page_count)."""
+def pages(path, item_key, page_size=10, **params):
+    """Walk a paginated list endpoint (page / page_count). Hevy caps pageSize at 10, except exercise templates (100)."""
     page = 1
     while True:
-        j = call("GET", path, page=page, pageSize=100, **params)
+        j = call("GET", path, page=page, pageSize=page_size, **params)
         yield from j.get(item_key, [])
         if page >= j.get("page_count", 1):
             return
         page += 1
 
 def templates():
-    return list(pages("/exercise_templates", "exercise_templates"))
+    return list(pages("/exercise_templates", "exercise_templates", page_size=100))
 
 def resolve(name, cache):
     """Exact title match first (case-insensitive), then a single substring match; otherwise fail with candidates."""
