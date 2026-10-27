@@ -44,3 +44,4 @@
 - Home gym confirmed: adjustable bench, two adjustable dumbbells, stability ball. Thursday's notes now use the bench. Coach rule added to COACH.md: ask two or three questions when something is unknown; Sunday review ends with a question. Steve: "remember to have the coach ask me questions."
 - Home gym: also a Bowflex adjustable barbell set. Session B gets the hinge (RDL) and hip thrust with it. Buy: resistance bands with a door anchor. Skip: doorway pull-up bar (the doorway is bad), kettlebell (until the dumbbells top out), rack.
 - Steve ordered a 57" wall-mounted pull-up bar, due Fri 30 Oct. Session B (next week) gets pull-ups or band-assisted pull-ups once it's up.
+- Steve bought loop bands. Session B: band-assisted pull-ups and band rows off the bar. Steve: "I love those."
