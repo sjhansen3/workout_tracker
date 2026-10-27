@@ -32,7 +32,7 @@ The repo decides every day. Any app we use must take its schedule from the repo,
 
 **Strava — read completed activities.** Register an API app at strava.com/settings/api (free). OAuth once, store refresh token as a repo secret. `scripts/strava_sync.py` pulls the last 7 days of activities and marks matching ledger rows done. This is the only integration that needs setup; everything flows into Strava already, so it's the one read that replaces all logging.
 
-**Hevy — strength, with an API.** `HEVY_API_KEY` (Pro; made at hevy.com → Settings → Developer, via `scripts/setup_secrets.py hevy`). The coach writes routines in and reads completed workouts back. The API can't delete, so a wrong routine gets removed by hand in the app.
+**Hevy — strength, with an API.** `HEVY_API_KEY` (Pro; made at hevy.com → Settings → Developer, via `scripts/setup_secrets.py hevy`). The coach writes a session file (`data/hevy/<date>.json`) and runs the `hevy` workflow to push it in as a routine; `pull` reads completed workouts back. `scripts/hevy.py` has the format. The API can't delete, so a wrong routine gets removed by hand in the app.
 
 **TrainerRoad — no API.** Don't fight it. Execution-only; its output reaches us through Strava.
 

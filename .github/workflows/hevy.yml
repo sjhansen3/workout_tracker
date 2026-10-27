@@ -1,0 +1,24 @@
+name: hevy
+# The coach's hands in Hevy. Run by hand (or by the coach) with an action; the key only exists here.
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "whoami | push | pull | find"
+        default: whoami
+        type: string
+      arg:
+        description: "push: session file (data/hevy/<date>.json) · pull: days · find: text"
+        default: ""
+        type: string
+permissions:
+  contents: read
+jobs:
+  hevy:
+    runs-on: ubuntu-latest
+    env: { TZ: America/Chicago, HEVY_API_KEY: "${{ secrets.HEVY_API_KEY }}" }
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with: { python-version: "3.12" }
+      - run: python scripts/hevy.py ${{ inputs.action }} ${{ inputs.arg }}

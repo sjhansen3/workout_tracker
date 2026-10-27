@@ -1,0 +1,13 @@
+{
+  "title": "Thu 29 Oct · Full body",
+  "notes": "First one in Hevy. Pick weights you could do 2–3 more reps with; I'll set them from here next time. Legs stay moderate: if your back or legs tighten, skip the rest of that exercise.",
+  "exercises": [
+    {"name": "Goblet Squat", "sets": "3x10", "rest": 90, "note": "Moderate. Heels down, chest up."},
+    {"name": "Dumbbell Row", "sets": "3x10", "rest": 60, "note": "One arm, other hand on a bench or chair so your back is supported."},
+    {"name": "Bench Press (Dumbbell)", "sets": "3x10", "rest": 90, "note": "Floor press is fine if there's no bench."},
+    {"name": "Glute Bridge", "sets": "3x12", "rest": 60, "note": "Bodyweight. Squeeze at the top for a second."},
+    {"name": "Shoulder Press (Dumbbell)", "sets": "3x10", "rest": 60, "note": "Seated if you have a chair with a back."},
+    {"name": "Plank", "sets": "3x30s", "rest": 45},
+    {"name": "Dead Bug", "sets": "2x10", "rest": 45, "note": "Slow. Low back stays flat on the floor."}
+  ]
+}
