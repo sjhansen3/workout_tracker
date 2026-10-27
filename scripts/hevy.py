@@ -3,7 +3,7 @@
     python scripts/hevy.py whoami                       checks the key (prints name, unit, pro)
     python scripts/hevy.py push data/hevy/2026-10-29.json   creates the routine, or updates the one with the same title
     python scripts/hevy.py pull [days]                  prints workouts from the last N days (default 7)
-    python scripts/hevy.py find "goblet"                searches Hevy's exercise templates by name
+    python scripts/hevy.py find "goblet,band row"       searches Hevy's exercise templates by name (comma-separated terms)
 
 Needs HEVY_API_KEY (Hevy Pro; hevy.com → Settings → Developer; stored via scripts/setup_secrets.py hevy).
 Runs in the `hevy` workflow, where the secret lives. The API can't delete: a wrong routine is removed by hand in the app.
@@ -127,8 +127,10 @@ def whoami():
     print(f"{u.get('name')} (@{u.get('username')})  unit={u.get('weight_unit')}  pro={u.get('is_pro')}")
 
 def find(q):
+    """Comma-separated terms search in one run."""
+    terms = [x.strip().lower() for x in q.split(",") if x.strip()]
     for t in templates():
-        if q.lower() in t["title"].lower():
+        if any(x in t["title"].lower() for x in terms):
             print(f"{t['id']}  {t['title']}  [{t['primary_muscle_group']}, {t['equipment']}]")
 
 if __name__ == "__main__":
