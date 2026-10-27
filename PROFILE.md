@@ -14,6 +14,9 @@ Edited through coaching conversations only. Every line here is something Steve s
 - Daily push at 9am, not 6am.
 - Family/social plans and sleep/fatigue are what knock training off track.
 
+## Body
+- 180 lb, 5' 11" (27 Oct 2026). Wants "some good goals there"; what that means is still to define with him.
+
 ## Constraints
 - Back: overworking legs leaves his legs or back tight. "Not too bad." Keep leg volume moderate in strength work and avoid heavy legs right before runs.
 - No days are off-limits. The Tuesday "Trainer" on the calendar is an old trainer, not a session.
