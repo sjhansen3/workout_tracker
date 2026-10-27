@@ -3,7 +3,7 @@
 46 weeks from Mon 26 Oct 2026 to race day. Under 5 hours a week to start, growing only where the bike demands it.
 
 ## Phase 1 — Habit and strength (26 Oct – 31 Dec, 10 weeks)
-2 × Fitbod, 2 × easy run, 1 × bike (once the KICKR is live). About 4–4.5 h.
+2 × strength (Hevy), 2 × easy run, 1 × bike (once the KICKR is live). About 4–4.5 h.
 The goal is consistency, not fitness. Runs stay easy. No intensity until the habit is boring.
 
 **Sub-goals by 31 Dec**
@@ -46,4 +46,4 @@ Long rides to 3 h, bricks, open-water swims, 2-week taper.
 - Weather moves days, not just venues: a dry 45° Thursday in January is worth moving a strength day for.
 
 ## Week one (26 Oct – 1 Nov)
-See `data/week.json`. Mon Fitbod · Tue easy run 30 · Wed bike 45 Z2 (off if the KICKR isn't ready) · Thu Fitbod · Fri off · Sat easy run 45 · Sun off or easy spin.
+See `data/week.json`. Mon strength · Tue easy run 30 · Wed bike 45 Z2 (off if the KICKR isn't ready) · Thu strength · Fri off · Sat easy run 45 · Sun off or easy spin.

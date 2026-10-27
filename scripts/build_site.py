@@ -21,9 +21,10 @@ APP_LINKS = {
     "runna": ("runna://", "https://www.runna.com"),
     "trainerroad": ("trainerroad://", "https://www.trainerroad.com/app"),
     "fitbod": ("fitbod://", "https://fitbod.me"),
+    "hevy": ("hevy://", "https://hevy.com"),
     "none": (None, None),
 }
-APP_NAME = {"runna": "Runna", "trainerroad": "TrainerRoad", "fitbod": "Fitbod"}
+APP_NAME = {"runna": "Runna", "trainerroad": "TrainerRoad", "fitbod": "Fitbod", "hevy": "Hevy"}
 SPORT_LABEL = {"run": "Run", "bike": "Bike", "strength": "Strength", "swim": "Swim", "rest": "Rest"}
 
 def load():

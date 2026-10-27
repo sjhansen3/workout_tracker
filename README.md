@@ -12,7 +12,7 @@ The head coach decides *which days* and *what kind* of session. The apps decide 
 |----------|-------------|-------------------|------------------------|-----------------|
 | Run      | Watch (phase 1) | this repo     | this repo (easy, unstructured) | Strava |
 | Bike     | TrainerRoad | this repo         | TrainerRoad            | Strava          |
-| Strength | Fitbod      | this repo         | Fitbod                 | Strava (via Apple Health) |
+| Strength | Hevy        | this repo         | this repo (via Hevy API) | Hevy API + Strava     |
 | Swim     | TBD (spring)| this repo         | TBD                    | Strava          |
 
 The repo decides every day. Any app we use must take its schedule from the repo, never own one of its own.
@@ -32,7 +32,9 @@ The repo decides every day. Any app we use must take its schedule from the repo,
 
 **Strava — read completed activities.** Register an API app at strava.com/settings/api (free). OAuth once, store refresh token as a repo secret. `scripts/strava_sync.py` pulls the last 7 days of activities and marks matching ledger rows done. This is the only integration that needs setup; everything flows into Strava already, so it's the one read that replaces all logging.
 
-**Fitbod / TrainerRoad — no API.** Don't fight it. They're execution-only. Their output reaches us through Strava.
+**Hevy — strength, with an API.** `HEVY_API_KEY` (Pro; made at hevy.com → Settings → Developer, via `scripts/setup_secrets.py hevy`). The coach writes routines in and reads completed workouts back. The API can't delete, so a wrong routine gets removed by hand in the app.
+
+**TrainerRoad — no API.** Don't fight it. Execution-only; its output reaches us through Strava.
 
 **Delivery — web push from the site.** The site installs to the home screen as "Training" and sends its own notifications (iOS 16.4+), no third-party app. One-time: open Training from the home screen, tap "Turn on notifications", paste the code into the `PUSH_SUBSCRIPTION` secret. `VAPID_PRIVATE_KEY` is the matching signing key. Tapping the notification opens the week.
 

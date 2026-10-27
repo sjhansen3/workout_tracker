@@ -10,7 +10,7 @@ Run weather.py --apply before this so venues are current.
 import json, os, sys, datetime as dt
 from urllib.parse import urlsplit
 
-APP_NAME = {"runna": "Runna", "trainerroad": "TrainerRoad", "fitbod": "Fitbod"}
+APP_NAME = {"runna": "Runna", "trainerroad": "TrainerRoad", "fitbod": "Fitbod", "hevy": "Hevy"}
 EMOJI = {"run": "🏃", "bike": "🚴", "strength": "🏋️", "swim": "🏊", "rest": "😴"}
 RACE = dt.date(2027, 9, 11)
 SITE = os.environ.get("SITE_URL") or "https://sjhansen3.github.io/workout_tracker/"

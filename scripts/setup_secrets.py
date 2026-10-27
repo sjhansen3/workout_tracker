@@ -2,7 +2,7 @@
 
     gh auth login                            (once; needs `brew install gh`)
     python3 scripts/setup_secrets.py         all steps
-    python3 scripts/setup_secrets.py strava  or just one: site | push | strava
+    python3 scripts/setup_secrets.py strava  or just one: site | push | strava | hevy
 Standard library + the system `openssl` only, so there is nothing to pip install.
 
 site    sets SITE_URL.
@@ -10,6 +10,7 @@ push    makes a fresh notification keypair: VAPID_PRIVATE_KEY (secret) + VAPID_P
         then rebuilds the site so the page uses the new key. Re-tap "Turn on notifications" afterwards.
 strava  asks for the Client ID/Secret (hidden), opens Strava to authorize, and stores
         STRAVA_CLIENT_ID, STRAVA_CLIENT_SECRET, STRAVA_REFRESH_TOKEN.
+hevy    asks for the Hevy API key (hidden; hevy.com → Settings → Developer, needs Pro) and stores HEVY_API_KEY.
 """
 import base64, getpass, json, re, subprocess, sys, webbrowser
 from urllib.parse import urlsplit, parse_qs, urlencode
@@ -72,7 +73,14 @@ def strava():
     secret("STRAVA_CLIENT_SECRET", csecret)
     secret("STRAVA_REFRESH_TOKEN", j["refresh_token"])
 
-STEPS = {"site": site, "push": push, "strava": strava}
+def hevy():
+    print("  hevy.com → Settings → Developer → generate an API key (Hevy Pro). Made on the website, not in the phone app.")
+    key = getpass.getpass("  API key (hidden): ").strip()
+    if not key:
+        sys.exit("  no key entered")
+    secret("HEVY_API_KEY", key)
+
+STEPS = {"site": site, "push": push, "strava": strava, "hevy": hevy}
 
 if __name__ == "__main__":
     for name in sys.argv[1:] or STEPS:
