@@ -23,6 +23,7 @@ Edited through coaching conversations only. Every line here is something Steve s
 - Clenches teeth at night; works "a fuck ton" in front of a computer. Classic desk posture: tight chest and hip flexors, weak upper back. Programme leans pull over push, adds thoracic and hip-flexor mobility.
 
 ## Food
+- Breakfast 28 Oct: cereal, almond milk, banana, a scoop of Greek yogurt. Good start; protein light. Nudge: more yogurt or add eggs, aim ~25–30 g protein.
 - Eats fairly healthy. Weak breakfast; the struggle is at night: too much at dinner and extra helpings.
 - Always skinny with a fast metabolism; started gaining weight after the kids.
 - Alcohol: a glass with dinner Fri/Sat, maybe one weeknight. No binges. Not a target.
