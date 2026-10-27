@@ -15,7 +15,8 @@ Edited through coaching conversations only. Every line here is something Steve s
 - Family/social plans and sleep/fatigue are what knock training off track.
 
 ## Body
-- 180 lb, 5' 11" (27 Oct 2026). Wants "some good goals there"; what that means is still to define with him.
+- 180 lb, 5' 11" (27 Oct 2026). Wants to lose weight, but "managing life feeling, stress and building strength to prevent injury is key."
+- Goal: ~170 lb by the start of April (phase 3), through consistency, not dieting. No calorie counting; it's the over-tracking he said backfires. Weigh in no more than once a week.
 
 ## Constraints
 - Back: overworking legs leaves his legs or back tight. "Not too bad." Keep leg volume moderate in strength work and avoid heavy legs right before runs.
@@ -37,6 +38,9 @@ Edited through coaching conversations only. Every line here is something Steve s
 - "I have never been one for lifting, but it helps so much with stress." Endurance person by identity; converted by trainers who didn't do "bro style" lifting. "I'm into it now."
 - Has been scared of loaded back squats and the like, but: "I'm okay working up to more and more things, just need to get there." So: build toward them, step by step, nothing skipped for good. Goblet → front-loaded → barbell when the base is there and a rack exists.
 - What strength is for this year: durability for the race, and the stress relief. Not chasing numbers.
+
+## Weekly template (phase 1)
+- Strength Mon + Thu. Runs Tue + Sat. Bike Wed once the KICKR is up (off until then). Fri off. Sun off or easy spin.
 
 ## Preferences
 - Hardest part is deciding what to do and where. Can be lazy and want to just chill. So: the plan decides for him, one clear thing per day.

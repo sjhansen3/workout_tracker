@@ -48,3 +48,5 @@
 - Strength style settled: no loaded back squats ("scared of" them), nothing bro-style; trainer-style functional work, dumbbells, bar, bands, ball. Aim is durability plus stress relief, not numbers. Steve: "it helps so much with stress... im into it now."
 - Correction: back squats are not off the table, they're a destination. Steve: "im okay working up to more and more things - just need to get there." Progression written into PROFILE.md.
 - Steve: 180 lb, 5'11", wants body goals. Recorded; the goal itself to be set with him (leaner, stronger, a number, or how he feels).
+- Body goal: ~170 lb by April, consistency not dieting, no calorie counting, weigh-in at most weekly. Steve: "i do want to loose weight. but managing life feeling, stress and building strength to prevent injury is key." Priorities in that order: feel, stress, injury-proof, then the scale.
+- Weekly template set by the coach (Steve didn't pick): strength Mon + Thu, runs Tue + Sat, bike Wed when live. He can override any week.
