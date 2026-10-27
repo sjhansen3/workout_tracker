@@ -1,0 +1,13 @@
+{
+  "title": "Tue 27 Oct · Upper body",
+  "notes": "First Hevy session. Legs were heavy after Monday's run, so this one is upper body and core, with one light hinge. Pick weights you could do 2–3 more reps with; I set them from here next time. Three pairs: A1 then A2, rest, repeat.",
+  "exercises": [
+    {"name": "Incline Bench Press (Dumbbell)", "sets": "3x10", "rest": 60, "superset": 0, "note": "A1. Bench at about 30°. Elbows about 45° from your sides."},
+    {"name": "Bent Over Row (Band)", "sets": "3x12", "rest": 60, "superset": 0, "note": "A2. Stand on the band, hinge, pull to your hips. Back flat."},
+    {"name": "Romanian Deadlift (Barbell)", "sets": "2x10", "rest": 60, "superset": 1, "note": "B1. Bowflex bar, light. Push hips back, bar slides down your thighs, stop when hamstrings pull. Skip if your back tightens."},
+    {"name": "Band Pullaparts", "sets": "3x15", "rest": 60, "superset": 1, "note": "B2. Arms straight, squeeze shoulder blades. Desk-posture medicine."},
+    {"name": "Lateral Raise (Dumbbell)", "sets": "3x12", "rest": 45, "superset": 2, "note": "C1. Light. Lead with the elbows, stop at shoulder height."},
+    {"name": "Side Plank", "sets": "3x25s", "rest": 45, "superset": 2, "note": "C2. 25 s each side."},
+    {"name": "Bird Dog", "sets": "2x10", "rest": 45, "note": "Finisher. Slow, 10 each side. Hips stay level."}
+  ]
+}
