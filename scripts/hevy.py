@@ -1,16 +1,18 @@
 """Hevy: the coach writes strength sessions in, and reads back what Steve lifted.
 
     python scripts/hevy.py whoami                       checks the key (prints name, unit, pro)
-    python scripts/hevy.py push data/hevy/2026-10-29.json   creates the routine, or updates the one with the same title
+    python scripts/hevy.py push data/hevy/A.json        updates the routine in place (routine_id), else creates it
     python scripts/hevy.py pull [days]                  prints workouts from the last N days (default 7)
     python scripts/hevy.py find "goblet,band row"       searches Hevy's exercise templates by name (comma-separated terms)
 
 Needs HEVY_API_KEY (Hevy Pro; hevy.com → Settings → Developer; stored via scripts/setup_secrets.py hevy).
 Runs in the `hevy` workflow, where the secret lives. The API can't delete: a wrong routine is removed by hand in the app.
 
-Session file, kept in data/hevy/<date>.json. Weights in lb (Steve's unit); converted to kg for the API.
+Session files: data/hevy/A.json and B.json, the two standing routines. They're updated in place each week
+(routine_id pins them), so Hevy never fills up with dated copies. Weights in lb (Steve's unit); converted to kg for the API.
 {
-  "title": "Thu 29 Oct · Full body",
+  "routine_id": "ec8dc5c6-...",
+  "title": "Session A · Full body",
   "notes": "shown at the top of the routine",
   "exercises": [
     {"name": "Goblet Squat", "sets": "3x10", "lb": 30, "rest": 90, "note": "shown under the exercise"},
@@ -99,13 +101,13 @@ def push(path):
     session = json.load(open(path))
     print(f'routine "{session["title"]}"')
     body = build(session, templates())
-    existing = [r for r in pages("/routines", "routines") if r["title"] == session["title"]]
-    if existing:
-        r = call("PUT", f"/routines/{existing[0]['id']}", body)["routine"]
-        print(f"updated routine {r['id']}")
+    rid = session.get("routine_id") or next((r["id"] for r in pages("/routines", "routines") if r["title"] == session["title"]), None)
+    if rid:
+        r = call("PUT", f"/routines/{rid}", body)["routine"]
+        print(f"updated routine {r['id']} in place")
     else:
         r = call("POST", "/routines", body)["routine"]
-        print(f"created routine {r['id']}")
+        print(f"created routine {r['id']}; put \"routine_id\": \"{r['id']}\" in {path} so later pushes update it in place")
 
 def pull(days=7):
     since = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=days)).isoformat()

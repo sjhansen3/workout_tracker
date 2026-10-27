@@ -10,7 +10,7 @@ Week one is about one thing: showing up. Two weeks after Chicago, the legs need 
 
 **How I'm planning around your life:** short routine sessions at night after the kids' 8pm bedtime; longer ones midday when your calendar's clear. I decide the what and where so you just lace up and see how you feel. Sleep beats a workout. If you're short on sleep, tell me and I'll swap the day; no make-ups. Swimming stays light all year since you're already strong; the bike gets the time.
 
-**Strength moves to Hevy.** You wanted an app that shows the sets and runs the timer, with me setting the weights and volume. Hevy does both and takes its workouts from here. Tuesday and Thursday are both in the app under Routines, three pairs each (A1/A2, rest, repeat), about 35 minutes. Fitbod is done; delete it when you like. These first two you pick the weights; after that I set them.
+**Strength moves to Hevy.** You wanted an app that shows the sets and runs the timer, with me setting the weights and volume. Hevy does both and takes its workouts from here. Two standing routines in the app, Session A (full body) and Session B (upper + hinge), that I update in place each week; Tuesday is B, Thursday is A. Three pairs each (A1/A2, rest, repeat), about 35 minutes. Fitbod is done; delete it when you like. These first two you pick the weights; after that I set them.
 
 **From today's intake:** pressing goes neutral-grip and every week has two pulls per push (left shoulder, desk posture). Pull-up bar and bands come into next week's Session B. One food change only: a real breakfast with protein, so dinner stops being the catch-up meal. Target ~170 lb by April, no counting.
 
