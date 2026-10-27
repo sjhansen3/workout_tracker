@@ -12,4 +12,6 @@ Week one is about one thing: showing up. Two weeks after Chicago, the legs need 
 
 **Strength moves to Hevy.** You wanted an app that shows the sets and runs the timer, with me setting the weights and volume. Hevy does both and takes its workouts from here. Thursday's session is already in the app under Routines: 7 exercises in three pairs (A1/A2, rest, repeat), dumbbells and bodyweight, about 35 minutes. This first one you pick the weights; after that I set them.
 
-**Still open:** how often you want massage with Nicole, what's in your home gym (dumbbells, bench?), and the KICKR model.
+**From today's intake:** pressing goes neutral-grip and every week has two pulls per push (left shoulder, desk posture). Pull-up bar and bands come into next week's Session B. One food change only: a real breakfast with protein, so dinner stops being the catch-up meal. Target ~170 lb by April, no counting.
+
+**Still open:** how often you want massage with Nicole, the max weight on your adjustable dumbbells, and the KICKR model.
