@@ -33,6 +33,7 @@ Edited through coaching conversations only. Every line here is something Steve s
 - Hardest part is deciding what to do and where. Can be lazy and want to just chill. So: the plan decides for him, one clear thing per day.
 - Over-tracking and over-analysis are a pitfall. "Best to just lace up the shoes and see how we feel." Keep numbers out of his way.
 - "Be kind to myself instead of hard ass."
+- Supersets: "I usually can get more done faster if we super set (but don't overdo that)." Pair non-competing exercises; two or three pairs a session, not everything.
 - Sauna is his favourite: "such a nice reward." Pair it with sessions as the payoff.
 - Wants regular massage with Nicole, his massage therapist; timing coordinated with her.
 - Likes how Runna works: one workout, pushed to the watch, adapts on its own, easy to move.
