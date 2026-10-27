@@ -30,6 +30,11 @@ Edited through coaching conversations only. Every line here is something Steve s
 - Bike: Wahoo KICKR (older generation, direct drive, ERG mode). Not set up yet (26 Oct). Generation, cassette speed and axle compatibility not yet confirmed. TrainerRoad planned once it's live.
 - Everything syncs to Strava.
 
+## Strength, how he relates to it
+- "I have never been one for lifting, but it helps so much with stress." Endurance person by identity; converted by trainers who didn't do "bro style" lifting. "I'm into it now."
+- Scared of loaded back squats and the like. No barbell back squat on the plan; goblet, split squat, hinge and carries do the job.
+- What strength is for this year: durability for the race, and the stress relief. Not chasing numbers.
+
 ## Preferences
 - Hardest part is deciding what to do and where. Can be lazy and want to just chill. So: the plan decides for him, one clear thing per day.
 - Over-tracking and over-analysis are a pitfall. "Best to just lace up the shoes and see how we feel." Keep numbers out of his way.

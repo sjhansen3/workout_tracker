@@ -45,3 +45,4 @@
 - Home gym: also a Bowflex adjustable barbell set. Session B gets the hinge (RDL) and hip thrust with it. Buy: resistance bands with a door anchor. Skip: doorway pull-up bar (the doorway is bad), kettlebell (until the dumbbells top out), rack.
 - Steve ordered a 57" wall-mounted pull-up bar, due Fri 30 Oct. Session B (next week) gets pull-ups or band-assisted pull-ups once it's up.
 - Steve bought loop bands. Session B: band-assisted pull-ups and band rows off the bar. Steve: "I love those."
+- Strength style settled: no loaded back squats ("scared of" them), nothing bro-style; trainer-style functional work, dumbbells, bar, bands, ball. Aim is durability plus stress relief, not numbers. Steve: "it helps so much with stress... im into it now."
