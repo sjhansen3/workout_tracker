@@ -54,3 +54,4 @@
 - PLAN.md and the coach note updated with the intake: Session B defined around the bar, bands and bench; pull-biased, neutral-grip rules; body target and the breakfast lever.
 - Tue 27 Oct: Fitbod → Hevy too, since the key is live. "Tue 27 Oct · Upper body": incline press + band row, light RDL + pull-aparts, lateral raise + side plank, bird dog. Legs rest after Monday's run. Steve: "the website still links to fitbod." Fitbod is retired.
 - Hevy routines are two standing ones, "Session A · Full body" and "Session B · Upper + hinge", updated in place each week (routine_id in data/hevy/A.json, B.json). The dated ones were renamed, not duplicated. Steve: "naming them with the date, thats gunna get old fast."
+- Clarified: A and B are stable names, not stable content. Exercises rotate every 3–4 weeks, weights move weekly, and more routines are fine when useful. Steve: "idk if i want every week to be exactly the same."
