@@ -22,6 +22,7 @@ Session files: data/hevy/A.json and B.json, the two standing routines. They're u
 }
 `sets`: "3x10", "3x8-12" (rep range), "3x30s" (seconds). `lb` optional: leave it out and Steve picks the weight in the app.
 `rir` (session-level or per exercise, default 2): reps left in the tank at the end of each set; written into the exercise note.
+`per_side`: true for one-sided moves (side plank, one-arm row, bird dog): doubles the sets so left and right are logged separately.
 `warmup`: "1x8" adds warm-up sets first. `name` must match a Hevy exercise title (case-insensitive); `find` helps.
 """
 import datetime as dt, json, os, re, sys
@@ -94,10 +95,12 @@ def build(session, cache):
         t = resolve(e["name"], cache)
         sets = parse_sets(e["warmup"], e.get("warmup_lb"), "warmup") if e.get("warmup") else []
         sets += parse_sets(e["sets"], e.get("lb"))
+        if e.get("per_side"):  # one-sided moves: one set per side, alternating, so both sides get logged
+            sets = [dict(x) for x in sets for _ in (0, 1)]
         # Hevy routines carry no effort target, so it goes at the top of the exercise note: "3×10, 2 left in the tank".
         rir = e.get("rir", session.get("rir", 2))
         timed = e["sets"].endswith("s")  # holds get a time, not a reps-in-reserve target
-        effort = e["sets"].replace("x", "×") + ("" if timed or rir is None else f", {rir} left in the tank")
+        effort = e["sets"].replace("x", "×") + (" per side, sets alternate L/R" if e.get("per_side") else "") + ("" if timed or rir is None else f", {rir} left in the tank")
         if e.get("lb"):
             effort += f' @ {e["lb"]} lb'
         notes = effort + (". " + e["note"] if e.get("note") else "")

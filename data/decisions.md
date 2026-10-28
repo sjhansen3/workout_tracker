@@ -57,3 +57,4 @@
 - Clarified: A and B are stable names, not stable content. Exercises rotate every 3–4 weeks, weights move weekly, and more routines are fine when useful. Steve: "idk if i want every week to be exactly the same."
 - 28 Oct evening: the effort-target push to Session B was overwritten by the app (Steve edited set 1 to 15 reps during the session; Hevy wrote its copy back). Rule: push in the morning, verify with `show`. Re-push both routines Wed morning.
 - Correction: no Bowflex barbell; Steve has two SelectTech 552 dumbbells (5–52.5 lb) plus light neoprene ones. The hinge in Session B is a dumbbell RDL. Goblet squats top out at 52.5 lb; a kettlebell or a bar comes up when that's easy.
+- One-sided moves (side plank, bird dog, dead bug, one-arm row) now get one Hevy set per side, alternating L/R, so both sides are logged. Steve: "your side planks don't really account for tracking both sides." Lands with the morning re-push.

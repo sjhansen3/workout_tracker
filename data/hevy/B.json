@@ -44,13 +44,15 @@
       "sets": "3x25s",
       "rest": 45,
       "superset": 2,
-      "note": "C2. 25 s each side."
+      "note": "C2.",
+      "per_side": true
     },
     {
       "name": "Bird Dog",
       "sets": "2x10",
       "rest": 45,
-      "note": "Finisher. Slow, 10 each side. Hips stay level."
+      "note": "Finisher. Slow. Hips stay level.",
+      "per_side": true
     }
   ]
 }

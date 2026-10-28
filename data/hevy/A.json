@@ -16,7 +16,8 @@
       "sets": "3x10",
       "rest": 60,
       "superset": 0,
-      "note": "A2. One arm, other hand and knee on the bench so your back is supported."
+      "note": "A2. One arm, other hand and knee on the bench so your back is supported.",
+      "per_side": true
     },
     {
       "name": "Bench Press (Dumbbell)",
@@ -50,7 +51,8 @@
       "name": "Dead Bug",
       "sets": "2x10",
       "rest": 45,
-      "note": "Finisher, on its own. Slow. Low back stays flat on the floor."
+      "note": "Finisher. Slow. Low back stays flat on the floor.",
+      "per_side": true
     }
   ]
 }
