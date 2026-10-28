@@ -50,8 +50,8 @@ Why: runners' 70.3s fall apart on the bike and in the last 5 km of the run. Stre
 
 **Phase 1 (now):** 2 × full body a week, Hevy, ~35–45 min, at home. Two sessions that alternate, A and B, so each lift comes round once a week:
 - A: squat pattern (goblet squat), horizontal pull (one-arm row), horizontal push (dumbbell bench/floor press), glute bridge, overhead press, plank, dead bug.
-- B: hinge (Romanian deadlift with the Bowflex bar, light), split squat with the rear foot on the bench, band-assisted pull-ups and band rows off the bar, incline dumbbell press, band pull-aparts, ball hamstring curl, side plank, bird dog. Ends with 5 min of thoracic and hip-flexor mobility (desk posture).
-- Rules from intake: two pulls per push (left shoulder, desk posture); presses neutral-grip; no loaded back squat yet, but it's a destination (goblet → front-loaded → barbell when the base and a rack exist), not a ban.
+- B: hinge (dumbbell Romanian deadlift, light), split squat with the rear foot on the bench, band-assisted pull-ups and band rows off the bar, incline dumbbell press, band pull-aparts, ball hamstring curl, side plank, bird dog. Ends with 5 min of thoracic and hip-flexor mobility (desk posture).
+- Rules from intake: two pulls per push (left shoulder, desk posture); presses neutral-grip; no loaded back squat yet, but it's a destination (goblet → dumbbell front squat → barbell when a bar and rack exist), not a ban.
 - Three supersets plus a core finisher. Legs moderate: 3 sets, never to failure, and never heavy the day before a run.
 - Progression: when every set hits the top of the range with 2–3 reps in hand, add 5 lb (upper) or 10 lb (lower) next time. Every 4th week, one set fewer everywhere.
 - The first session calibrates weights; the coach sets them from the second on, read back from Hevy.
