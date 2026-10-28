@@ -9,7 +9,7 @@ Edited through coaching conversations only. Every line here is something Steve s
 - Previous endurance background: ran the Chicago Marathon (11 Oct 2026). Hasn't run since. Strava shows ~20–27 mi/week in August, long runs to 11 mi.
 
 ## Life
-- Two young kids. Works from home. Steve: "most important thing to know is this." His fitness goals are about staying on top of that life.
+- Two young kids, one is Luca (1). Night wake-ups happen (28 Oct: up at 3, an hour to settle). Works from home. Steve: "most important thing to know is this." His fitness goals are about staying on top of that life.
 - Weekdays: routine short sessions ("let's just do 30 min") at night after the kids' 8pm bedtime. Midday also works and is a good work break, but check his calendar first. Big/long sessions are best midday. Weekends: nap time / midday window. Usually sleeps 7+ h, but sleep can be the blocker.
 - Daily push at 9am, not 6am.
 - Family/social plans and sleep/fatigue are what knock training off track.
@@ -56,12 +56,12 @@ Edited through coaching conversations only. Every line here is something Steve s
 - Hardest part is deciding what to do and where. Can be lazy and want to just chill. So: the plan decides for him, one clear thing per day.
 - Over-tracking and over-analysis are a pitfall. "Best to just lace up the shoes and see how we feel." Keep numbers out of his way.
 - "Be kind to myself instead of hard ass."
+- Shoulders got "really sore" after the first Session B (28 Oct): 8 lb lateral raises were a lot. Start light on shoulder isolation; soreness, not pain.
 - Supersets: "I usually can get more done faster if we super set (but don't overdo that)." Pair non-competing exercises; two or three pairs a session, not everything.
 - Sauna is his favourite: "such a nice reward." Pair it with sessions as the payoff.
-- Wants regular massage with Nicole, his massage therapist; timing coordinated with her.
+- Regular massage with Nicole, his massage therapist. First one Wed 28 Oct 4pm; he books them, tells the coach, the coach keeps that day light.
 - Likes how Runna works: one workout, pushed to the watch, adapts on its own, easy to move.
 - Wants low friction: look, do it, or ask for a change, and go.
 
 ## Still to confirm
-- Massage with Nicole: how often, and which days she has open.
 - KICKR generation.

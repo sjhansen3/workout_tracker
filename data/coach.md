@@ -10,6 +10,8 @@ Week one is about one thing: showing up. Two weeks after Chicago, the legs need 
 
 **How I'm planning around your life:** short routine sessions at night after the kids' 8pm bedtime; longer ones midday when your calendar's clear. I decide the what and where so you just lace up and see how you feel. Sleep beats a workout. If you're short on sleep, tell me and I'll swap the day; no make-ups. Swimming stays light all year since you're already strong; the bike gets the time.
 
+**Wednesday is a real rest day:** Luca was up at 3, and you've got Nicole at 4. Sore shoulders are the first-session kind; they'll ease by Thursday, and the lateral raises drop to the 5s next time.
+
 **Session B done, felt good.** Fair point that a lot of it felt like PT. That's week one: calibrate, protect the back and shoulder, see how you move. From week three the big four (goblet squat, RDL, press, row) get heavier every week and drop to 8s, then 6s by December. The PT-style stuff becomes a five-minute finisher.
 
 **Strength moves to Hevy.** You wanted an app that shows the sets and runs the timer, with me setting the weights and volume. Hevy does both and takes its workouts from here. Two standing routines in the app, Session A (full body) and Session B (upper + hinge), that I update in place each week; Tuesday is B, Thursday is A. Three pairs each (A1/A2, rest, repeat), about 35 minutes. Fitbod is done; delete it when you like. These first two you pick the weights; after that I set them.
