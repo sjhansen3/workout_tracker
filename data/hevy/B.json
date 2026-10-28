@@ -2,14 +2,15 @@
   "routine_id": "e468da84-3b3a-4cd3-bcf0-496f34ad855a",
   "title": "Session B · Upper + hinge",
   "rir": 2,
-  "notes": "Updated by the coach each week; the weights here are the plan. Every set ends with 2 reps left in the tank (the note on each exercise says so). First time: pick weights that make that true. Three pairs: A1 then A2, rest, repeat. Pull-ups join once the bar is up.",
+  "notes": "Updated by the coach each week; the weights here are the plan. Every set ends with 2 reps left in the tank. Three pairs: A1 then A2, rest, repeat. Pull-ups join once the bar is up.",
   "exercises": [
     {
       "name": "Incline Bench Press (Dumbbell)",
       "sets": "3x10",
       "rest": 60,
       "superset": 0,
-      "note": "A1. Bench at about 30°. Elbows about 45° from your sides."
+      "note": "A1. Bench at about 30°. Elbows about 45° from your sides. (Last time: 25/30/35, 35 only got 8.)",
+      "lb": 30
     },
     {
       "name": "Bent Over Row (Band)",
@@ -20,10 +21,11 @@
     },
     {
       "name": "Romanian Deadlift (Dumbbell)",
-      "sets": "2x10",
+      "sets": "3x10",
       "rest": 60,
       "superset": 1,
-      "note": "B1. Light. Dumbbells slide down the front of your thighs, hips push back, stop when the hamstrings pull. Skip if your back tightens."
+      "note": "B1. Light. Dumbbells slide down the front of your thighs, hips push back, stop when the hamstrings pull. Skip if your back tightens.",
+      "lb": 35
     },
     {
       "name": "Band Pullaparts",
@@ -42,7 +44,7 @@
     },
     {
       "name": "Side Plank",
-      "sets": "3x25s",
+      "sets": "3x30s",
       "rest": 45,
       "superset": 2,
       "note": "C2.",
