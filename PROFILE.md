@@ -47,7 +47,7 @@ Edited through coaching conversations only. Every line here is something Steve s
 ## Strength, how he relates to it
 - "I have never been one for lifting, but it helps so much with stress." Endurance person by identity; converted by trainers who didn't do "bro style" lifting. "I'm into it now."
 - Has been scared of loaded back squats and the like, but: "I'm okay working up to more and more things, just need to get there." So: build toward them, step by step, nothing skipped for good. Goblet → front-loaded → barbell when the base is there and a rack exists.
-- What strength is for this year: durability for the race, and the stress relief. Not chasing numbers.
+- What strength is for this year: durability for the race, and the stress relief. Not chasing numbers, but after session one: "a lot of things felt very PT... unsure if we should work towards more heavy weights over time?" Yes: the big lifts get heavier every week; the PT-style work shrinks to a short finisher.
 
 ## Weekly template (phase 1)
 - Strength Mon + Thu. Runs Tue + Sat. Bike Wed once the KICKR is up (off until then). Fri off. Sun off or easy spin.

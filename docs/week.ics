@@ -5,28 +5,28 @@ X-WR-CALNAME:Training
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 BEGIN:VEVENT
 UID:2026-10-26-run@training-hq
-DTSTAMP:20261027T140733Z
+DTSTAMP:20261028T020917Z
 DTSTART;VALUE=DATE:20261026
 SUMMARY:Easy run · 30 min · outside
 DESCRIPTION:none Done. Legs heavy at the end\; felt good to be in a groove. Swapped with Fitbod\; sauna after. Conversational pace. Record with the Strava app on your phone.
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-27-strength@training-hq
-DTSTAMP:20261027T140733Z
+DTSTAMP:20261028T020917Z
 DTSTART;VALUE=DATE:20261027
 SUMMARY:Hevy · Session B · 35 min · home
 DESCRIPTION:Hevy Open Hevy → Routines → "Session B · Upper + hinge". Upper and core\, one light hinge\; legs rest after Monday's run. You pick the weights this first time.
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-29-strength@training-hq
-DTSTAMP:20261027T140733Z
+DTSTAMP:20261028T020917Z
 DTSTART;VALUE=DATE:20261029
 SUMMARY:Hevy · Session A · 45 min · home
 DESCRIPTION:Hevy Open Hevy → Routines → "Session A · Full body" and tap through. Pick weights you could do 2–3 more reps with\; I set them from here next time.
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-31-run@training-hq
-DTSTAMP:20261027T140733Z
+DTSTAMP:20261028T020917Z
 DTSTART;VALUE=DATE:20261031
 SUMMARY:Easy run · 45 min · outside
 DESCRIPTION:none Conversational pace. Record with the Strava app on your phone.

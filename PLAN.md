@@ -54,6 +54,7 @@ Why: runners' 70.3s fall apart on the bike and in the last 5 km of the run. Stre
 - Rules from intake: two pulls per push (left shoulder, desk posture); presses neutral-grip; no loaded back squat yet, but it's a destination (goblet → dumbbell front squat → barbell when a bar and rack exist), not a ban.
 - Three supersets plus a core finisher. Legs moderate: 3 sets, never to failure, and never heavy the day before a run.
 - Progression: when every set hits the top of the range with 2–3 reps in hand, add 5 lb (upper) or 10 lb (lower) next time. Every 4th week, one set fewer everywhere.
+- Getting heavier: weeks 1–2 are 3×10 to calibrate. Weeks 3–5: 3×8, heavier. Weeks 6–9: 4×6 on the big four (goblet squat, RDL, press, row), the rest stays 3×10. The "PT" work (pull-aparts, bird dog, dead bug, side plank) is a 5-minute finisher, not the session; it shrinks as the back and shoulder prove themselves.
 - The first session calibrates weights; the coach sets them from the second on, read back from Hevy.
 
 **Body:** ~170 lb by April from 180, through training and one food lever at a time (first: a real breakfast with protein). No calorie counting, weigh-in at most weekly.
