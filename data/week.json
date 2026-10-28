@@ -7,7 +7,7 @@
     {"date": "2026-10-28", "sport": "rest", "app": "none", "title": "Off", "minutes": 0, "venue": "home", "status": "planned", "note": "Massage with Nicole at 4pm. Short night (Luca up at 3), so this is a real rest day."},
     {"date": "2026-10-29", "sport": "strength", "app": "hevy", "title": "Hevy · Session A", "minutes": 45, "venue": "home", "status": "planned", "note": "Open Hevy → Routines → \"Session A · Full body\" and tap through. Pick weights you could do 2–3 more reps with; I set them from here next time."},
     {"date": "2026-10-30", "sport": "rest", "app": "none", "title": "Off", "minutes": 0, "venue": "home", "status": "planned", "note": ""},
-    {"date": "2026-10-31", "sport": "run", "app": "none", "title": "Easy run", "minutes": 45, "venue": "outside", "status": "planned", "note": "Conversational pace. Record with the Strava app on your phone."},
+    {"date": "2026-10-31", "sport": "run", "app": "none", "title": "Easy run", "minutes": 45, "venue": "treadmill", "status": "planned", "note": "Conversational pace. Record with the Strava app on your phone. Venue set to treadmill by weather on 2026-10-28."},
     {"date": "2026-11-01", "sport": "rest", "app": "none", "title": "Off, or 30 min easy spin", "minutes": 0, "venue": "home", "status": "planned", "note": "Optional."}
   ]
 }
