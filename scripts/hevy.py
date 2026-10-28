@@ -96,7 +96,8 @@ def build(session, cache):
         sets += parse_sets(e["sets"], e.get("lb"))
         # Hevy routines carry no effort target, so it goes at the top of the exercise note: "3×10, 2 left in the tank".
         rir = e.get("rir", session.get("rir", 2))
-        effort = f'{e["sets"].replace("x", "×")}, {rir} left in the tank' if rir is not None else e["sets"].replace("x", "×")
+        timed = e["sets"].endswith("s")  # holds get a time, not a reps-in-reserve target
+        effort = e["sets"].replace("x", "×") + ("" if timed or rir is None else f", {rir} left in the tank")
         if e.get("lb"):
             effort += f' @ {e["lb"]} lb'
         notes = effort + (". " + e["note"] if e.get("note") else "")
