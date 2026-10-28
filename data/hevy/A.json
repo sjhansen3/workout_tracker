@@ -1,7 +1,8 @@
 {
   "routine_id": "ec8dc5c6-5ccd-4722-b710-b9864119919f",
   "title": "Session A · Full body",
-  "notes": "Updated by the coach each week; the weights here are the plan. First time: pick weights you could do 2–3 more reps with. Three pairs: A1 then A2, rest, repeat. Legs moderate: if your back or legs tighten, skip the rest of that exercise.",
+  "rir": 2,
+  "notes": "Updated by the coach each week; the weights here are the plan. Every set ends with 2 reps left in the tank (the note on each exercise says so). First time: pick weights that make that true. Three pairs: A1 then A2, rest, repeat. Legs moderate: if your back or legs tighten, skip the rest of that exercise.",
   "exercises": [
     {
       "name": "Goblet Squat",

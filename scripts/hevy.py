@@ -3,6 +3,7 @@
     python scripts/hevy.py whoami                       checks the key (prints name, unit, pro)
     python scripts/hevy.py push data/hevy/A.json        updates the routine in place (routine_id), else creates it
     python scripts/hevy.py pull [days]                  prints workouts from the last N days (default 7)
+    python scripts/hevy.py show <routine_id>              prints what Hevy holds for a routine (supersets, sets, notes)
     python scripts/hevy.py find "goblet,band row"       searches Hevy's exercise templates by name (comma-separated terms)
 
 Needs HEVY_API_KEY (Hevy Pro; hevy.com → Settings → Developer; stored via scripts/setup_secrets.py hevy).
@@ -20,6 +21,7 @@ Session files: data/hevy/A.json and B.json, the two standing routines. They're u
   ]
 }
 `sets`: "3x10", "3x8-12" (rep range), "3x30s" (seconds). `lb` optional: leave it out and Steve picks the weight in the app.
+`rir` (session-level or per exercise, default 2): reps left in the tank at the end of each set; written into the exercise note.
 `warmup`: "1x8" adds warm-up sets first. `name` must match a Hevy exercise title (case-insensitive); `find` helps.
 """
 import datetime as dt, json, os, re, sys
@@ -92,8 +94,14 @@ def build(session, cache):
         t = resolve(e["name"], cache)
         sets = parse_sets(e["warmup"], e.get("warmup_lb"), "warmup") if e.get("warmup") else []
         sets += parse_sets(e["sets"], e.get("lb"))
+        # Hevy routines carry no effort target, so it goes at the top of the exercise note: "3×10, 2 left in the tank".
+        rir = e.get("rir", session.get("rir", 2))
+        effort = f'{e["sets"].replace("x", "×")}, {rir} left in the tank' if rir is not None else e["sets"].replace("x", "×")
+        if e.get("lb"):
+            effort += f' @ {e["lb"]} lb'
+        notes = effort + (". " + e["note"] if e.get("note") else "")
         exercises.append({"exercise_template_id": t["id"], "superset_id": e.get("superset"),
-                          "rest_seconds": e.get("rest", 60), "notes": e.get("note"), "sets": sets})
+                          "rest_seconds": e.get("rest", 60), "notes": notes, "sets": sets})
         print(f'  {t["title"]}: {len(sets)} sets' + (f' @ {e["lb"]} lb' if e.get("lb") else ""))
     return {"routine": {"title": session["title"], "folder_id": None, "notes": session.get("notes", ""), "exercises": exercises}}
 
@@ -124,6 +132,14 @@ def pull(days=7):
             secs = "/".join(f"{s['duration_seconds']}s" for s in done if s.get("duration_seconds"))
             print(f"    {e['title']}: {len(done)} sets  {reps or secs}" + (f"  @ {'/'.join(lifted)} lb" if lifted else ""))
 
+def show(rid):
+    """What Hevy actually holds for a routine: order, superset ids, sets. For checking a push landed as intended."""
+    r = call("GET", f"/routines/{rid}")["routine"]
+    print(r["title"])
+    for e in r["exercises"]:
+        sets = "/".join(str(s.get("reps") or f"{s.get('duration_seconds')}s") for s in e["sets"])
+        print(f"  [{e.get('superset_id')}] {e['title']}  {sets}  rest {e.get('rest_seconds')}  | {e.get('notes')}")
+
 def whoami():
     u = call("GET", "/user/info")["data"]
     print(f"{u.get('name')} (@{u.get('username')})  unit={u.get('weight_unit')}  pro={u.get('is_pro')}")
@@ -137,5 +153,5 @@ def find(q):
 
 if __name__ == "__main__":
     cmd, args = (sys.argv[1] if len(sys.argv) > 1 else "whoami"), sys.argv[2:]
-    {"whoami": lambda: whoami(), "push": lambda: push(args[0]), "find": lambda: find(" ".join(args)),
+    {"whoami": lambda: whoami(), "push": lambda: push(args[0]), "find": lambda: find(" ".join(args)), "show": lambda: show(args[0]),
      "pull": lambda: pull(int(args[0]) if args else 7)}[cmd]()

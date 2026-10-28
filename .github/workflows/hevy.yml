@@ -4,11 +4,11 @@ on:
   workflow_dispatch:
     inputs:
       action:
-        description: "whoami | push | pull | find"
+        description: "whoami | push | pull | find | show"
         default: whoami
         type: string
       arg:
-        description: "push: session file (data/hevy/<date>.json) · pull: days · find: text"
+        description: "push: data/hevy/A.json · pull: days · find: text · show: routine id"
         default: ""
         type: string
 permissions:

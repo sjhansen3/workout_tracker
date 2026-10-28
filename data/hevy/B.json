@@ -1,7 +1,8 @@
 {
   "routine_id": "e468da84-3b3a-4cd3-bcf0-496f34ad855a",
   "title": "Session B · Upper + hinge",
-  "notes": "Updated by the coach each week; the weights here are the plan. First time: pick weights you could do 2–3 more reps with. Three pairs: A1 then A2, rest, repeat. Pull-ups join once the bar is up.",
+  "rir": 2,
+  "notes": "Updated by the coach each week; the weights here are the plan. Every set ends with 2 reps left in the tank (the note on each exercise says so). First time: pick weights that make that true. Three pairs: A1 then A2, rest, repeat. Pull-ups join once the bar is up.",
   "exercises": [
     {
       "name": "Incline Bench Press (Dumbbell)",
