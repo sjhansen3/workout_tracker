@@ -218,6 +218,13 @@ const pick = d => {{
 }};
 document.querySelectorAll('.strip .day').forEach(b => b.onclick = () => pick(b.dataset.date));
 pick("{pick}");
+// Home-screen apps come back from the background showing yesterday's page. When the page becomes visible
+// again on a new day, or after 20 minutes away, reload so the day and the coach note are fresh.
+const BUILT_FOR = "{today.isoformat()}", loadedAt = Date.now();
+const localDay = () => {{ const d = new Date(); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }};
+const refreshIfStale = () => {{ if (document.visibilityState === 'visible' && (localDay() !== BUILT_FOR || Date.now() - loadedAt > 20 * 60 * 1000)) location.reload(); }};
+document.addEventListener('visibilitychange', refreshIfStale);
+window.addEventListener('pageshow', e => {{ if (e.persisted) refreshIfStale(); }});
 // Notifications from this page itself (iOS 16.4+ when opened from the home screen).
 const VAPID = "{VAPID_PUBLIC}";
 const $ = id => document.getElementById(id);
