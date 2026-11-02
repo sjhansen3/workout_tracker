@@ -6,8 +6,8 @@
     {"date": "2026-11-03", "sport": "strength", "app": "hevy", "title": "Hevy · Session B", "minutes": 35, "venue": "home", "status": "planned", "note": "Open Hevy → Routines → \"Session B · Upper + hinge\". Weights are set from last week. Pull-ups join if the bar is up."},
     {"date": "2026-11-04", "sport": "rest", "app": "none", "title": "Off", "minutes": 0, "venue": "home", "status": "planned", "note": "Rainy anyway."},
     {"date": "2026-11-05", "sport": "strength", "app": "hevy", "title": "Hevy · Session A", "minutes": 40, "venue": "home", "status": "planned", "note": "Open Hevy → Routines → \"Session A · Full body\". Everything went up a notch after last week's clean sets."},
-    {"date": "2026-11-06", "sport": "rest", "app": "none", "title": "Off", "minutes": 0, "venue": "home", "status": "planned", "note": ""},
-    {"date": "2026-11-07", "sport": "run", "app": "none", "title": "Easy run", "minutes": 45, "venue": "outside", "status": "planned", "note": "Conversational pace. Dry, 46–51°F: gloves and a hat. Record with Strava."},
+    {"date": "2026-11-06", "sport": "run", "app": "none", "title": "Easy run", "minutes": 45, "venue": "outside", "status": "planned", "note": "Moved from Saturday: weekends are the hard part, so the long-ish run goes Friday. Dry, high 40s. Midday if your calendar is clear. Record with Strava."},
+    {"date": "2026-11-07", "sport": "rest", "app": "none", "title": "Off (backup run day)", "minutes": 0, "venue": "home", "status": "planned", "note": "Only if Friday's run didn't happen and the day allows. No pressure either way."},
     {"date": "2026-11-08", "sport": "rest", "app": "none", "title": "Off", "minutes": 0, "venue": "home", "status": "planned", "note": "Sauna if you like."}
   ]
 }

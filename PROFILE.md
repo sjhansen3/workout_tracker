@@ -50,7 +50,7 @@ Edited through coaching conversations only. Every line here is something Steve s
 - What strength is for this year: durability for the race, and the stress relief. Not chasing numbers, but after session one: "a lot of things felt very PT... unsure if we should work towards more heavy weights over time?" Yes: the big lifts get heavier every week; the PT-style work shrinks to a short finisher.
 
 ## Weekly template (phase 1)
-- Strength Mon + Thu. Runs Tue + Sat. Bike Wed once the KICKR is up (off until then). Fri off. Sun off or easy spin.
+- Strength Tue + Thu. Runs Mon + Fri; Saturday is a backup, not a plan. Bike Wed once the KICKR is up. Weekends are the hard part with the kids: "Weekends are tough. I should have done the run on Friday."
 
 ## Preferences
 - Hardest part is deciding what to do and where. Can be lazy and want to just chill. So: the plan decides for him, one clear thing per day.

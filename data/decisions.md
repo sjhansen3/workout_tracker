@@ -67,3 +67,4 @@
 - Decision: stay the course. Week two is the same template (run Mon, B Tue, A Thu, run Sat); the gym goes one notch up where every set was clean: goblet 40, row 35, bench 40, press 22.5, plank 40 s. B holds its weights, RDL to 3 sets, band pull-ups added (bar arrived Fri 30 Oct). Still 3×10; the 3×8 block starts week three per PLAN.md.
 - Weather: Tue/Wed wet, so the runs sit on Mon and Sat (both dry). Monday run 30 → 35 min. Calendar next week is clear after 8pm every night.
 - Hevy pull also shows a stray 6-min duplicate on 28 Oct; Steve deletes it in the app.
+- Sat 31 Oct run skipped: Luca didn't sleep, Halloween, napped. Steve: "Weekends are tough. I should have done the run on Friday. Good future learning." Template change: second run moves to Friday, Saturday becomes a backup day. This week: Fri 6 Nov easy 45, Sat off/backup.
