@@ -5,28 +5,28 @@ X-WR-CALNAME:Training
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 BEGIN:VEVENT
 UID:2026-11-02-run@training-hq
-DTSTAMP:20261102T005741Z
+DTSTAMP:20261102T230111Z
 DTSTART;VALUE=DATE:20261102
 SUMMARY:Easy run · 3.5 mi · outside
 DESCRIPTION:none Conversational pace\; if you can't talk\, slow down. Dry and 50s. Record with Strava on your phone.
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-03-strength@training-hq
-DTSTAMP:20261102T005741Z
+DTSTAMP:20261102T230111Z
 DTSTART;VALUE=DATE:20261103
 SUMMARY:Hevy · Session B · 35 min · home
 DESCRIPTION:Hevy Open Hevy → Routines → "Session B · Upper + hinge". Weights are set from last week. Pull-ups join if the bar is up.
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-05-strength@training-hq
-DTSTAMP:20261102T005741Z
+DTSTAMP:20261102T230111Z
 DTSTART;VALUE=DATE:20261105
 SUMMARY:Hevy · Session A · 40 min · home
 DESCRIPTION:Hevy Open Hevy → Routines → "Session A · Full body". Everything went up a notch after last week's clean sets.
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-06-run@training-hq
-DTSTAMP:20261102T005741Z
+DTSTAMP:20261102T230111Z
 DTSTART;VALUE=DATE:20261106
 SUMMARY:Easy run · 5 mi · outside
 DESCRIPTION:none Moved from Saturday: weekends are the hard part\, so the long-ish run goes Friday. Dry\, high 40s. Midday if your calendar is clear. Record with Strava.
