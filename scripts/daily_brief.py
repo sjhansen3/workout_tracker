@@ -38,7 +38,7 @@ def compose(week, today):
         return f"😴 {dow} · {s['title']}", " · ".join(x for x in [s["note"], weeks] if x)
     app = APP_NAME.get(s["app"], "")  # runs are app "none": just go, record on the watch
     what = s["title"].removeprefix(app).strip() if app else s["title"]
-    title = f"{EMOJI.get(s['sport'], '•')} {dow} · {what[0].upper() + what[1:]}, {s['minutes']} min"
+    title = f"{EMOJI.get(s['sport'], '•')} {dow} · {what[0].upper() + what[1:]}, " + (f"{s['miles']:g} mi" if s.get("miles") else f"{s['minutes']} min")
     where = s["venue"]
     if s["sport"] in ("run", "bike") and s["venue"] == "outside":
         w = weather_bit(s["date"])

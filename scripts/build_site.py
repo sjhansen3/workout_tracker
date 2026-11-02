@@ -71,7 +71,8 @@ def hero(s, today):
     scheme, web = APP_LINKS.get(s["app"], (None, None))
     name = APP_NAME.get(s["app"], s["app"])
     btn = f'<a class="go" href="#" data-scheme="{scheme}" data-app="{name}">Open {name}</a>' if scheme else ""
-    when = d.strftime("%A, %b %-d") + (f' · {s["minutes"]} min' if s["minutes"] else "")
+    size = f'{s["miles"]:g} mi' if s.get("miles") else (f'{s["minutes"]} min' if s["minutes"] else "")
+    when = d.strftime("%A, %b %-d") + (f" · {size}" if size else "")
     what = SPORT_LABEL.get(s["sport"], s["sport"]) + ("" if s["sport"] == "rest" else f' · {s["venue"]}')
     note = f'<p class="note">{html.escape(s["note"])}</p>' if s["note"] else ""
     rec = recovery_html(s["date"]) if d == today else ""
@@ -304,7 +305,7 @@ def ics(week):
             continue
         d = s["date"].replace("-", "")
         lines += ["BEGIN:VEVENT", f"UID:{s['date']}-{s['sport']}@training-hq", f"DTSTAMP:{stamp}", f"DTSTART;VALUE=DATE:{d}",
-                  f"SUMMARY:{esc(s['title'])} · {s['minutes']} min · {s['venue']}", esc(f"DESCRIPTION:{APP_NAME.get(s['app'], s['app'])} {s['note']}".strip()), "END:VEVENT"]
+                  f"SUMMARY:{esc(s['title'])} · {(str(s['miles']) + ' mi') if s.get('miles') else (str(s['minutes']) + ' min')} · {s['venue']}", esc(f"DESCRIPTION:{APP_NAME.get(s['app'], s['app'])} {s['note']}".strip()), "END:VEVENT"]
     lines.append("END:VCALENDAR")
     return "\r\n".join(lines) + "\r\n"
 

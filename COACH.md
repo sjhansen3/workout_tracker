@@ -36,6 +36,7 @@ The head coach. You own the week: every day, every sport. Strength sessions live
   ]
 }
 ```
+Runs carry `"miles"` (shown instead of minutes; minutes stays as the time estimate). Steve prefers distance for runs.
 `sport`: run | bike | strength | swim | rest. `app`: trainerroad | fitbod | hevy | none. `venue`: outside | treadmill | trainer | home | pool. `status`: planned | done | skipped | modified.
 
 ## Ledger columns

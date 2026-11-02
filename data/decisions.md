@@ -68,3 +68,4 @@
 - Weather: Tue/Wed wet, so the runs sit on Mon and Sat (both dry). Monday run 30 → 35 min. Calendar next week is clear after 8pm every night.
 - Hevy pull also shows a stray 6-min duplicate on 28 Oct; Steve deletes it in the app.
 - Sat 31 Oct run skipped: Luca didn't sleep, Halloween, napped. Steve: "Weekends are tough. I should have done the run on Friday. Good future learning." Template change: second run moves to Friday, Saturday becomes a backup day. This week: Fri 6 Nov easy 45, Sat off/backup.
+- Runs now prescribed in miles (Steve: "Can you put distance in the run instead of time?"). Mon 3.5 mi, Fri 4.5 mi, easy pace. Minutes kept as the estimate for weekly totals.
