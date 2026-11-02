@@ -61,3 +61,9 @@
 - Tue 27 Oct Session B done, felt good. Steve: "a lot of things felt very PT... unsure if we should work towards more heavy weights over time?" Plan: weeks 1–2 3×10 calibrate, weeks 3–5 3×8 heavier, weeks 6–9 4×6 on the big four; PT work becomes a 5-min finisher. Written into PLAN.md.
 - Wed 28 Oct: rest day holds; massage with Nicole 4pm; Luca up at 3am. Shoulders really sore from Tuesday (8 lb lateral raises): B's lateral raise set to 5 lb; A's press note says go light if still sore. Luca (1) added to profile.
 - First Hevy read-back (Tue B, 28 min): incline 25/30/35 lb (15/12/8), band row 15/14/12, RDL 30/35 (8/8), pull-aparts 15/18/18, lateral raise 5/8 (18/12/8), side plank 43/33/26 s. Next B: incline 30, RDL 35 for 3×10, side plank 30 s/side, raises 5. Session A starting guesses: goblet 35, row 30, bench 35, press 20. A stray 6-min duplicate workout (1 set) is in Hevy; Steve deletes it in the app.
+
+## 2026-11-01 (Sunday review, automatic)
+- Week one: Mon run done (Strava 67 min), Tue Session B done, Thu Session A done (Hevy: goblet 35 for 12/12/10, row 30, bench 35, press 20, plank 35 s), Sat run skipped (no Strava activity). 3 of 4. Strava sync ran at 18:00.
+- Decision: stay the course. Week two is the same template (run Mon, B Tue, A Thu, run Sat); the gym goes one notch up where every set was clean: goblet 40, row 35, bench 40, press 22.5, plank 40 s. B holds its weights, RDL to 3 sets, band pull-ups added (bar arrived Fri 30 Oct). Still 3×10; the 3×8 block starts week three per PLAN.md.
+- Weather: Tue/Wed wet, so the runs sit on Mon and Sat (both dry). Monday run 30 → 35 min. Calendar next week is clear after 8pm every night.
+- Hevy pull also shows a stray 6-min duplicate on 28 Oct; Steve deletes it in the app.

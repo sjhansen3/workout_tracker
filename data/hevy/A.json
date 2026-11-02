@@ -2,36 +2,36 @@
   "routine_id": "ec8dc5c6-5ccd-4722-b710-b9864119919f",
   "title": "Session A · Full body",
   "rir": 2,
-  "notes": "Updated by the coach each week; the weights here are the plan. First time for this one, so the weights are starting guesses from Tuesday: change them in the app if they're off. Every set ends with 2 reps left in the tank. Three pairs: A1 then A2, rest, repeat. Legs moderate: if your back or legs tighten, skip the rest of that exercise.",
+  "notes": "Updated by the coach each week; the weights here are the plan. Every set ends with 2 reps left in the tank. Three pairs: A1 then A2, rest, repeat. Legs moderate: if your back or legs tighten, skip the rest of that exercise.",
   "exercises": [
     {
       "name": "Goblet Squat",
       "sets": "3x10",
       "rest": 60,
       "superset": 0,
-      "note": "A1. Moderate. Heels down, chest up.",
-      "lb": 35
+      "note": "A1. Up from 35 (12/12/10 last week). Heels down, chest up.",
+      "lb": 40
     },
     {
       "name": "Dumbbell Row",
       "sets": "3x10",
       "rest": 60,
       "superset": 0,
-      "note": "A2. One arm, other hand and knee on the bench so your back is supported.",
+      "note": "A2. Up from 30. One arm, other hand and knee on the bench.",
       "per_side": true,
-      "lb": 30
+      "lb": 35
     },
     {
       "name": "Bench Press (Dumbbell)",
       "sets": "3x10",
       "rest": 60,
       "superset": 1,
-      "note": "B1. Flat bench. Elbows about 45° from your sides, not flared.",
-      "lb": 35
+      "note": "B1. Up from 35. Flat bench. Elbows about 45° from your sides.",
+      "lb": 40
     },
     {
       "name": "Glute Bridge",
-      "sets": "3x12",
+      "sets": "3x15",
       "rest": 60,
       "superset": 1,
       "note": "B2. Bodyweight. Squeeze at the top for a second."
@@ -41,15 +41,15 @@
       "sets": "3x10",
       "rest": 60,
       "superset": 2,
-      "note": "C1. Seated, bench upright. Palms facing each other (neutral grip). If the shoulders are still sore from Tuesday, go light and keep it smooth.",
-      "lb": 20
+      "note": "C1. Up a notch from 20. Seated, bench upright, palms facing each other.",
+      "lb": 22.5
     },
     {
       "name": "Plank",
-      "sets": "3x30s",
+      "sets": "3x40s",
       "rest": 60,
       "superset": 2,
-      "note": "C2."
+      "note": "C2. Up from 35 s."
     },
     {
       "name": "Dead Bug",

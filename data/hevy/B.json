@@ -2,7 +2,7 @@
   "routine_id": "e468da84-3b3a-4cd3-bcf0-496f34ad855a",
   "title": "Session B · Upper + hinge",
   "rir": 2,
-  "notes": "Updated by the coach each week; the weights here are the plan. Every set ends with 2 reps left in the tank. Three pairs: A1 then A2, rest, repeat. Pull-ups join once the bar is up.",
+  "notes": "Updated by the coach each week; the weights here are the plan. Every set ends with 2 reps left in the tank. Four pairs: A1 then A2, rest, repeat.",
   "exercises": [
     {
       "name": "Incline Bench Press (Dumbbell)",
@@ -13,26 +13,26 @@
       "lb": 30
     },
     {
-      "name": "Bent Over Row (Band)",
-      "sets": "3x12",
+      "name": "Pull Up (Band)",
+      "sets": "3x6",
       "rest": 60,
       "superset": 0,
-      "note": "A2. Stand on the band, hinge, pull to your hips. Back flat."
+      "note": "A2. Band looped over the bar, foot or knee in it. Thick band first. If the bar isn't up yet, skip this and do the band row for 4 sets."
     },
     {
       "name": "Romanian Deadlift (Dumbbell)",
       "sets": "3x10",
       "rest": 60,
       "superset": 1,
-      "note": "B1. Light. Dumbbells slide down the front of your thighs, hips push back, stop when the hamstrings pull. Skip if your back tightens.",
+      "note": "B1. 35s, 3×10 this time. Hips back, dumbbells slide down your thighs, stop when the hamstrings pull.",
       "lb": 35
     },
     {
-      "name": "Band Pullaparts",
-      "sets": "3x15",
+      "name": "Bent Over Row (Band)",
+      "sets": "3x12",
       "rest": 60,
       "superset": 1,
-      "note": "B2. Arms straight, squeeze shoulder blades. Desk-posture medicine."
+      "note": "B2. Stand on the band, hinge, pull to your hips. Back flat."
     },
     {
       "name": "Lateral Raise (Dumbbell)",
@@ -51,11 +51,19 @@
       "per_side": true
     },
     {
+      "name": "Band Pullaparts",
+      "sets": "3x15",
+      "rest": 60,
+      "superset": 3,
+      "note": "D1. Arms straight, squeeze shoulder blades."
+    },
+    {
       "name": "Bird Dog",
       "sets": "2x10",
       "rest": 45,
-      "note": "Finisher. Slow. Hips stay level.",
-      "per_side": true
+      "note": "D2. Slow. Hips stay level.",
+      "per_side": true,
+      "superset": 3
     }
   ]
 }
