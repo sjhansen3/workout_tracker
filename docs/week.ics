@@ -4,29 +4,29 @@ PRODID:-//Training HQ//EN
 X-WR-CALNAME:Training
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 BEGIN:VEVENT
-UID:2026-11-02-run@training-hq
-DTSTAMP:20261102T230111Z
+UID:2026-11-02-strength@training-hq
+DTSTAMP:20261102T234533Z
 DTSTART;VALUE=DATE:20261102
-SUMMARY:Easy run · 3.5 mi · outside
-DESCRIPTION:none Conversational pace\; if you can't talk\, slow down. Dry and 50s. Record with Strava on your phone.
+SUMMARY:Hevy · Session B · 35 min · home
+DESCRIPTION:Hevy Swapped from Tuesday. Open Hevy → Routines → "Session B · Upper + hinge". Keep the RDLs light since you run tomorrow.
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-03-strength@training-hq
-DTSTAMP:20261102T230111Z
+UID:2026-11-03-run@training-hq
+DTSTAMP:20261102T234533Z
 DTSTART;VALUE=DATE:20261103
-SUMMARY:Hevy · Session B · 35 min · home
-DESCRIPTION:Hevy Open Hevy → Routines → "Session B · Upper + hinge". Weights are set from last week. Pull-ups join if the bar is up.
+SUMMARY:Easy run · 3.5 mi · treadmill
+DESCRIPTION:none Swapped from Monday. Rain likely (about 70%)\, so treadmill unless it clears. Conversational pace. Record with Strava.
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-05-strength@training-hq
-DTSTAMP:20261102T230111Z
+DTSTAMP:20261102T234533Z
 DTSTART;VALUE=DATE:20261105
 SUMMARY:Hevy · Session A · 40 min · home
 DESCRIPTION:Hevy Open Hevy → Routines → "Session A · Full body". Everything went up a notch after last week's clean sets.
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-06-run@training-hq
-DTSTAMP:20261102T230111Z
+DTSTAMP:20261102T234533Z
 DTSTART;VALUE=DATE:20261106
 SUMMARY:Easy run · 5 mi · outside
 DESCRIPTION:none Moved from Saturday: weekends are the hard part\, so the long-ish run goes Friday. Dry\, high 40s. Midday if your calendar is clear. Record with Strava.

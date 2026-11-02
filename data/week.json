@@ -2,8 +2,8 @@
   "week_of": "2026-11-02",
   "phase": 1,
   "days": [
-    {"date": "2026-11-02", "sport": "run", "app": "none", "title": "Easy run", "miles": 3.5, "minutes": 35, "venue": "outside", "status": "planned", "note": "Conversational pace; if you can't talk, slow down. Dry and 50s. Record with Strava on your phone."},
-    {"date": "2026-11-03", "sport": "strength", "app": "hevy", "title": "Hevy · Session B", "minutes": 35, "venue": "home", "status": "planned", "note": "Open Hevy → Routines → \"Session B · Upper + hinge\". Weights are set from last week. Pull-ups join if the bar is up."},
+    {"date": "2026-11-02", "sport": "strength", "app": "hevy", "title": "Hevy · Session B", "minutes": 35, "venue": "home", "status": "planned", "note": "Swapped from Tuesday. Open Hevy → Routines → \"Session B · Upper + hinge\". Keep the RDLs light since you run tomorrow."},
+    {"date": "2026-11-03", "sport": "run", "app": "none", "title": "Easy run", "miles": 3.5, "minutes": 35, "venue": "treadmill", "status": "planned", "note": "Swapped from Monday. Rain likely (about 70%), so treadmill unless it clears. Conversational pace. Record with Strava."},
     {"date": "2026-11-04", "sport": "rest", "app": "none", "title": "Off", "minutes": 0, "venue": "home", "status": "planned", "note": "Rainy anyway."},
     {"date": "2026-11-05", "sport": "strength", "app": "hevy", "title": "Hevy · Session A", "minutes": 40, "venue": "home", "status": "planned", "note": "Open Hevy → Routines → \"Session A · Full body\". Everything went up a notch after last week's clean sets."},
     {"date": "2026-11-06", "sport": "run", "app": "none", "title": "Easy run", "miles": 5, "minutes": 50, "venue": "outside", "status": "planned", "note": "Moved from Saturday: weekends are the hard part, so the long-ish run goes Friday. Dry, high 40s. Midday if your calendar is clear. Record with Strava."},
