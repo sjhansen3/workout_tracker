@@ -70,7 +70,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.4 -apple-system,
   <h1>Week 2/46</h1>
 </div>
 <p class="sub">Phase 1 · Habit & strength · 43 weeks to Madison</p>
-<nav class="strip"><button class="day past" data-date="2026-11-02"><span class="dow">MON</span><span class="num">2</span><span class="dots"><i class="dot planned" style="--c:#f0703c"></i></span></button><button class="day past" data-date="2026-11-03"><span class="dow">TUE</span><span class="num">3</span><span class="dots"><i class="dot planned" style="--c:#4cc35a"></i></span></button><button class="day past" data-date="2026-11-04"><span class="dow">WED</span><span class="num">4</span><span class="dots"></span></button><button class="day past" data-date="2026-11-05"><span class="dow">THU</span><span class="num">5</span><span class="dots"><i class="dot planned" style="--c:#f0703c"></i></span></button><button class="day past" data-date="2026-11-06"><span class="dow">FRI</span><span class="num">6</span><span class="dots"><i class="dot planned" style="--c:#4cc35a"></i></span></button><button class="day past" data-date="2026-11-07"><span class="dow">SAT</span><span class="num">7</span><span class="dots"></span></button><button class="day today" data-date="2026-11-08"><span class="dow">SUN</span><span class="num">8</span><span class="dots"></span></button></nav>
+<nav class="strip"><button class="day past" data-date="2026-11-02"><span class="dow">MON</span><span class="num">2</span><span class="dots"><i class="dot planned" style="--c:#f0703c"></i></span></button><button class="day past" data-date="2026-11-03"><span class="dow">TUE</span><span class="num">3</span><span class="dots"><i class="dot done" style="--c:#4cc35a"></i></span></button><button class="day past" data-date="2026-11-04"><span class="dow">WED</span><span class="num">4</span><span class="dots"></span></button><button class="day past" data-date="2026-11-05"><span class="dow">THU</span><span class="num">5</span><span class="dots"><i class="dot planned" style="--c:#f0703c"></i></span></button><button class="day past" data-date="2026-11-06"><span class="dow">FRI</span><span class="num">6</span><span class="dots"><i class="dot done" style="--c:#4cc35a"></i></span></button><button class="day past" data-date="2026-11-07"><span class="dow">SAT</span><span class="num">7</span><span class="dots"></span></button><button class="day today" data-date="2026-11-08"><span class="dow">SUN</span><span class="num">8</span><span class="dots"></span></button></nav>
 <div class="push" id="push-install" hidden>Get the morning brief as a notification: tap <b>Share → Add to Home Screen</b>, then open <b>Training</b> from your home screen.</div>
 <div class="push" id="push-ask" hidden>Get the 9am brief as a notification from this app.<br><button id="push-on">Turn on notifications</button></div>
 <div class="push" id="push-code" hidden>Last step: copy this code into the GitHub secret <b>PUSH_SUBSCRIPTION</b> (<a href="https://github.com/sjhansen3/workout_tracker/settings/secrets/actions/new">open secrets</a>).
@@ -85,10 +85,10 @@ body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.4 -apple-system,
     <p class="note">Swapped from Tuesday. Open Hevy → Routines → &quot;Session B · Upper + hinge&quot;. Keep the RDLs light since you run tomorrow.</p><a class="go" href="#" data-scheme="hevy://" data-app="Hevy">Open Hevy</a>
   </div>
 </article>
-<article class="hero planned" data-date="2026-11-03" style="--c1:#e8c61a;--c2:#4cc35a" hidden>
+<article class="hero done" data-date="2026-11-03" style="--c1:#e8c61a;--c2:#4cc35a" hidden>
   <div class="bar"></div>
   <div class="body">
-    <h2>Easy run</h2>
+    <h2>Easy run<span class="badge">✓ Done</span></h2>
     <p class="when">Tuesday, Nov 3 · 3.5 mi</p>
     <p class="what">Run · outside</p>
     <p class="note">Swapped from Monday. Rain likely (about 70%), so treadmill unless it clears. Conversational pace. Record with Strava. Venue set to outside by weather on 2026-11-03.</p>
@@ -112,10 +112,10 @@ body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.4 -apple-system,
     <p class="note">Open Hevy → Routines → &quot;Session A · Full body&quot;. Everything went up a notch after last week&#x27;s clean sets.</p><a class="go" href="#" data-scheme="hevy://" data-app="Hevy">Open Hevy</a>
   </div>
 </article>
-<article class="hero planned" data-date="2026-11-06" style="--c1:#e8c61a;--c2:#4cc35a" hidden>
+<article class="hero done" data-date="2026-11-06" style="--c1:#e8c61a;--c2:#4cc35a" hidden>
   <div class="bar"></div>
   <div class="body">
-    <h2>Easy run</h2>
+    <h2>Easy run<span class="badge">✓ Done</span></h2>
     <p class="when">Friday, Nov 6 · 5 mi</p>
     <p class="what">Run · outside</p>
     <p class="note">Moved from Saturday: weekends are the hard part, so the long-ish run goes Friday. Dry, high 40s. Midday if your calendar is clear. Record with Strava. Venue set to outside by weather on 2026-11-04.</p>
@@ -141,8 +141,8 @@ body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.4 -apple-system,
 </article>
 <section class="overview">
   <h3>Week 2 overview</h3>
-  <div class="segs"><i class="seg" style="--c:#f0703c"></i><i class="seg" style="--c:#4cc35a"></i><i class="seg" style="--c:#f0703c"></i><i class="seg" style="--c:#4cc35a"></i></div>
-  <div class="stats"><span>Sessions: <b>0/4</b></span><span>Time: <b>0m/2h 40m</b></span></div>
+  <div class="segs"><i class="seg" style="--c:#f0703c"></i><i class="seg on" style="--c:#4cc35a"></i><i class="seg" style="--c:#f0703c"></i><i class="seg on" style="--c:#4cc35a"></i></div>
+  <div class="stats"><span>Sessions: <b>2/4</b></span><span>Time: <b>1h 25m/2h 40m</b></span></div>
   <div class="legend"><span><i style="--c:#4cc35a"></i>Run</span><span><i style="--c:#f0703c"></i>Strength</span></div>
 </section>
 <a class="chat" href="https://claude.ai/code/session_01D1JheBwhYgigUFzvCCM8eX">💬 Ask the coach</a>
