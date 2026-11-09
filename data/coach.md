@@ -1,9 +1,13 @@
-Week one: three of four. Monday's run, both lifting sessions, and a Saturday run that didn't happen. That's a good first week back, not a perfect one, and good is the point. Week two is the same shape, one notch heavier in the gym.
+Week two: three of four again. Session B Monday, a treadmill run Tuesday, and a 5-miler Friday. Thursday's Session A didn't happen; it isn't made up, it just leads this week. Two weeks in a row of three sessions is the habit forming.
 
-**This week:** Session B Monday, easy 3.5 mi Tuesday (treadmill if it rains), off Wednesday (rain anyway), Session A Thursday, easy 5 mi Friday (dry, high 40s, midday if you can; 6 the Friday after), Saturday backup only, off Sunday.
+**This week is the SF trip, so it's lighter on purpose:** off Monday (flight), easy 3.5 mi Tuesday morning in SF before the meetup day, off Wednesday (onsite and dinner), Session A Thursday morning at the hotel gym, off Friday (flight home), easy 5 mi Saturday, off Sunday.
 
-**In Hevy:** Session A went up across the board after clean sets last week: goblet squat 40, row 35, bench 40, press 22.5, plank 40 s. Session B keeps last week's weights (incline 30, RDL 35 for three sets now, raises on the 5s) and adds band-assisted pull-ups if the bar's up. Still 3×10 this week; the 8s start next week.
+**Hotel gym:** use whatever dumbbells are closest to Hevy's numbers; the rule is still two reps left in the tank. No gym, no problem: push-ups, split squats, band rows and planks, three rounds. Pack a band.
 
-**Saturday:** Luca up all night plus Halloween; napping was the right call. Your learning, and I agree: weekends are the hard part, so the longer run moves to Friday from now on, with Saturday only as a backup.
+**In the gym:** Session B went clean at last week's weights (incline 30 for 10s, RDL 35, raises on the 5s). The heavier 3×8 block starts the week after you're home, once Session A has had its turn.
 
-**Still open:** when the next massage with Nicole is, whether the pull-up bar is mounted, and the KICKR model (December).
+**Saturday's run** stays 5 mi, not 6: travel weeks are tiring enough. 6 comes the Friday after.
+
+**Note:** your calendar shows a massage Tuesday 1pm, but you'll be in SF. Move it if that's stale.
+
+**Still open:** whether the pull-up bar is mounted (no pull-ups in Hevy yet), and the KICKR model (December).

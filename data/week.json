@@ -1,13 +1,13 @@
 {
-  "week_of": "2026-11-02",
+  "week_of": "2026-11-09",
   "phase": 1,
   "days": [
-    {"date": "2026-11-02", "sport": "strength", "app": "hevy", "title": "Hevy · Session B", "minutes": 35, "venue": "home", "status": "planned", "note": "Swapped from Tuesday. Open Hevy → Routines → \"Session B · Upper + hinge\". Keep the RDLs light since you run tomorrow."},
-    {"date": "2026-11-03", "sport": "run", "app": "none", "title": "Easy run", "miles": 3.5, "minutes": 35, "venue": "outside", "status": "done", "note": "Swapped from Monday. Rain likely (about 70%), so treadmill unless it clears. Conversational pace. Record with Strava. Venue set to outside by weather on 2026-11-03."},
-    {"date": "2026-11-04", "sport": "rest", "app": "none", "title": "Off", "minutes": 0, "venue": "home", "status": "planned", "note": "Rainy anyway."},
-    {"date": "2026-11-05", "sport": "strength", "app": "hevy", "title": "Hevy · Session A", "minutes": 40, "venue": "home", "status": "planned", "note": "Open Hevy → Routines → \"Session A · Full body\". Everything went up a notch after last week's clean sets."},
-    {"date": "2026-11-06", "sport": "run", "app": "none", "title": "Easy run", "miles": 5, "minutes": 50, "venue": "outside", "status": "done", "note": "Moved from Saturday: weekends are the hard part, so the long-ish run goes Friday. Dry, high 40s. Midday if your calendar is clear. Record with Strava. Venue set to outside by weather on 2026-11-04."},
-    {"date": "2026-11-07", "sport": "rest", "app": "none", "title": "Off (backup run day)", "minutes": 0, "venue": "home", "status": "planned", "note": "Only if Friday's run didn't happen and the day allows. No pressure either way."},
-    {"date": "2026-11-08", "sport": "rest", "app": "none", "title": "Off", "minutes": 0, "venue": "home", "status": "planned", "note": "Sauna if you like."}
+    {"date": "2026-11-09", "sport": "rest", "app": "none", "title": "Off (travel)", "minutes": 0, "venue": "home", "status": "planned", "note": "Flying to SF. Pack running shoes and a band."},
+    {"date": "2026-11-10", "sport": "run", "app": "none", "title": "Easy run", "miles": 3.5, "minutes": 35, "venue": "outside", "status": "planned", "note": "In SF, early, before the 10am meetup day. Conversational pace. Record with Strava."},
+    {"date": "2026-11-11", "sport": "rest", "app": "none", "title": "Off", "minutes": 0, "venue": "home", "status": "planned", "note": "Intuitive onsite and dinner. Walk where you can."},
+    {"date": "2026-11-12", "sport": "strength", "app": "hevy", "title": "Hevy · Session A (hotel)", "minutes": 35, "venue": "home", "status": "planned", "note": "Hotel gym, morning before the onsite. Open Hevy → \"Session A · Full body\"; use the closest dumbbells they have, same 2-left-in-the-tank rule. No gym? Push-ups, split squats, band rows, plank: 3 rounds."},
+    {"date": "2026-11-13", "sport": "rest", "app": "none", "title": "Off (travel)", "minutes": 0, "venue": "home", "status": "planned", "note": "Flying home, land 5pm."},
+    {"date": "2026-11-14", "sport": "run", "app": "none", "title": "Easy run", "miles": 5, "minutes": 50, "venue": "outside", "status": "planned", "note": "Travel week, so the longer run lands Saturday this once. Dry, mid-30s to 40s: layers, hat, gloves. Skip without guilt if the weekend eats it."},
+    {"date": "2026-11-15", "sport": "rest", "app": "none", "title": "Off", "minutes": 0, "venue": "home", "status": "planned", "note": "Sauna if you like."}
   ]
 }

@@ -4,31 +4,24 @@ PRODID:-//Training HQ//EN
 X-WR-CALNAME:Training
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 BEGIN:VEVENT
-UID:2026-11-02-strength@training-hq
-DTSTAMP:20261109T005521Z
-DTSTART;VALUE=DATE:20261102
-SUMMARY:Hevy · Session B · 35 min · home
-DESCRIPTION:Hevy Swapped from Tuesday. Open Hevy → Routines → "Session B · Upper + hinge". Keep the RDLs light since you run tomorrow.
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-03-run@training-hq
-DTSTAMP:20261109T005521Z
-DTSTART;VALUE=DATE:20261103
+UID:2026-11-10-run@training-hq
+DTSTAMP:20261109T005602Z
+DTSTART;VALUE=DATE:20261110
 SUMMARY:Easy run · 3.5 mi · outside
-DESCRIPTION:none Swapped from Monday. Rain likely (about 70%)\, so treadmill unless it clears. Conversational pace. Record with Strava. Venue set to outside by weather on 2026-11-03.
+DESCRIPTION:none In SF\, early\, before the 10am meetup day. Conversational pace. Record with Strava.
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-05-strength@training-hq
-DTSTAMP:20261109T005521Z
-DTSTART;VALUE=DATE:20261105
-SUMMARY:Hevy · Session A · 40 min · home
-DESCRIPTION:Hevy Open Hevy → Routines → "Session A · Full body". Everything went up a notch after last week's clean sets.
+UID:2026-11-12-strength@training-hq
+DTSTAMP:20261109T005602Z
+DTSTART;VALUE=DATE:20261112
+SUMMARY:Hevy · Session A (hotel) · 35 min · home
+DESCRIPTION:Hevy Hotel gym\, morning before the onsite. Open Hevy → "Session A · Full body"\; use the closest dumbbells they have\, same 2-left-in-the-tank rule. No gym? Push-ups\, split squats\, band rows\, plank: 3 rounds.
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-06-run@training-hq
-DTSTAMP:20261109T005521Z
-DTSTART;VALUE=DATE:20261106
+UID:2026-11-14-run@training-hq
+DTSTAMP:20261109T005602Z
+DTSTART;VALUE=DATE:20261114
 SUMMARY:Easy run · 5 mi · outside
-DESCRIPTION:none Moved from Saturday: weekends are the hard part\, so the long-ish run goes Friday. Dry\, high 40s. Midday if your calendar is clear. Record with Strava. Venue set to outside by weather on 2026-11-04.
+DESCRIPTION:none Travel week\, so the longer run lands Saturday this once. Dry\, mid-30s to 40s: layers\, hat\, gloves. Skip without guilt if the weekend eats it.
 END:VEVENT
 END:VCALENDAR

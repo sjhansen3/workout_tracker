@@ -71,3 +71,11 @@
 - Runs now prescribed in miles (Steve: "Can you put distance in the run instead of time?"). Mon 3.5 mi, Fri 4.5 mi, easy pace. Minutes kept as the estimate for weekly totals.
 - Steve: "I feel like I can do a 6mi in there? ... Too much too soon after marathon? Focus on weights?" Decision: Fri 5 mi this week, 6 mi next Friday. Aerobically he can do 6 now; the limit is legs and tendons 4 weeks after Chicago with one run back, and the gym went up this week too. Weights stay the priority this block; runs build ~1 mi a week to the 15 mi/week sub-goal.
 - Mon/Tue swap: Session B tonight, easy 3.5 mi Tuesday. Steve asked. Tuesday is ~70% rain, so treadmill by default. RDLs light tonight since a run follows.
+
+## 2026-11-08 (Sunday review, automatic)
+- The scheduled Strava sync didn't fire tonight (first Sunday after the clock change); the coach ran sunday.yml by hand at 00:50 UTC and it succeeded.
+- Week two: Mon Session B done (Hevy: incline 30 10/10/10, RDL 35 10/8/10, raises 5 for 12s, side plank 36–39 s); Tue run done (treadmill, Strava 62 min); Thu Session A skipped (nothing in Hevy); Fri run done (5 mi, Strava 47 min). 3 of 4.
+- Calendar: SF trip Mon 9 – Fri 13 Nov (flight out Mon 8:05am, back Fri 5:05pm), dinners Tue and Wed. Decision: ease off for travel. Three sessions: Tue easy 3.5 mi in SF (morning), Thu Session A at the hotel gym (bodyweight fallback), Sat easy 5 mi. Saturday is allowed this once because Friday is a travel day.
+- Gym holds: B was clean but A wasn't done, so no weight changes and no Hevy push this week. The 3×8 block starts the week of 16 Nov.
+- Saturday stays 5 mi (6 deferred one week) because of travel load.
+- Calendar shows "Massage" Tue 10 Nov 1pm, while Steve is in SF; flagged in the coach note.
