@@ -7,7 +7,7 @@
     {"date": "2026-11-11", "sport": "rest", "app": "none", "title": "Off", "minutes": 0, "venue": "home", "status": "planned", "note": "Intuitive onsite and dinner. Walk where you can."},
     {"date": "2026-11-12", "sport": "strength", "app": "hevy", "title": "Hevy · Session A (hotel)", "minutes": 35, "venue": "home", "status": "planned", "note": "Hotel gym, morning before the onsite. Open Hevy → \"Session A · Full body\"; use the closest dumbbells they have, same 2-left-in-the-tank rule. No gym? Push-ups, split squats, band rows, plank: 3 rounds."},
     {"date": "2026-11-13", "sport": "rest", "app": "none", "title": "Off (travel)", "minutes": 0, "venue": "home", "status": "planned", "note": "Flying home, land 5pm."},
-    {"date": "2026-11-14", "sport": "run", "app": "none", "title": "Easy run", "miles": 5, "minutes": 50, "venue": "treadmill", "status": "planned", "note": "Travel week, so the longer run lands Saturday this once. Dry, mid-30s to 40s: layers, hat, gloves. Skip without guilt if the weekend eats it. Venue set to treadmill by weather on 2026-11-10."},
+    {"date": "2026-11-14", "sport": "run", "app": "none", "title": "Easy run", "miles": 5, "minutes": 50, "venue": "outside", "status": "planned", "note": "Travel week, so the longer run lands Saturday this once. Dry, mid-30s to 40s: layers, hat, gloves. Skip without guilt if the weekend eats it. Venue set to outside by weather on 2026-11-11."},
     {"date": "2026-11-15", "sport": "rest", "app": "none", "title": "Off", "minutes": 0, "venue": "home", "status": "planned", "note": "Sauna if you like."}
   ]
 }
