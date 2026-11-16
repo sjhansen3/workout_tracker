@@ -79,3 +79,9 @@
 - Gym holds: B was clean but A wasn't done, so no weight changes and no Hevy push this week. The 3×8 block starts the week of 16 Nov.
 - Saturday stays 5 mi (6 deferred one week) because of travel load.
 - Calendar shows "Massage" Tue 10 Nov 1pm, while Steve is in SF; flagged in the coach note.
+
+## 2026-11-15 (Sunday review, automatic)
+- The scheduled Strava sync didn't run again (none at 23:00 or 00:00 UTC). The coach dispatched it by hand at 00:46 UTC; it succeeded. Fix: the Sunday sync now runs at 17:23 Chicago (off the top of the hour, an hour before the review), and COACH.md tells the review to dispatch it itself if it's missing.
+- SF week: 0 of 3. No Strava activities, nothing in Hevy. Tue run, Thu hotel session and Sat run marked skipped.
+- Decision: ease off. Re-entry week, which also counts as this cycle's lighter fourth week: easy 3 mi Mon, Session A Wed (same weights, 2 sets OK), easy 4 mi Fri. Tue off (Theo's appointment, massage 1:30, family call 6pm); weekend off (Theo's soccer Sat 9am, birthday party Sun 10am). Runs drop back from 5 to 3–4 mi after a week off. No Hevy changes; the 3×8 block starts after a normal week back.
+- Calendar shows two "Massage" events Tue 17 Nov (1:30 and 3:30); flagged in the coach note.

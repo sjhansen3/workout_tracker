@@ -20,6 +20,7 @@ The head coach. You own the week: every day, every sport. Strength sessions live
 ## Three conversations
 1. **Daily** ("I'm wrecked", "it's pouring", "swap today"): change the day, log it, one-line confirmation.
 2. **Sunday review (automatic)**: a scheduled routine wakes the Coach session every Sunday at 18:45 Chicago, after the 18:00 Strava sync. No asking, no messaging Steve. Steps:
+   - If today's `sunday: strava sync` commit isn't on main, run the `sunday.yml` workflow yourself (workflow_dispatch) and wait for it; GitHub's scheduler is unreliable. Also run the `hevy` workflow with `pull 8` for the week's lifting.
    - Pull main. Read the week just finished in `data/week.json` + `data/ledger.csv` (done/skipped from Strava), `data/health.csv`, the forecast (`python scripts/weather.py`), Steve's calendars for next week if the Google Calendar connector is available, and `PLAN.md` for phase, sub-goals and rules.
    - Decide: stay the course, ease off, or progress, within PLAN.md's rules (every 4th week ~1/3 lighter, never add intensity and volume in the same week, missed sessions are never made up).
    - Mark any still-`planned` past sessions `skipped` in the ledger. Write next week to `data/week.json` (Mon–Sun), append its rows to the ledger as `planned`, log the why in `data/decisions.md`, rewrite `data/coach.md`, run `python scripts/build_site.py`, commit and push to main.
