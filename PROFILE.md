@@ -10,6 +10,7 @@ Edited through coaching conversations only. Every line here is something Steve s
 
 ## Life
 - Two young kids, one is Luca (1). Night wake-ups happen (28 Oct: up at 3, an hour to settle). Works from home. Steve: "most important thing to know is this." His fitness goals are about staying on top of that life.
+- Early-morning runs sometimes upset his digestion (17 Nov). Prefer midday or later for runs; if early, keep the pre-run food light and give it time.
 - Weekdays: routine short sessions ("let's just do 30 min") at night after the kids' 8pm bedtime. Midday also works and is a good work break, but check his calendar first. Big/long sessions are best midday. Weekends: nap time / midday window. Usually sleeps 7+ h, but sleep can be the blocker.
 - Daily push at 9am, not 6am.
 - Family/social plans and sleep/fatigue are what knock training off track.
