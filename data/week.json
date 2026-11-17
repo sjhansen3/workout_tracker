@@ -3,7 +3,7 @@
   "phase": 1,
   "days": [
     {"date": "2026-11-16", "sport": "run", "app": "none", "title": "Easy run", "miles": 3, "minutes": 30, "venue": "outside", "status": "planned", "note": "Back in the groove, nothing more. Dry, 30s to low 50s: midday is warmest, after the 9am call. Record with Strava."},
-    {"date": "2026-11-17", "sport": "rest", "app": "none", "title": "Off", "minutes": 0, "venue": "home", "status": "planned", "note": "Theo's appointment, massage at 1:30, family call at 6. Enough for one day."},
+    {"date": "2026-11-17", "sport": "run", "app": "none", "title": "Long easy, zone 2", "minutes": 70, "venue": "outside", "status": "planned", "note": "For your head, not your fitness. 60–75 min, slow enough to talk the whole way; walk any hill. Best window: 2:45 after the massage, back before dark (~4:30). Dry, mid-50s. Phone in your pocket, no pace watching. Sauna after if you can."},
     {"date": "2026-11-18", "sport": "strength", "app": "hevy", "title": "Hevy · Session A", "minutes": 35, "venue": "home", "status": "planned", "note": "Open Hevy → \"Session A · Full body\". Same weights as before; it's been two weeks, so 2 sets of each is fine if 3 feels like a lot."},
     {"date": "2026-11-19", "sport": "rest", "app": "none", "title": "Off", "minutes": 0, "venue": "home", "status": "planned", "note": ""},
     {"date": "2026-11-20", "sport": "run", "app": "none", "title": "Easy run", "miles": 4, "minutes": 40, "venue": "outside", "status": "planned", "note": "Dry, 50s. Midday if the calendar allows. Record with Strava."},

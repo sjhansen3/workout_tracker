@@ -85,3 +85,4 @@
 - SF week: 0 of 3. No Strava activities, nothing in Hevy. Tue run, Thu hotel session and Sat run marked skipped.
 - Decision: ease off. Re-entry week, which also counts as this cycle's lighter fourth week: easy 3 mi Mon, Session A Wed (same weights, 2 sets OK), easy 4 mi Fri. Tue off (Theo's appointment, massage 1:30, family call 6pm); weekend off (Theo's soccer Sat 9am, birthday party Sun 10am). Runs drop back from 5 to 3–4 mi after a week off. No Hevy changes; the 3×8 block starts after a normal week back.
 - Calendar shows two "Massage" events Tue 17 Nov (1:30 and 3:30); flagged in the coach note.
+- Tue 17 Nov: rest day → long easy zone 2, 60–75 min, after the massage. Steve: "I've been not feeling great, kinda \"depressed\" I think I need a long zone 2 today." Mood comes first; this is the right kind of session for it. Friday stays easy 4 mi, optional if today runs long.
