@@ -5,28 +5,28 @@ X-WR-CALNAME:Training
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 BEGIN:VEVENT
 UID:2026-11-16-run@training-hq
-DTSTAMP:20261117T224808Z
+DTSTAMP:20261118T223001Z
 DTSTART;VALUE=DATE:20261116
 SUMMARY:Easy run · 3 mi · outside
 DESCRIPTION:none Back in the groove\, nothing more. Dry\, 30s to low 50s: midday is warmest\, after the 9am call. Record with Strava.
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-17-run@training-hq
-DTSTAMP:20261117T224808Z
+DTSTAMP:20261118T223001Z
 DTSTART;VALUE=DATE:20261117
 SUMMARY:Long easy\, zone 2 · 70 min · outside
 DESCRIPTION:none Done early this morning. Extra for your head: a 30–40 min walk outside around noon\, after Theo's appointment\, in the sun. No weights today\; Session A is tomorrow.
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-18-strength@training-hq
-DTSTAMP:20261117T224808Z
+DTSTAMP:20261118T223001Z
 DTSTART;VALUE=DATE:20261118
 SUMMARY:Hevy · Session A · 35 min · home
 DESCRIPTION:Hevy Open Hevy → "Session A · Full body". Same weights as before\; it's been two weeks\, so 2 sets of each is fine if 3 feels like a lot.
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-20-run@training-hq
-DTSTAMP:20261117T224808Z
+DTSTAMP:20261118T223001Z
 DTSTART;VALUE=DATE:20261120
 SUMMARY:Easy run · 4 mi · outside
 DESCRIPTION:none Dry\, 50s. Midday if the calendar allows. Record with Strava.
