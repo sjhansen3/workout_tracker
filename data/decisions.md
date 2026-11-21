@@ -87,3 +87,4 @@
 - Calendar shows two "Massage" events Tue 17 Nov (1:30 and 3:30); flagged in the coach note.
 - Tue 17 Nov: rest day → long easy zone 2, 60–75 min, after the massage. Steve: "I've been not feeling great, kinda \"depressed\" I think I need a long zone 2 today." Mood comes first; this is the right kind of session for it. Friday stays easy 4 mi, optional if today runs long.
 - Tue 17 Nov: Steve ran early instead of after the massage. Early runs sometimes upset his digestion; noted in PROFILE.md, runs default to midday or later. He wanted more for his mood before the massage: a 30–40 min walk outside at noon, no weights (Session A is tomorrow).
+- Thu 19 Nov: Steve did an intense beach dry-land session with his brother (burpees etc.), unplanned. Logged as a strength session done. Nothing to change this weekend; the Sunday review reads it in.
