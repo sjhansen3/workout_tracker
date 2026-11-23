@@ -1,13 +1,13 @@
 {
-  "week_of": "2026-11-16",
+  "week_of": "2026-11-23",
   "phase": 1,
   "days": [
-    {"date": "2026-11-16", "sport": "run", "app": "none", "title": "Easy run", "miles": 3, "minutes": 30, "venue": "outside", "status": "planned", "note": "Back in the groove, nothing more. Dry, 30s to low 50s: midday is warmest, after the 9am call. Record with Strava."},
-    {"date": "2026-11-17", "sport": "run", "app": "none", "title": "Long easy, zone 2", "minutes": 70, "venue": "outside", "status": "done", "note": "Done early this morning. Extra for your head: a 30–40 min walk outside around noon, after Theo's appointment, in the sun. No weights today; Session A is tomorrow."},
-    {"date": "2026-11-18", "sport": "strength", "app": "hevy", "title": "Hevy · Session A", "minutes": 35, "venue": "home", "status": "planned", "note": "Open Hevy → \"Session A · Full body\". Same weights as before; it's been two weeks, so 2 sets of each is fine if 3 feels like a lot."},
-    {"date": "2026-11-19", "sport": "strength", "app": "none", "title": "Beach dry-land with his brother", "minutes": 45, "venue": "outside", "status": "done", "note": "Unplanned and intense: burpees etc. Counts."},
-    {"date": "2026-11-20", "sport": "run", "app": "none", "title": "Easy run", "miles": 4, "minutes": 40, "venue": "outside", "status": "planned", "note": "Dry, 50s. Midday if the calendar allows. Record with Strava."},
-    {"date": "2026-11-21", "sport": "rest", "app": "none", "title": "Off", "minutes": 0, "venue": "home", "status": "planned", "note": "Theo's soccer at 9."},
-    {"date": "2026-11-22", "sport": "rest", "app": "none", "title": "Off", "minutes": 0, "venue": "home", "status": "planned", "note": "Birthday party. Sauna if you get a minute."}
+    {"date": "2026-11-23", "sport": "run", "app": "none", "title": "Easy run", "miles": 3, "minutes": 30, "venue": "outside", "status": "planned", "note": "Cold but dry, high 30s by midday. Hat and gloves. After lunch, not early (your stomach). Record with Strava."},
+    {"date": "2026-11-24", "sport": "strength", "app": "hevy", "title": "Hevy · Session A", "minutes": 25, "venue": "home", "status": "planned", "note": "Open Hevy → \"Session A · Full body\". The short version counts: do the first two pairs and stop. Anything more is a bonus."},
+    {"date": "2026-11-25", "sport": "rest", "app": "none", "title": "Off", "minutes": 0, "venue": "home", "status": "planned", "note": ""},
+    {"date": "2026-11-26", "sport": "rest", "app": "none", "title": "Thanksgiving", "minutes": 0, "venue": "home", "status": "planned", "note": "Off. A walk after the meal if the family's up for it."},
+    {"date": "2026-11-27", "sport": "run", "app": "none", "title": "Easy run", "miles": 4, "minutes": 40, "venue": "treadmill", "status": "planned", "note": "Rain likely, so treadmill unless it's dry at midday. Easy, a good way to shake off Thursday. Record with Strava."},
+    {"date": "2026-11-28", "sport": "rest", "app": "none", "title": "Off", "minutes": 0, "venue": "home", "status": "planned", "note": "Backup day for Friday's run only."},
+    {"date": "2026-11-29", "sport": "rest", "app": "none", "title": "Off", "minutes": 0, "venue": "home", "status": "planned", "note": "Sauna if you get the chance."}
   ]
 }

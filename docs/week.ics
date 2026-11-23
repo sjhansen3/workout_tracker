@@ -4,38 +4,24 @@ PRODID:-//Training HQ//EN
 X-WR-CALNAME:Training
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 BEGIN:VEVENT
-UID:2026-11-16-run@training-hq
-DTSTAMP:20261123T004618Z
-DTSTART;VALUE=DATE:20261116
+UID:2026-11-23-run@training-hq
+DTSTAMP:20261123T004651Z
+DTSTART;VALUE=DATE:20261123
 SUMMARY:Easy run · 3 mi · outside
-DESCRIPTION:none Back in the groove\, nothing more. Dry\, 30s to low 50s: midday is warmest\, after the 9am call. Record with Strava.
+DESCRIPTION:none Cold but dry\, high 30s by midday. Hat and gloves. After lunch\, not early (your stomach). Record with Strava.
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-17-run@training-hq
-DTSTAMP:20261123T004618Z
-DTSTART;VALUE=DATE:20261117
-SUMMARY:Long easy\, zone 2 · 70 min · outside
-DESCRIPTION:none Done early this morning. Extra for your head: a 30–40 min walk outside around noon\, after Theo's appointment\, in the sun. No weights today\; Session A is tomorrow.
+UID:2026-11-24-strength@training-hq
+DTSTAMP:20261123T004651Z
+DTSTART;VALUE=DATE:20261124
+SUMMARY:Hevy · Session A · 25 min · home
+DESCRIPTION:Hevy Open Hevy → "Session A · Full body". The short version counts: do the first two pairs and stop. Anything more is a bonus.
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-18-strength@training-hq
-DTSTAMP:20261123T004618Z
-DTSTART;VALUE=DATE:20261118
-SUMMARY:Hevy · Session A · 35 min · home
-DESCRIPTION:Hevy Open Hevy → "Session A · Full body". Same weights as before\; it's been two weeks\, so 2 sets of each is fine if 3 feels like a lot.
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-19-strength@training-hq
-DTSTAMP:20261123T004618Z
-DTSTART;VALUE=DATE:20261119
-SUMMARY:Beach dry-land with his brother · 45 min · outside
-DESCRIPTION:none Unplanned and intense: burpees etc. Counts.
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-20-run@training-hq
-DTSTAMP:20261123T004618Z
-DTSTART;VALUE=DATE:20261120
-SUMMARY:Easy run · 4 mi · outside
-DESCRIPTION:none Dry\, 50s. Midday if the calendar allows. Record with Strava.
+UID:2026-11-27-run@training-hq
+DTSTAMP:20261123T004651Z
+DTSTART;VALUE=DATE:20261127
+SUMMARY:Easy run · 4 mi · treadmill
+DESCRIPTION:none Rain likely\, so treadmill unless it's dry at midday. Easy\, a good way to shake off Thursday. Record with Strava.
 END:VEVENT
 END:VCALENDAR

@@ -1,9 +1,9 @@
-The SF week didn't have any training in it, and that's fine. Travel weeks do that, and three weeks in, the habit is still there. This week is just about getting back in: three short sessions, nothing heavy.
+Last week you did two things, and both were the right ones: a long easy run on a low day, and a beach session with your brother. The planned stuff slipped, and that's fine. When you're not feeling great, moving at all is the win.
 
-**This week:** easy 3 mi Monday, a long easy zone 2 Tuesday afternoon after the massage (you asked for it, and it's the right call), Session A Wednesday, off Thursday, easy 4 mi Friday, and the weekend off for soccer and the birthday party.
+**This week is Thanksgiving, so it stays small:** an easy 3 mi Monday after lunch (cold, dry), a short Session A Tuesday night, a treadmill 4 mi Friday to shake off Thursday, and everything else off.
 
-**In the gym:** same weights as two weeks ago. It's been a while, so two sets of each is fine if three feels like a lot. The heavier 3×8 block waits until you've had a normal week back.
+**The short version counts.** Session A's first two pairs take about 20 minutes. Do those and stop if that's all there is. A short session done beats a long one skipped.
 
-**One tidy-up:** your calendar has two massages on Tuesday, 1:30 and 3:30. One's probably left over from before the trip.
+**How you're feeling matters more than the plan.** If the low mood is still hanging around, say so here any time and I'll swap whatever's on the card for whatever you need that day: a long walk, a ride, the sauna.
 
-**Still open:** whether the pull-up bar is mounted, and the KICKR model (December).
+**Still open:** the pull-up bar, and the KICKR (December).

@@ -88,3 +88,9 @@
 - Tue 17 Nov: rest day → long easy zone 2, 60–75 min, after the massage. Steve: "I've been not feeling great, kinda \"depressed\" I think I need a long zone 2 today." Mood comes first; this is the right kind of session for it. Friday stays easy 4 mi, optional if today runs long.
 - Tue 17 Nov: Steve ran early instead of after the massage. Early runs sometimes upset his digestion; noted in PROFILE.md, runs default to midday or later. He wanted more for his mood before the massage: a 30–40 min walk outside at noon, no weights (Session A is tomorrow).
 - Thu 19 Nov: Steve did an intense beach dry-land session with his brother (burpees etc.), unplanned. Logged as a strength session done. Nothing to change this weekend; the Sunday review reads it in.
+
+## 2026-11-22 (Sunday review, automatic)
+- The scheduled Strava sync didn't fire again, even at the new 17:23 slot (no run at all in Actions, while the daily brief's schedule runs fine). Dispatched by hand at 00:46 UTC; it succeeded. If it misses next week too, move the Strava sync into daily.yml on Sundays instead of relying on sunday.yml's schedule.
+- Re-entry week: Tue long easy run done (Strava 40 min, morning) and Thu beach dry-land with his brother (unplanned, intense). Mon run, Wed Session A and Fri run skipped. Nothing in Hevy for three weeks.
+- Context: Steve said on Tue he's been feeling low ("kinda depressed"). Mood comes first.
+- Decision: hold, keep the bar low over Thanksgiving. Three sessions: easy 3 mi Mon (dry, after lunch per the digestion note), Session A Tue night with an explicit short version (first two pairs, ~20 min), easy 4 mi Fri on the treadmill (rain). Thu Thanksgiving off. The 3×8 block waits until he's had a normal week of lifting.
