@@ -5,21 +5,21 @@ X-WR-CALNAME:Training
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 BEGIN:VEVENT
 UID:2026-11-23-run@training-hq
-DTSTAMP:20261123T004651Z
+DTSTAMP:20261123T034621Z
 DTSTART;VALUE=DATE:20261123
 SUMMARY:Easy run · 3 mi · outside
 DESCRIPTION:none Cold but dry\, high 30s by midday. Hat and gloves. After lunch\, not early (your stomach). Record with Strava.
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-24-strength@training-hq
-DTSTAMP:20261123T004651Z
+DTSTAMP:20261123T034621Z
 DTSTART;VALUE=DATE:20261124
 SUMMARY:Hevy · Session A · 25 min · home
 DESCRIPTION:Hevy Open Hevy → "Session A · Full body". The short version counts: do the first two pairs and stop. Anything more is a bonus.
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-27-run@training-hq
-DTSTAMP:20261123T004651Z
+DTSTAMP:20261123T034621Z
 DTSTART;VALUE=DATE:20261127
 SUMMARY:Easy run · 4 mi · treadmill
 DESCRIPTION:none Rain likely\, so treadmill unless it's dry at midday. Easy\, a good way to shake off Thursday. Record with Strava.
