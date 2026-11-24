@@ -94,3 +94,4 @@
 - Re-entry week: Tue long easy run done (Strava 40 min, morning) and Thu beach dry-land with his brother (unplanned, intense). Mon run, Wed Session A and Fri run skipped. Nothing in Hevy for three weeks.
 - Context: Steve said on Tue he's been feeling low ("kinda depressed"). Mood comes first.
 - Decision: hold, keep the bar low over Thanksgiving. Three sessions: easy 3 mi Mon (dry, after lunch per the digestion note), Session A Tue night with an explicit short version (first two pairs, ~20 min), easy 4 mi Fri on the treadmill (rain). Thu Thanksgiving off. The 3×8 block waits until he's had a normal week of lifting.
+- Tue 24 Nov: Steve doing Session A tonight. Weights reset to his last lifted (goblet 35, row 30, bench 35, press 20, plank 35 s) after three weeks without lifting; the planned bumps never happened. KICKR is out and being set up, expected ready next week, so the Sunday review can add the first easy spin.
